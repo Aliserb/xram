@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xram</title>
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/fonts/AmaticSC/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/fonts/raleway/stylesheet.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header_row">
+                <div class="header_top">
+                    <div class="header_left">
+                        <div class="header_links">
+                            <div class="item">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./assets/images/sprites/sprite.svg#header_instagram"></use>
+                                    </svg>                                  
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#"> 
+                                    <svg>
+                                        <use xlink:href="./assets/images/sprites/sprite.svg#header_telegram "></use>
+                                    </svg>                             
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="./assets/images/sprites/sprite.svg#header_zen"></use>
+                                    </svg>                                     
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.3125 0.5H3.9375C2.89321 0.5 1.89169 0.914843 1.15327 1.65327C0.414843 2.39169 0 3.39321 0 4.4375V17.5625C0 18.6068 0.414843 19.6083 1.15327 20.3467C1.89169 21.0852 2.89321 21.5 3.9375 21.5H22.3125C23.3568 21.5 24.3583 21.0852 25.0967 20.3467C25.8352 19.6083 26.25 18.6068 26.25 17.5625V4.4375C26.25 3.39321 25.8352 2.39169 25.0967 1.65327C24.3583 0.914843 23.3568 0.5 22.3125 0.5ZM21.4331 3.125L13.125 9.35938L4.81687 3.125H21.4331ZM22.3125 18.875H3.9375C3.5894 18.875 3.25556 18.7367 3.00942 18.4906C2.76328 18.2444 2.625 17.9106 2.625 17.5625V4.76562L12.3375 12.05C12.5647 12.2204 12.841 12.3125 13.125 12.3125C13.409 12.3125 13.6853 12.2204 13.9125 12.05L23.625 4.76562V17.5625C23.625 17.9106 23.4867 18.2444 23.2406 18.4906C22.9944 18.7367 22.6606 18.875 22.3125 18.875Z" fill="#20211B"/>
+                                    </svg>                 
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_470_390)">
+                                        <path d="M5.99664 11.2139H2.20335C1.7788 11.2139 1.43896 11.5571 1.43896 11.9863V14.3034C1.43896 14.7324 1.77861 15.0758 2.20335 15.0758H5.99664C6.42119 15.0758 6.76102 14.7326 6.76102 14.3034V11.9863C6.76102 11.5571 6.42118 11.2139 5.99664 11.2139Z" fill="#20211B"/>
+                                        <path d="M5.99676 17.25H2.20347C1.77892 17.25 1.43909 17.5932 1.43909 18.0224V20.3395C1.43909 20.7686 1.77873 21.112 2.20347 21.112H5.99676C6.42131 21.112 6.76114 20.7687 6.76114 20.3395V18.0224C6.76114 17.5932 6.42131 17.25 5.99676 17.25Z" fill="#20211B"/>
+                                        <path d="M13.4703 11.2139H9.67698C9.25243 11.2139 8.9126 11.5571 8.9126 11.9863V14.3034C8.9126 14.7324 9.25224 15.0758 9.67698 15.0758H13.4703C13.8948 15.0758 14.2347 14.7326 14.2347 14.3034V11.9863C14.2347 11.5571 13.895 11.2139 13.4703 11.2139Z" fill="#20211B"/>
+                                        <path d="M13.4703 17.25H9.67698C9.25243 17.25 8.9126 17.5932 8.9126 18.0224V20.3395C8.9126 20.7686 9.25224 21.112 9.67698 21.112H13.4703C13.8948 21.112 14.2347 20.7687 14.2347 20.3395V18.0224C14.2347 17.5932 13.895 17.25 13.4703 17.25Z" fill="#20211B"/>
+                                        <path d="M20.9439 11.2139H17.1506C16.7261 11.2139 16.3862 11.5571 16.3862 11.9863V14.3034C16.3862 14.7324 16.7259 15.0758 17.1506 15.0758H20.9439C21.3685 15.0758 21.7083 14.7326 21.7083 14.3034V11.9863C21.7083 11.5571 21.3686 11.2139 20.9439 11.2139Z" fill="#20211B"/>
+                                        <path d="M20.9437 17.25H17.1504C16.7258 17.25 16.386 17.5932 16.386 18.0224V20.3395C16.386 20.7686 16.7256 21.112 17.1504 21.112H20.9437C21.3682 21.112 21.708 20.7687 21.708 20.3395V18.0224C21.708 17.5932 21.3684 17.25 20.9437 17.25Z" fill="#20211B"/>
+                                        <path d="M21.9628 3.46152C21.4533 3.00377 20.8021 2.46018 20.2642 2.14551C17.9147 0.772434 14.8289 0 11.5735 0C8.31797 0 5.23234 0.772434 2.88273 2.17406C2.34481 2.48875 1.69377 3.03232 1.18411 3.49008C0.674661 3.9191 0.4764 4.60574 0.617993 5.26364L1.29745 8.41049C1.4106 8.92531 1.9485 9.23998 2.45815 9.0971L7.01583 7.63821C7.44037 7.49514 7.69528 7.09463 7.63861 6.66563L7.29897 4.14798C8.74266 3.71896 9.93157 3.49008 11.5735 3.49008C13.3286 3.49008 14.5175 3.74749 15.9047 4.17669L15.5933 6.63687C15.5366 7.06589 15.7916 7.49513 16.2161 7.60945L20.7456 9.06835C21.255 9.23995 21.7929 8.92527 21.9063 8.38173L22.5291 5.23488C22.6704 4.57718 22.4724 3.89057 21.9627 3.46152H21.9628Z" fill="#20211B"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_470_390">
+                                        <rect width="22" height="22" fill="white" transform="translate(0.25)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                         
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header_right">
+                        <div class="header_projects_title">
+                            Проекты
+                            <div class="header_projects_button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="header_projects_wrap">
+                            <div class="header_project_row">
+                                <div class="header_project_title">
+                                    Наши другие проекты
+                                    
+                                    <div class="header_projects_button header_projects_button-active">
+                                        <div class="header_projects_button">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="header_project_wrap">
+                                    <div class="header_project_item">
+                                        <div class="header_project_image">
+                                            <img src="assets/images/card/header_project-1.png" alt="project">
+                                        </div>
+    
+                                        <div class="header_project_info">
+                                            <h5 class="header_project_name">
+                                                Православные платья
+                                            </h5>
+    
+                                            <p class="header_project_description">
+                                                Несколько слов о самом проекте
+                                            </p>
+    
+                                            <a href="#">
+                                                Перейти к проекту
+                                                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.53606 6.13674C2.92258 5.75455 3.52646 5.75455 3.91299 6.13674C4.29951 6.51894 4.29951 7.11607 3.91299 7.49827L2.72935 8.66867C2.17382 9.21798 1.88383 9.93457 1.88383 10.699C1.88383 11.4634 2.17364 12.1798 2.72935 12.7293C3.28487 13.2786 4.00956 13.5653 4.78261 13.5653C5.55566 13.5653 6.28018 13.2788 6.83588 12.7293L8.04363 11.5589C8.43015 11.1767 9.03404 11.1767 9.42056 11.5589C9.80708 11.9411 9.80708 12.5382 9.42056 12.9204L8.23692 14.0908C7.31898 14.9985 6.11123 15.5 4.83101 15.5C3.55079 15.5 2.31897 14.9983 1.4251 14.0908C0.507167 13.1831 -1.90735e-06 11.9889 -1.90735e-06 10.723C-1.90735e-06 9.45708 0.507339 8.23904 1.4251 7.35517L2.53606 6.13674Z" fill="#FDFFFE"/>
+                                                    <path d="M10.2174 2.43463C9.44433 2.43463 8.71981 2.7212 8.16412 3.27069L6.95636 4.46493C6.56984 4.84713 5.96596 4.84713 5.57944 4.46493C5.19292 4.08273 5.19292 3.48561 5.57944 3.10341L6.76308 1.90916C7.68101 1.0015 8.88877 0.5 10.169 0.5C11.4492 0.5 12.681 1.00167 13.5749 1.90916C14.4928 2.81683 15 4.01108 15 5.27697C15 6.54287 14.4927 7.76091 13.5749 8.64478L12.3913 9.83903C12.198 10.0301 11.9565 10.1256 11.7149 10.1256C11.4733 10.1256 11.2319 10.0301 11.0386 9.83903C10.652 9.45683 10.652 8.8597 11.0386 8.4775L12.2463 7.28326C12.8018 6.73395 13.0918 6.01736 13.0918 5.25296C13.0918 4.48856 12.802 3.77214 12.2463 3.22266C11.7149 2.72116 10.9902 2.43459 10.2173 2.43459L10.2174 2.43463Z" fill="#FDFFFE"/>
+                                                    <path d="M5.94203 10.4839C5.70041 10.4839 5.45898 10.3884 5.26569 10.1973C4.87917 9.81509 4.87917 9.21797 5.26569 8.83577L8.33343 5.80252C8.71995 5.42032 9.32383 5.42032 9.71035 5.80252C10.0969 6.18471 10.0969 6.78184 9.71035 7.16404L6.64262 10.1975C6.44936 10.3884 6.20774 10.4839 5.94203 10.4839Z" fill="#FDFFFE"/>
+                                                </svg>                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header_projects_overlay"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header_middle">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="assets/images/logo.svg" alt="logotype">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="header_bottom">
+                    <nav class="header_left_menu header_menu">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    О храме
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Расписание
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Воскресная школа
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="header_right_menu header_menu">
+                        <ul>
+                            <li>
+                                <a href="news.html">
+                                    Новости
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Записка
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Помочь
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main_banner_section">
+        <div class="container">
+            <div class="main_banner_row" style="background-image: url(./assets/images/bg/main_banner_bg.png);">
+                <div class="main_banner_left">
+                    <div class="main_banner_subtitle">
+                        храм г.Ивье
+                    </div>
+
+                    <h3 class="main_banner_title">
+                        Гавриила
+                        Белостокского
+                    </h3>
+
+                    <button class="main_banner_button ask_question_trigger">
+                        Написать батюшке
+                    </button>
+                </div>
+
+                <div class="main_banner_center">
+                    <img src="assets/images/bg/main_banner_image.png" alt="image">
+                </div>
+
+                <div class="main_banner_right">
+                    <div class="main_banner_subtitle">
+                        день памяти 3 мая (ст. ст. 20 апреля)
+                    </div>
+
+                    <h3 class="main_banner_title">
+                        покровитель детей и подростков
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calendar_slider_section">
+        <div class="container">
+            <div class="calendar_slider">
+                <div class="swiper calendar_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="calendar_item_date">
+                                чт
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
+                                </svg>                                        
+                                18 окт
+                            </div>
+
+                            <div class="calendar_item_box">
+                                <div class="calendar_box_title">
+                                    Таинство
+                                </div>
+
+                                <div class="calendar_box_list">
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="calendar_item_date">
+                                чт
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
+                                </svg>                                        
+                                18 окт
+                            </div>
+
+                            <div class="calendar_item_box">
+                                <div class="calendar_box_title">
+                                    Таинство
+                                </div>
+
+                                <div class="calendar_box_list">
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="calendar_item_date">
+                                чт
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
+                                </svg>                                        
+                                18 окт
+                            </div>
+
+                            <div class="calendar_item_box">
+                                <div class="calendar_box_title">
+                                    Таинство
+                                </div>
+
+                                <div class="calendar_box_list">
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="calendar_item_date">
+                                чт
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
+                                </svg>                                        
+                                18 окт
+                            </div>
+
+                            <div class="calendar_item_box">
+                                <div class="calendar_box_title">
+                                    Таинство
+                                </div>
+
+                                <div class="calendar_box_list">
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="calendar_box_list_item">
+                                        <div class="calendar_time">
+                                            12:00
+                                        </div>
+
+                                        <div class="calendar_description">
+                                            <div class="calendar_date_name">
+                                                Освящение воды
+                                            </div>
+
+                                            <p>
+                                                Многословная дополнительная информация для заполнения
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendar_swiper_buttons">
+                        <div class="calendar_swiper_prev calendar_swiper_button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="18.5" stroke="#DFC29E" stroke-width="3"/>
+                                <path d="M23 13L15.1333 18.9C14.0667 19.7 14.0667 21.3 15.1333 22.1L23 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="calendar_swiper_next calendar_swiper_button">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle r="18.5" transform="matrix(-1 0 0 1 20 20)" stroke="#DFC29E" stroke-width="3"/>
+                                <path d="M17 13L24.8667 18.9C25.9333 19.7 25.9333 21.3 24.8667 22.1L17 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about_section">
+        <div class="container">
+            <div class="about">
+                <div class="about_text">
+                    <h3 class="about_title">
+                        О храме
+                    </h3>
+
+                    <p>
+                        Святому младенцу молятся за детей, особенно за болящих детей, он же является небесный покровитель скорбящих матерей по своим детям.
+                    </p>
+
+                    <p>
+                        Гавриил Белостокский является образом мученичества. Он не просто
+                        страдал перед судом язычников или еретиков за исповедание веры, но страдал безвинно и умира, не сопротивляясь злу, чтобы таким образом последовать примеру Христа.
+                    </p>
+
+                    <p>
+                        Святой мученик Гавриил Белостокский считается целителем детей и их молитвенным покровителем. 
+                    </p>
+
+                    <a href="#" class="button_1">
+                        Узнать больше
+                    </a>
+                </div>
+
+                <div class="about_image">
+                    <img src="assets/images/card/about_img.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote_section">
+        <div class="container">
+            <div class="quote" style="background-image: url(./assets/images/bg/quote_bg.png);">
+                <div class="quote_top">
+                    <img src="assets/images/bg/quote_top.png" alt="top">
+                </div>
+
+                <div class="quote_box">
+                    <p class="quote_text">
+                        Старайтесь не о куске хлеба для детей своих, старайтесь о душе и совести. И не будут нуждаться дети ваши, и вы благословенны будете на земле и небесах.
+                    </p>
+
+                    <div class="quote_author">
+                        Николай Сербский
+                    </div>
+                </div>
+
+                <div class="quote_bottom">
+                    <img src="assets/images/bg/quote_bottom.png" alt="bottom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stories_section section_top_150">
+        <div class="container">
+            <div class="stories">
+                <h3 class="section_title">
+                    Истории прихожан
+                </h3>
+
+                <div class="stories_row row">
+                    <div class="stories_item col-12 col-xl-4 col-lg-6">
+                        <div class="stories_box">
+                            <div class="stories_video">
+                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+
+                                <video id="video-1" class="storie_video" width="400" height="300" loop muted>
+                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                </video>
+
+                                <span class="stories_video_play" id="video-play-1">
+                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/images/sprites/sprite.svg#stories_video_svg"></use>
+                                    </svg>                                    
+                                </span>
+                            </div>
+    
+                            <div class="stories_name">
+                                Название истории
+                            </div>
+    
+                            <div class="stories_description">
+                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stories_item col-12 col-xl-4 col-lg-6">
+                        <div class="stories_box">
+                            <div class="stories_video">
+                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+
+                                <video id="video-2" class="storie_video" width="400" height="300" loop muted>
+                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                </video>
+
+                                <span class="stories_video_play" id="video-play-2">
+                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/images/sprites/sprite.svg#stories_video_svg"></use>
+                                    </svg>                                    
+                                </span>
+                            </div>
+    
+                            <div class="stories_name">
+                                Название истории
+                            </div>
+    
+                            <div class="stories_description">
+                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stories_item col-12 col-xl-4 col-lg-6">
+                        <div class="stories_box">
+                            <div class="stories_video">
+                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+
+                                <video id="video-3" class="storie_video" width="400" height="300" loop muted>
+                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                </video>
+
+                                <span class="stories_video_play" id="video-play-3">
+                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/images/sprites/sprite.svg#stories_video_svg"></use>
+                                    </svg>                                    
+                                </span>
+                            </div>
+    
+                            <div class="stories_name">
+                                Название истории
+                            </div>
+    
+                            <div class="stories_description">
+                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery_section section_top_150">
+        <div class="container">
+            <div class="gallery">
+                <div class="section_title">
+                    Жизнь прихода
+                </div>
+
+                <div class="gallery_row margint_top_100">
+                    <div class="gallery_item gallery_item-1">
+                        <div class="gallery_box">
+                            <div class="gallery_img">
+                                <img src="assets/images/card/gallery-1.png" alt="gallery">
+                            </div>
+    
+                            <div class="gallery_info">
+                                <span class="gallery_category">
+                                    Категория новости
+                                </span>
+    
+                                <h5 class="gallery_name">
+                                    <a href="#">
+                                        Cостоится Молебен перед началом учебного года
+                                    </a>
+                                </h5>
+    
+                                <div class="gallery_date">
+                                    <span>
+                                        4 часа назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery_item gallery_item-2">
+                        <div class="gallery_box">
+                            <div class="gallery_img">
+                                <img src="assets/images/card/gallery-2.png" alt="gallery">
+                            </div>
+    
+                            <div class="gallery_info">
+                                <span class="gallery_category">
+                                    Категория новости
+                                </span>
+    
+                                <h5 class="gallery_name">
+                                    <a href="#">
+                                        Cостоится Молебен перед началом учебного года
+                                    </a>
+                                </h5>
+    
+                                <div class="gallery_date">
+                                    <span>
+                                        4 часа назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery_item gallery_item-3">
+                        <div class="gallery_box">
+                            <div class="gallery_img">
+                                <img src="assets/images/card/gallery-3.png" alt="gallery">
+                            </div>
+    
+                            <div class="gallery_info">
+                                <span class="gallery_category">
+                                    Категория новости
+                                </span>
+    
+                                <h5 class="gallery_name">
+                                    <a href="#">
+                                        Cостоится Молебен перед началом учебного года
+                                    </a>
+                                </h5>
+    
+                                <div class="gallery_date">
+                                    <span>
+                                        4 часа назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery_item gallery_item-4">
+                        <div class="gallery_box">
+                            <div class="gallery_img">
+                                <img src="assets/images/card/gallery-4.png" alt="gallery">
+                            </div>
+    
+                            <div class="gallery_info">
+                                <span class="gallery_category">
+                                    Категория новости
+                                </span>
+    
+                                <h5 class="gallery_name">
+                                    <a href="#">
+                                        Cостоится Молебен перед началом учебного года
+                                    </a>
+                                </h5>
+    
+                                <div class="gallery_date">
+                                    <span>
+                                        4 часа назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery_item gallery_item-5">
+                        <div class="gallery_box">
+                            <div class="gallery_img">
+                                <img src="assets/images/card/gallery-5.png" alt="gallery">
+                            </div>
+    
+                            <div class="gallery_info">
+                                <span class="gallery_category">
+                                    Категория новости
+                                </span>
+    
+                                <h5 class="gallery_name">
+                                    <a href="#">
+                                        Cостоится Молебен перед началом учебного года
+                                    </a>
+                                </h5>
+    
+                                <div class="gallery_date">
+                                    <span>
+                                        4 часа назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery_item gallery_item-6">
+                        <div class="gallery_box">
+                            <div class="gallery_img">
+                                <img src="assets/images/card/gallery-6.png" alt="gallery">
+                            </div>
+    
+                            <div class="gallery_info">
+                                <span class="gallery_category">
+                                    Категория новости
+                                </span>
+    
+                                <h5 class="gallery_name">
+                                    <a href="#">
+                                        Cостоится Молебен перед началом учебного года
+                                    </a>
+                                </h5>
+    
+                                <div class="gallery_date">
+                                    <span>
+                                        4 часа назад
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="show_more">
+                    <button class="button_1">
+                        Перейти к новостям
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section_top_150">
+        <div class="container">
+            <div class="footer_row">
+                <div class="footer_top">
+                    <div class="footer_item">
+                        <span>
+                            храм<br>
+                            Гавриила<br>
+                            Белостокского<br>
+                        </span>
+                    </div>
+
+                    <div class="footer_item">
+                        <a href="/" class="footer_logo">
+                            <img src="assets/images/footer-logo.svg" alt="logotype">
+                        </a>
+                    </div>
+
+                    <div class="footer_item">
+                        <div class="footer_contact">
+                            <div class="footer_contact_item">
+                                <div class="footer_contact_social">
+                                    <a href="#">
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.285 5.66602H17.7503M7.75033 1.66602H15.7503C18.6958 1.66602 21.0837 4.05383 21.0837 6.99935V14.9993C21.0837 17.9449 18.6958 20.3327 15.7503 20.3327H7.75032C4.80481 20.3327 2.41699 17.9449 2.41699 14.9993V6.99935C2.41699 4.05383 4.80481 1.66602 7.75033 1.66602ZM11.7503 14.9993C9.54119 14.9993 7.75033 13.2085 7.75033 10.9993C7.75033 8.79021 9.54119 6.99935 11.7503 6.99935C13.9595 6.99935 15.7503 8.79021 15.7503 10.9993C15.7503 13.2085 13.9595 14.9993 11.7503 14.9993Z" stroke="#F5F7F5" stroke-width="2.5"/>
+                                        </svg>                                            
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_512_37)">
+                                            <path d="M21.75 11C21.75 16.5228 17.2728 21 11.75 21C6.22715 21 1.75 16.5228 1.75 11C1.75 5.47715 6.22715 1 11.75 1C17.2728 1 21.75 5.47715 21.75 11Z" stroke="#F5F7F5" stroke-width="2"/>
+                                            <path d="M3.93659 10.5145L17.401 6.01369C17.6032 5.9459 17.7961 6.14081 17.7402 6.35611L15.3845 15.4244C15.3428 15.5846 15.1793 15.6722 15.0316 15.6133L10.2747 13.7204C10.0877 13.6459 10.0413 13.3895 10.1896 13.2482L13.9212 9.69068C14.1506 9.47213 13.903 9.08642 13.6245 9.22901L7.37773 12.4258C7.30932 12.4608 7.23017 12.4634 7.15978 12.4332L3.91663 11.0436C3.68485 10.9441 3.69798 10.5942 3.93661 10.5146L3.93659 10.5145ZM11.4212 11.2813C11.5383 11.1742 11.4083 10.9813 11.2734 11.0621L8.29646 12.7726C8.02799 12.9334 7.90192 13.2689 7.9932 13.5795L8.91274 16.8368C8.95947 17.0018 9.15634 17.055 9.27279 16.9342L11.1081 15.1063C11.1831 15.0284 11.1592 14.8952 11.0623 14.8518L9.15787 13.8531C9.05327 13.7981 9.03268 13.6507 9.1175 13.5665L11.421 11.2812L11.4212 11.2813Z" fill="#FDFFFE"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_512_37">
+                                            <rect width="22" height="22" fill="white" transform="translate(0.75)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                            
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_512_41)">
+                                            <path d="M13.0007 5.6036C12.8154 4.63742 12.7365 3.42878 12.6753 1.77228C14.2663 1.77998 15.5861 1.81318 16.6826 1.95457C18.0616 2.1324 18.8592 2.45786 19.3367 2.91308C19.7867 3.3856 20.1157 4.21034 20.2952 5.61896C20.4357 6.72167 20.4695 8.03337 20.4775 9.57283C18.8209 9.50971 17.6124 9.43107 16.6456 9.24632C15.5135 9.03 14.8041 8.68327 14.1732 8.07684C13.5659 7.445 13.2177 6.73486 13.0007 5.6036ZM5.85445 9.24632C4.88759 9.43107 3.67905 9.50971 2.02247 9.57283C2.03051 8.03337 2.06431 6.72167 2.20481 5.61896C2.3843 4.21035 2.71333 3.38562 3.16328 2.9131C3.64055 2.45816 4.43952 2.1325 5.82013 1.95458C6.91701 1.81323 8.2364 1.78 9.82467 1.77229C9.76345 3.42879 9.6846 4.63743 9.4993 5.6036C9.28233 6.73486 8.93414 7.44499 8.32684 8.07683C7.69588 8.68326 6.98652 9.03 5.85445 9.24632ZM9.49632 16.3956C9.68108 17.3624 9.75972 18.571 9.82284 20.2277C8.2327 20.22 6.91351 20.1868 5.81742 20.0454C4.43836 19.8676 3.64081 19.5421 3.16327 19.0869C2.71333 18.6144 2.3843 17.7896 2.20481 16.381C2.06425 15.2779 2.03048 13.9656 2.02246 12.4253C3.67887 12.4866 4.88746 12.5654 5.8536 12.7507C6.98486 12.9677 7.695 13.3159 8.32684 13.9232C8.93327 14.5541 9.28 15.2635 9.49632 16.3956ZM16.6456 12.7537C17.6124 12.5689 18.8209 12.4903 20.4775 12.4272C20.4695 13.9666 20.4357 15.2783 20.2952 16.381C20.1157 17.7897 19.7867 18.6144 19.3367 19.0869C18.8592 19.5421 18.0616 19.8676 16.6826 20.0454C15.5861 20.1868 14.2663 20.22 12.6753 20.2277C12.7365 18.5712 12.8154 17.3626 13.0007 16.3964C13.2177 15.2651 13.5659 14.555 14.1732 13.9232C14.8041 13.3167 15.5135 12.97 16.6456 12.7537Z" stroke="#F5F7F5" stroke-width="2.54"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_512_41">
+                                            <rect width="21" height="21" fill="white" transform="translate(0.75 0.5)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                            
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23.0625 0.5H4.6875C3.64321 0.5 2.64169 0.914843 1.90327 1.65327C1.16484 2.39169 0.75 3.39321 0.75 4.4375V17.5625C0.75 18.6068 1.16484 19.6083 1.90327 20.3467C2.64169 21.0852 3.64321 21.5 4.6875 21.5H23.0625C24.1068 21.5 25.1083 21.0852 25.8467 20.3467C26.5852 19.6083 27 18.6068 27 17.5625V4.4375C27 3.39321 26.5852 2.39169 25.8467 1.65327C25.1083 0.914843 24.1068 0.5 23.0625 0.5ZM22.1831 3.125L13.875 9.35938L5.56687 3.125H22.1831ZM23.0625 18.875H4.6875C4.3394 18.875 4.00556 18.7367 3.75942 18.4906C3.51328 18.2444 3.375 17.9106 3.375 17.5625V4.76562L13.0875 12.05C13.3147 12.2204 13.591 12.3125 13.875 12.3125C14.159 12.3125 14.4353 12.2204 14.6625 12.05L24.375 4.76562V17.5625C24.375 17.9106 24.2367 18.2444 23.9906 18.4906C23.7444 18.7367 23.4106 18.875 23.0625 18.875Z" fill="#F5F7F5"/>
+                                        </svg>                                            
+                                    </a>
+
+                                    <a href="#">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_512_47)">
+                                            <path d="M5.74664 11.2139H1.95335C1.5288 11.2139 1.18896 11.5571 1.18896 11.9863V14.3034C1.18896 14.7324 1.52861 15.0758 1.95335 15.0758H5.74664C6.17119 15.0758 6.51102 14.7326 6.51102 14.3034V11.9863C6.51102 11.5571 6.17118 11.2139 5.74664 11.2139Z" fill="#F5F7F5"/>
+                                            <path d="M5.74664 17.25H1.95335C1.5288 17.25 1.18896 17.5932 1.18896 18.0224V20.3395C1.18896 20.7686 1.52861 21.112 1.95335 21.112H5.74664C6.17119 21.112 6.51102 20.7687 6.51102 20.3395V18.0224C6.51102 17.5932 6.17118 17.25 5.74664 17.25Z" fill="#F5F7F5"/>
+                                            <path d="M13.2203 11.2139H9.42698C9.00243 11.2139 8.6626 11.5571 8.6626 11.9863V14.3034C8.6626 14.7324 9.00224 15.0758 9.42698 15.0758H13.2203C13.6448 15.0758 13.9847 14.7326 13.9847 14.3034V11.9863C13.9847 11.5571 13.645 11.2139 13.2203 11.2139Z" fill="#F5F7F5"/>
+                                            <path d="M13.2203 17.25H9.42698C9.00243 17.25 8.6626 17.5932 8.6626 18.0224V20.3395C8.6626 20.7686 9.00224 21.112 9.42698 21.112H13.2203C13.6448 21.112 13.9847 20.7687 13.9847 20.3395V18.0224C13.9847 17.5932 13.645 17.25 13.2203 17.25Z" fill="#F5F7F5"/>
+                                            <path d="M20.6939 11.2139H16.9006C16.4761 11.2139 16.1362 11.5571 16.1362 11.9863V14.3034C16.1362 14.7324 16.4759 15.0758 16.9006 15.0758H20.6939C21.1185 15.0758 21.4583 14.7326 21.4583 14.3034V11.9863C21.4583 11.5571 21.1186 11.2139 20.6939 11.2139Z" fill="#F5F7F5"/>
+                                            <path d="M20.6937 17.25H16.9004C16.4758 17.25 16.136 17.5932 16.136 18.0224V20.3395C16.136 20.7686 16.4756 21.112 16.9004 21.112H20.6937C21.1182 21.112 21.458 20.7687 21.458 20.3395V18.0224C21.458 17.5932 21.1184 17.25 20.6937 17.25Z" fill="#F5F7F5"/>
+                                            <path d="M21.7128 3.46152C21.2033 3.00377 20.5521 2.46018 20.0142 2.14551C17.6647 0.772434 14.5789 0 11.3235 0C8.06797 0 4.98234 0.772434 2.63273 2.17406C2.09481 2.48875 1.44377 3.03232 0.934114 3.49008C0.424661 3.9191 0.2264 4.60574 0.367993 5.26364L1.04745 8.41049C1.1606 8.92531 1.6985 9.23998 2.20815 9.0971L6.76583 7.63821C7.19037 7.49514 7.44528 7.09463 7.38861 6.66563L7.04897 4.14798C8.49266 3.71896 9.68157 3.49008 11.3235 3.49008C13.0786 3.49008 14.2675 3.74749 15.6547 4.17669L15.3433 6.63687C15.2866 7.06589 15.5416 7.49513 15.9661 7.60945L20.4956 9.06835C21.005 9.23995 21.5429 8.92527 21.6563 8.38173L22.2791 5.23488C22.4204 4.57718 22.2224 3.89057 21.7127 3.46152H21.7128Z" fill="#F5F7F5"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_512_47">
+                                            <rect width="22" height="22" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>                                            
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="footer_contact_item">
+                                <a href="tel:+375251234567">
+                                    +375 (25) 123 45 67
+                                </a>
+                            </div>
+
+                            <div class="footer_contact_item">
+                                <a href="email:info@xram.by">
+                                    info@xram.by
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_bottom">
+                    <div class="footer_item">
+                        <a href="#">
+                            Правила использования Cookies
+                        </a>
+                    </div>
+
+                    <div class="footer_item">
+                        <div class="copyright">
+                            © 2020-2022 xram.by
+                        </div>
+                    </div>
+
+                    <div class="footer_item">
+                        <a href="#">
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="ask_question modal_style">
+        <div class="ask_question_content">
+            <div class="ask_question_modal modal_box">
+                <div class="ask_question_modal_close ask_modal_close">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="30" rx="15" fill="#E7C99F"/>
+                        <path d="M15 15L20.625 9.375M15 15L9.375 20.625M15 15L20.625 20.625M15 15L9.375 9.375" stroke="#F5F7F5" stroke-width="3" stroke-linecap="round"/>
+                    </svg>                    
+                </div>
+    
+                <div class="ask_question_swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <h3 class="modal_title ask_question_title">
+                                задать вопрос
+                            </h3>
+                
+                            <div class="ask_question_toggle" id="container">
+                                <div class="inner-container">
+                                    <div class="toggle">
+                                        <p>Батюшке</p>
+                                    </div>
+                                    <div class="toggle">
+                                        <p>Матушке</p>
+                                    </div>
+                                </div>
+                                <div class="inner-container" id='toggle-container'>
+                                    <div class="toggle">
+                                        <p>Батюшке</p>
+                                    </div>
+                                    <div class="toggle">
+                                        <p>Матушке</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="ask_question_field">
+                                <label for="ask_question-name">
+                                    Ваше имя
+                                </label>
+                                <input type="text" name="ask_question-name" id="ask_question-name" class="ask_question_input" placeholder="Введите ваше имя">
+                            </div>
+                
+                            <div class="ask_question_field">
+                                <label for="ask_question-message">
+                                    Ваш вопрос
+                                </label>
+                                <textarea name="ask_question-message" id="ask_question-message" cols="30" rows="6" placeholder="test"></textarea>
+                            </div>
+    
+                            <div class="ask_question_next">
+                                <button class="button_1 disable">
+                                    Продолжить
+                                    <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.6842 13.3385L19.6106 24.1443C19.1685 24.6186 18.4737 24.6186 18.0631 24.1443C17.6211 23.6701 17.6211 22.9249 18.0631 22.4844L26.2736 13.6772L1.10537 13.6774C0.505316 13.6774 0 13.1354 0 12.4917C0 11.848 0.50531 11.306 1.10537 11.306H26.242L18.0316 2.49873C17.5895 2.0245 17.5895 1.27926 18.0316 0.838837C18.2527 0.601604 18.5369 0.5 18.821 0.5C19.1052 0.5 19.3893 0.601604 19.6105 0.838837L29.6841 11.6447C29.9053 11.8819 30 12.1527 30 12.4915C30 12.8304 29.8738 13.1013 29.6842 13.3385Z" fill="#20211B"/>
+                                    </svg>                                    
+                                </button>
+                            </div>
+    
+                            <div class="ask_question_confidentiality">
+                                Это конфиденциально.<br>
+                                Мы не храним, не передаем третьим лицам Ваше сообщение и данные.  
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <h3 class="modal_title ask_question_title">
+                                Как ответить на вопрос?
+                            </h3>
+                
+                            <div class="ask_question_toggle triple_toggle" id="containerTriple">
+                                <div class="inner-container triple_toggle">
+                                    <div class="triple_toggle" id="triple_toggle-1">
+                                        <p>Сообщение</p>
+                                    </div>
+                                    <div class="triple_toggle" id="triple_toggle-2">
+                                        <p>Звонок</p>
+                                    </div>
+                                    <div class="triple_toggle" id="triple_toggle-3">
+                                        <p>E-mail</p>
+                                    </div>
+                                </div>
+                                <div class="inner-container triple_toggle" id='toggle-container-triple'>
+                                    <div class="triple_toggle">
+                                        <p>Сообщение</p>
+                                    </div>
+                                    <div class="triple_toggle">
+                                        <p>Звонок</p>
+                                    </div>
+                                    <div class="triple_toggle">
+                                        <p>E-mail</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="ask_question_field ask_question_radio_field">
+                                <div class="ask_question_radio_title">
+                                    Выберите мессенджер
+                                </div>
+    
+                                <div class="ask_question_radio" id="ask_question_tooltip">
+                                    <input type="radio" name="choice_messenger" id="messenger-telegram" value="telegram">
+                                    <label for="messenger-telegram" class="ask_question_radio-label">
+                                        Telegram                                       
+                                    </label>
+    
+                                    <div class="ask_question_tooltip" data-tooltip="Убедитесь, пожалуйста, что настройки конфиденциальности позволяют Вас найти по номеру телефона.">
+                                        <svg id="telegram_tooltip" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0.000171335C7.34783 0.000171335 4.80435 1.05369 2.9289 2.92905C1.05353 4.8044 0 7.34807 0 10.0001C0 12.6521 1.05353 15.1957 2.9289 17.0711C4.80427 18.9465 7.34796 20 10 20C12.652 20 15.1956 18.9465 17.0711 17.0711C18.9465 15.1958 20 12.6521 20 10.0001C20 8.24477 19.538 6.52028 18.6604 4.99991C17.7826 3.47981 16.5201 2.21736 15 1.33964C13.4797 0.462045 11.7552 0 9.99983 0L10 0.000171335ZM10 18.0003C7.8782 18.0003 5.84331 17.1574 4.3432 15.657C2.84284 14.1568 1.99991 12.122 1.99991 10.0003C1.99991 7.87856 2.84284 5.8436 4.3432 4.34351C5.8434 2.84316 7.87828 2.00024 10 2.00024C12.1217 2.00024 14.1567 2.84316 15.6568 4.34351C17.1572 5.84369 18.0001 7.87856 18.0001 10.0003C18.0001 11.4045 17.6304 12.7841 16.9281 14.0002C16.226 15.2165 15.2162 16.2263 13.9999 16.9284C12.7838 17.6307 11.4042 18.0004 9.99991 18.0004L10 18.0003Z" fill="#8B8B88"/>
+                                            <path d="M10.1898 5H9.80977C9.06443 5 8.34978 5.29615 7.82275 5.82316C7.29573 6.35001 6.99976 7.06487 6.99976 7.80999V8C6.99976 8.35725 7.19044 8.68739 7.49982 8.86602C7.8092 9.04465 8.19039 9.04465 8.49978 8.86602C8.80916 8.68739 8.99984 8.35726 8.99984 8V7.80999C8.99984 7.5952 9.08506 7.38928 9.23707 7.23728C9.38891 7.08544 9.595 7.00006 9.80978 7.00006H10.1898C10.4163 7.00224 10.6319 7.098 10.7853 7.26474C10.9388 7.43131 11.0163 7.65414 10.9998 7.88013C11.0006 8.03164 10.9589 8.18046 10.8794 8.30956C10.7999 8.43863 10.6857 8.54276 10.5498 8.61006C10.0812 8.83992 9.68708 9.19751 9.41287 9.64164C9.13865 10.0856 8.99551 10.5982 8.99987 11.12C8.99987 11.4773 9.19038 11.8074 9.49976 11.9861C9.80914 12.1647 10.1905 12.1647 10.4999 11.9861C10.8093 11.8074 10.9998 11.4773 10.9998 11.12C10.9989 10.9685 11.0408 10.8197 11.1203 10.6906C11.1998 10.5615 11.314 10.4574 11.4498 10.3901C12.213 10.0017 12.7613 9.29091 12.9428 8.45416C13.1244 7.61728 12.92 6.74321 12.3863 6.07356C11.8526 5.40391 11.0462 5.00967 10.1899 4.99994L10.1898 5Z" fill="#8B8B88"/>
+                                            <path d="M10.7102 13.2903L10.5602 13.1703L10.3802 13.0802V13.0804C10.3206 13.0499 10.2565 13.0296 10.1902 13.0203C10.0619 12.9905 9.92851 12.9905 9.80011 13.0203L9.62014 13.0802L9.44017 13.1703L9.29017 13.2903C9.19909 13.3854 9.12778 13.4976 9.08023 13.6203C8.97326 13.8624 8.97326 14.1383 9.08023 14.3803C9.13079 14.5015 9.20177 14.6132 9.29017 14.7103C9.478 14.8996 9.73349 15.0061 10.0001 15.0061C10.2668 15.0061 10.5223 14.8996 10.7101 14.7103C10.7985 14.6132 10.8695 14.5015 10.9201 14.3803C11.027 14.1382 11.027 13.8623 10.9201 13.6203C10.8725 13.4976 10.8012 13.3854 10.7101 13.2903L10.7102 13.2903Z" fill="#8B8B88"/>
+                                        </svg> 
+                                    </div>
+                                </div>
+                                
+                                <div class="ask_question_radio">
+                                    <input type="radio" name="choice_messenger" id="messenger-viber" value="viber">
+                                    <label for="messenger-viber" class="ask_question_radio-label">
+                                        Viber
+                                    </label>
+                                </div>
+    
+                                <div class="ask_question_radio">
+                                    <input type="radio" name="choice_messenger" id="messenger-whatsapp" value="whatsapp">
+                                    <label for="messenger-whatsapp" class="ask_question_radio-label">
+                                        WhatsApp
+                                    </label>
+                                </div>
+    
+                                <div class="ask_question_radio">
+                                    <input type="radio" name="choice_messenger" id="messenger-instagram" value="instagram">
+                                    <label for="messenger-instagram" class="ask_question_radio-label">
+                                        Instagram
+                                    </label>
+                                </div>
+    
+                                <div class="ask_question_radio">
+                                    <input type="radio" name="choice_messenger" id="messenger-sms" value="СМС">
+                                    <label for="messenger-sms" class="ask_question_radio-label"> 
+                                        СМС
+                                    </label>
+                                </div>
+                            </div>
+    
+                            <div class="ask_question_field">
+                                <label for="ask_question-login">
+                                    номер Телефона или ник
+                                </label>
+                                <input type="text" name="ask_question-login" id="ask_question-login" class="ask_question_input" placeholder="Введите ваш телефон или ник">
+                            </div>
+    
+                            <div class="ask_question_submit">
+                                <button type="submit" class="button_1">
+                                    Отправить вопрос
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ask_question_overlay overlay ask_modal_close"></div>
+    </section>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
