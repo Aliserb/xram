@@ -157,3 +157,9 @@
 }
 /* pagination */
 
+/* container */
+.container.container_850 {
+    max-width: 850px;
+    padding: 0;
+}
+/* container */
