@@ -11,6 +11,20 @@
     border: none;
 }
 
+.button_2 {
+    font: normal 500 20px/29px Jost;
+    text-align: center;
+    color: #20211B;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    border: none;
+    padding: 16px 32px;
+    border: 1px solid #E7C99F;
+    border-radius: 12px;
+    background: #fff;
+}
+
 .button_1 svg {
     margin-left: 10px;
 }

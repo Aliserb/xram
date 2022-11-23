@@ -157,3 +157,23 @@ return day - 1;
 
 createCalendar(calendar, 2012, 9);
 // calendar
+
+// decor
+let decor = document.querySelector('.decor');
+let decorItem = document.querySelector('.decor img');
+let decorItemHeight = decorItem.height + 15;
+let decorHeight = decor.scrollHeight;
+let sumDecor = Math.floor(decorHeight / decorItemHeight - 1);
+
+let decorLeft = document.querySelector('.decor_left');
+
+for (let i = decorLeft.children.length; i <= sumDecor; i++) {
+    decorLeft.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
+}
+
+let decorRight = document.querySelector('.decor_right');
+
+for (let i = decorRight.children.length; i <= sumDecor; i++) {
+    decorRight.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
+}
+// decor
