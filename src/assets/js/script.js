@@ -165,6 +165,8 @@ let decorItemHeight = decorItem.height + 15;
 let decorHeight = decor.scrollHeight;
 let sumDecor = Math.floor(decorHeight / decorItemHeight - 1);
 
+// console.log(sumDecor);
+
 let decorLeft = document.querySelector('.decor_left');
 
 for (let i = decorLeft.children.length; i <= sumDecor; i++) {
@@ -176,4 +178,9 @@ let decorRight = document.querySelector('.decor_right');
 for (let i = decorRight.children.length; i <= sumDecor; i++) {
     decorRight.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
 }
+
+// console.log('child ' + decorLeft.children.length);
+
+// console.log('height a item decor ' + decorItem.getPropertyValue("margin-bottom"));
+
 // decor

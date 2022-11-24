@@ -1849,3 +1849,267 @@ label.ask_question_radio-label {
 .contact_cards_section {
     margin-top: 58.5px;
 }
+
+.split_banner {
+    position: relative;
+    min-height: 590px;
+}
+
+.description_banner {
+    padding-top: 190px;
+}
+
+.split_banner_image {
+    position: absolute;
+    z-index: 1;
+}
+
+.split_banner_image::before {
+    content: '';
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 12.88%, rgba(0, 0, 0, 0.64) 67.24%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.split_banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about_section.about_page {
+    margin-top: 60px;
+}
+
+.about_video {
+    margin-top: 30px;
+    border: 1px solid #E7C99F;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.rector_card_info {
+    font: normal 400 18px/110% Jost;
+    text-align: center;
+    color: #8B8B88;
+    margin-top: 68px;
+}
+
+.rector_about_col:first-child {
+    max-width: 358px;
+}
+
+.rector_card_name {
+    font: normal 600 25px/120% Jost;
+    color: #20211B;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.rector_card_desc {
+    font: normal 300 20px/130% Jost;
+    text-align: center;
+    color: #20211B;
+    margin-top: 5px;
+}
+
+.rector_card_button {
+    margin: 20px auto 0px auto;
+}
+
+.rector_about {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.rector_about_col:first-child {
+    margin-right: 35px;
+}
+
+.rector_about_col:nth-child(2) {
+    width: 100%;
+    height: 100%;
+}
+
+.rector_info_wrap {
+    padding: 30px;
+    border: 3px solid #E7C99F;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.rector_info_box {
+    padding: 20px 30px;
+    background: #EDECE6;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.rector_info_box:first-child {
+    margin-top: 0;
+}
+
+.rector_info_box_title {
+    font: normal 600 20px/120% Jost;
+    text-transform: uppercase;
+    color: #20211B;
+    margin-bottom: 10px;
+}
+
+.rector_info_box p {
+    margin-bottom: 0;
+    margin-top: 20px;
+    font: normal 300 20px/110% Jost;
+    color: #20211B;
+}
+
+.rector_info_box p strong {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.rector_info_box p b {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.rector_info_item {
+    width: 50%;
+}
+
+.rector_info_item:first-child {
+    margin-right: 30px;
+}
+
+.rector_card_image {
+    position: relative;
+}
+
+.rector_card_image img {
+    display: block;
+    margin: 0 auto;
+}
+
+.rector_image_mark {
+    width: 295px;
+    height: 295px;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.rector_card_image svg {
+    position: absolute;
+}
+
+#rector_image_mark-1 {
+    right: 100%;
+    top: 12%;
+    bottom: 0;
+    margin: auto;
+    margin-right: 5px;
+}
+
+#rector_image_mark-2 {
+    bottom: 18%;
+    right: 98%;
+}
+
+#rector_image_mark-3 {
+    right: 89%;
+    bottom: 0;
+}
+
+#rector_image_mark-4 {
+    bottom: -12%;
+    right: 72%;
+}
+
+#rector_image_mark-5 {
+    bottom: -20%;
+    right: 53%;
+}
+
+#rector_image_mark-6 {
+    bottom: -20%;
+    left: 53%;
+}
+
+#rector_image_mark-7 {
+    bottom: -12%;
+    left: 72%;
+}
+
+#rector_image_mark-8 {
+    left: 89%;
+    bottom: 0;
+}
+
+#rector_image_mark-9 {
+    bottom: 18%;
+    left: 98%;
+}
+
+#rector_image_mark-10 {
+    left: 100%;
+    top: 12%;
+    bottom: 0;
+    margin: auto;
+    margin-left: 5px;
+}
+
+.quote_section.margint_top_60 {
+    margin-top: 60px;
+}
+
+.peoples_item {
+    width: 216px;
+}
+
+.peoples_item img {
+    width: 216px;
+    height: 216px;
+}
+
+.peoples_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.peoples_section_desc {
+    font: normal 300 25px/120% Jost;
+    color: #20211B;
+    margin-top: 20px;
+    margin-bottom: 0;
+    max-width: 790px;
+}
+
+.peoples_row {
+    margin-top: 60px;
+}
+
+.peoples_item_name {
+    font: normal 600 20px/120% Jost;
+    color: #20211B;
+    margin-top: 20px;
+    text-align: center;
+}

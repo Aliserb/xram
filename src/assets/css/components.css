@@ -50,6 +50,10 @@
     margin-top: 30px;
 }
 
+.margint_top_60 {
+    margin-top: 60px;
+}
+
 /* .modal_style {
     position: fixed;
     z-index: 5;
@@ -112,7 +116,7 @@
 
 /* category_1 */
 .category_1_box {
-    padding: 12px 62px;
+    padding: 12px 40px;
     background: #20211B;
     border-radius: 16px;
     transition: all 0.3s ease 0s;
