@@ -384,7 +384,12 @@
     background-repeat: no-repeat;
     background-color: #EDECE6;
     border-radius: 26px;
-    padding: 30px 30px 50px 30px;
+    padding: 30px 30px 30px 30px;
+}
+
+.stories_box .button_1 {
+    padding: 8px 32px;
+    margin: 20px auto 0px auto;
 }
 
 .stories_row {
@@ -1862,6 +1867,11 @@ label.ask_question_radio-label {
 .split_banner_image {
     position: absolute;
     z-index: 1;
+    height: 100%;
+}
+
+.split_banner_image img {
+    height: 100%;
 }
 
 .split_banner_image::before {
@@ -2112,4 +2122,94 @@ label.ask_question_radio-label {
     color: #20211B;
     margin-top: 20px;
     text-align: center;
+}
+
+.temple_show_section {
+    background: #EDECE6;
+    padding: 30px 0px;
+}
+
+.temple_show_wrap {
+    display: flex;
+    align-items: flex-start;
+}
+
+.temple_tab_buttons {
+    max-width: 180px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.temple_tab_button {
+    position: relative;
+    font: normal 400 20px/120% Jost;
+    color: #20211B;
+    text-align: left;
+    padding-bottom: 15px;
+    padding-left: 26px;
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease 0s;
+    border-bottom: 1px solid #DDD8CE;
+}
+
+.temple_tab_button:first-child {
+    padding-top: 15px;
+    border-top: 1px solid #DDD8CE;
+}
+
+.temple_tab_button::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: #DFD0B9;
+    border-radius: 50%;
+    transition: all 0.3s ease 0s;
+}
+
+.temple_tab_button:first-child::before {
+    top: 20px;
+}
+
+.temple_tab_button.active::before {
+    background: #E7C99F;
+}
+
+.temple_tab_button.active {
+    font-weight: 600;
+}
+
+.temple_show_section {
+    margin-top: 183px;
+}
+
+.temple_tab_content {
+    margin-left: 25px;
+}
+
+.temple_tab_pane {
+    display: flex;
+    align-items: flex-start;
+}
+
+.temple_tab_image {
+    margin-top: -160px;
+}
+
+.temple_tab_pane {
+    display: none;
+}
+
+.temple_tab_pane.active {
+    display: flex;
+}
+
+.temple_tab_content p {
+    font: normal 400 20px/140% Jost;
+    color: #20211B;
 }
