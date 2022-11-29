@@ -43,3 +43,27 @@ var moreNews = new Swiper(".more_news", {
         prevEl: ".more_news_prev",
     },
 });
+
+
+
+
+
+
+
+
+var schoolThumbs = new Swiper(".school_swiper_years", {
+    spaceBetween: 0,
+    slidesPerView: 14,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+var schoolThumbsContent = new Swiper(".school_swiper_content", {
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".school_swiper_next",
+        prevEl: ".school_swiper_prev",
+},
+    thumbs: {
+    swiper: schoolThumbs,
+},
+});

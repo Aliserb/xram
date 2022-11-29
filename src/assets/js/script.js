@@ -159,28 +159,50 @@ createCalendar(calendar, 2012, 9);
 // calendar
 
 // decor
-let decor = document.querySelector('.decor');
-let decorItem = document.querySelector('.decor img');
-let decorItemHeight = decorItem.height + 15;
-let decorHeight = decor.scrollHeight;
-let sumDecor = Math.floor(decorHeight / decorItemHeight - 1);
+// let decor = document.querySelector('.decor');
+// let decorItem = document.querySelector('.decor img');
+// let decorItemHeight = decorItem.height + 15;
+// let decorHeight = decor.scrollHeight;
+// let sumDecor = Math.floor(decorHeight / decorItemHeight - 1);
 
-// console.log(sumDecor);
+// // console.log(sumDecor);
 
-let decorLeft = document.querySelector('.decor_left');
+// let decorLeft = document.querySelector('.decor_left');
 
-for (let i = decorLeft.children.length; i <= sumDecor; i++) {
-    decorLeft.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
-}
+// for (let i = decorLeft.children.length; i <= sumDecor; i++) {
+//     decorLeft.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
+// }
 
-let decorRight = document.querySelector('.decor_right');
+// let decorRight = document.querySelector('.decor_right');
 
-for (let i = decorRight.children.length; i <= sumDecor; i++) {
-    decorRight.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
-}
+// for (let i = decorRight.children.length; i <= sumDecor; i++) {
+//     decorRight.innerHTML += '<img src="assets/images/bg/decor.png" alt="decor">';
+// }
 
 // console.log('child ' + decorLeft.children.length);
 
 // console.log('height a item decor ' + decorItem.getPropertyValue("margin-bottom"));
 
 // decor
+
+// tabs
+let tabsTrigger = document.querySelectorAll('.tab_button');
+
+tabsTrigger.forEach(tab => {
+    let tabHref = tab.dataset.href;
+    let tabPane = document.querySelectorAll('.tab_pane');
+    tab.addEventListener('click', trigger => {
+        trigger.target.classList.add('active');
+        console.log(trigger.target.previousSibling);
+        $(trigger.target).siblings().removeClass('active');
+        tabPane.forEach(pane => {
+            if(tabHref == pane.dataset.id) {
+                pane.classList.add('active');
+            } else {
+                pane.classList.remove('active');
+            }
+        })
+    })
+})
+// tabs
+

@@ -15,6 +15,10 @@
     <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/AmaticSC/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/raleway/stylesheet.css" rel="stylesheet" type="text/css"/>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <body>
     
@@ -230,38 +234,38 @@
 
     <section class="news_category_section category_1_section">
         <div class="container">
-            <div class="news_category_row category_1_row row">
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+            <div class="news_category_row">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Строительство
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Визит Патриарха
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Реконструкция
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Икона с космоса
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Икона с Афона
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Святой Источник
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Служение Богу и людям
                     </div>
@@ -307,28 +311,28 @@
         <div class="container">
             <div class="temple_show_wrap">
                 <div class="temple_tab_buttons">
-                    <button class="temple_tab_button active">
+                    <button class="temple_tab_button tab_button active" data-href="temple_tab-1">
                         Средняя часть храма
                     </button>
-                    <button class="temple_tab_button">
+                    <button class="temple_tab_button tab_button" data-href="temple_tab-2">
                         Притвор
                     </button>
-                    <button class="temple_tab_button">
+                    <button class="temple_tab_button tab_button" data-href="temple_tab-3">
                         Алтарь
                     </button>
-                    <button class="temple_tab_button">
+                    <button class="temple_tab_button tab_button" data-href="temple_tab-4">
                         Колокольня
                     </button>
-                    <button class="temple_tab_button">
+                    <button class="temple_tab_button tab_button" data-href="temple_tab-5">
                         Крыша
                     </button>
-                    <button class="temple_tab_button">
+                    <button class="temple_tab_button tab_button" data-href="temple_tab-6">
                         Купола
                     </button>
                 </div>
 
                 <div class="temple_tab_content">
-                    <div class="temple_tab_pane active">
+                    <div class="temple_tab_pane tab_pane active" data-id="temple_tab-1">
                         <div class="temple_tab_image">
                             <img src="assets/images/card/temple_tab_1.png" alt="temple">
                         </div>
@@ -339,11 +343,319 @@
                             </p>
                         </div>
                     </div>
-                    <div class="temple_tab_pane">2</div>
-                    <div class="temple_tab_pane">3</div>
-                    <div class="temple_tab_pane">4</div>
-                    <div class="temple_tab_pane">5</div>
-                    <div class="temple_tab_pane">6</div>
+                    <div class="temple_tab_pane tab_pane" data-id="temple_tab-2">2</div>
+                    <div class="temple_tab_pane tab_pane" data-id="temple_tab-3">3</div>
+                    <div class="temple_tab_pane tab_pane" data-id="temple_tab-4">4</div>
+                    <div class="temple_tab_pane tab_pane" data-id="temple_tab-5">5</div>
+                    <div class="temple_tab_pane tab_pane" data-id="temple_tab-6">6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="history_section">
+        <div class="container">
+            <div class="history_description">
+                <div class="history_description_content">
+                    <p>
+                        Здание, в котором расположен храм, по свидетельству старожилов, было вначале жилым домом (1927-1940гг.), потом родильным домом (начало 40-х и середина 50-х), с середины  1970-х г. там располагался  детсад. В 1992 году детсад был закрыт, а здание передали православной общине. И только в 1993 году (что было, по сути, не так давно) здание передали православной общине. В отличие от государственного строительства, церковь строилась только на пожертвования верующих. 
+                    </p>
+                </div>
+
+                <div class="history_description_fancybox">
+                    <div class="history_description_images">
+                        <div class="history_description_image">
+                            <a data-fancybox="gallery" href="assets/images/card/history_description_1.png">
+                                <img src="assets/images/card/history_description_1.png" alt="document">
+                            </a>
+                        </div>
+                        <div class="history_description_image">
+                            <a data-fancybox="gallery" href="assets/images/card/history_description_1.png">
+                                <img src="assets/images/card/history_description_1.png" alt="document">
+                            </a>
+                        </div>
+                        <div class="history_description_image">
+                            <a data-fancybox="gallery" href="assets/images/card/history_description_1.png">
+                                <img src="assets/images/card/history_description_1.png" alt="document">
+                            </a>
+                        </div>
+                    </div>
+
+                    <span>
+                        Нажмите что бы увеличить изображения
+                    </span>
+                </div>
+            </div>
+
+            <div class="history_content news_text">
+                <div class="history_columns">
+                    <div class="history_column history_column-33">
+                        <blockquote>
+                           <b>
+                                Спонсоры строительства церкви:
+                           </b>
+
+                            <ul>
+                                <li>
+                                    Колхоз «Путь Ленина», 
+                                </li>
+                                <li>
+                                    Фирма «РИАЛПО», 
+                                </li>
+                                <li>
+                                    МУООС, 
+                                </li>
+                                <li>
+                                    Сельхозхимия, 
+                                </li>
+                                <li>
+                                    Ветлечебница, 
+                                </li>
+                                <li>
+                                    Колхозы «Субботники», 
+                                </li>
+                                <li>
+                                    «Жемыславль», 
+                                </li>
+                                <li>
+                                    ДРСУ, 
+                                </li>
+                                <li>
+                                    Райсельэнерго, 
+                                </li>
+                                <li>
+                                    Консервный завод, 
+                                </li>
+                                <li>
+                                    Лесхоз.
+                                </li>
+                            </ul>
+                        </blockquote>
+                    </div>
+                    <div class="history_column history_column-66">
+                        <p>
+                            Трудности при строительстве были в том, что стройматериал был большим дефицитом и стоил очень дорого (тяжёлые девяностые годы), детский садик меньше всего был приспособлен под строительство церкви. Были проблемы: где найти хорошего мастера, чтобы накрыть жестью крышу. С первых дней строительства все заботы легли на плечи отца Анатолия Резановича, ему помогал Иван Филиппович Федарук, который являлся отличным столяром. Многих жителей просили помочь, но некоторые ссылались на возраст, некоторые на принадлежность к другой вере. Построить церковь дело непростое, нужно знать многие тонкости православной веры. Отец Анатолий Резанович только на Полесье нашёл умельцев строить храмы.
+                        </p>
+
+                        <p>
+                            В Ивье приехали Николай Иванович Резанович, Сергей Николаевич Резанович, Константин Степанович Пашкевич, Василий Павлович Пашкевич. Эти имена навсегда войдут в историю города Ивье.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="history_columns">
+                    <div class="history_column-66 history_column">
+                        <img src="assets/images/card/history_content-1.png" alt="image">
+
+                        <blockquote>
+                            <p>
+                                10 октября 1993 года прошло малое освящение церкви. Торжественный чин освящения храма провёл священник Князиковской церкви отец Анатолий (малым освящение называется потому, что оно проводилось внедостроенном и необорудованном, надлежащим образом,  храме). Усилиями верующих в конце ноября 1993 года двери церкви были открыты. Отец Анатолий Резанович начал проводить богослужения.
+                            </p>
+                        </blockquote>
+
+                        <img src="assets/images/card/history_content-3.png" alt="image">
+                        <div class="history_columns">
+                            <div class="history_column-55 history_column">
+                                <img src="assets/images/card/history_content-4.png" alt="image">
+                            </div>
+
+                            <div class="history_column-55 history_column">
+                                <img src="assets/images/card/history_content-5.png" alt="image">
+                            </div>
+                        </div>
+
+                        <p>
+                            До появления ивьевской церквушки, православные верующие местечка вынуждены были ездить на службы в соседние населенные пункты, что отнимало много времени и сил. Поэтому открытие православного храма в Ивье стало настоящим чудом и подарком для местных верующих. В праведных трудах его поддерживали и власти, и простые люди, и те, кто смог внести серьезную лепту в Богоугодное дело. Патриарх Московский и Всея Руси Алексий II во время своего визита в Беларусь в 1995 году, за Богоугодное дело наградил иерея Анатолия Резановича правом ношения наперстного креста.
+                        </p>
+
+                        <p>
+                            Затем во главе прихода стояли священники: Дмитрий Лагодич, Александр Денищиц.<br>
+                            С 1998 года духовным наставником православных ивьевчан стал священник<br>
+                            <b>Вячеслав Пашкевич.</b>
+                        </p>
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-2.png" alt="image">
+                    </div>
+                </div>
+
+                <h3 class="section_top_150">
+                    Визит Патриарха
+                </h3>
+
+                <div class="history_columns">
+                    <div class="history_column-66 history_column">
+                        <p>
+                            А 1995 год стал важным для церкви, так как храм посетил Святейший Патриарх Московский и всея Руси Алексий II.
+                        </p>
+
+                        <p>
+                            В период с 22 по 26 июля 1995 года Святейший патриарх Московский и всея Руси Алексий II совершил свой второй визит в нашу республику. Первый раз Московский Патриарх посетил 15 – 19 июня 1991 года Минскую, Гродненскую, Могилёвскую и Гомельскую епархии Белорусского Экзархата, поражённые чернобыльской радиацией. Как и предыдущее  путешествие, второй визит Его Святейшества являлся выражением молитвенного единства и братской христианской взаимопомощи славянских народов в годы исторических испытаний.   Посещение страны главой самой большой Православной церкви мира было посвящено 50-летию Победы в Великой Отечественной войне.
+                        </p>
+
+                        <p>
+                            Представители Православной, Римо-Католической Церквей и мусульманской общины были среди встречавших Святейшего Патриарха Московского и всея Руси.  На центральной площади (ещё тогда посёлка) у памятника погибшим в годы Великой Отечественной войны Предстоятеля Русской Православной Церкви встречал епископ Новогрудский и Лидский Константин, ректор Минской Духовной Семинарии.
+                        </p>
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-6.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="history_columns">
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-7.png" alt="image">
+                    </div>
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-8.png" alt="image">
+                    </div>
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-9.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="history_columns">
+                    <div class="history_column-50 history_column">
+                        <img src="assets/images/card/history_content-10.png" alt="image">
+                    </div>
+                    <div class="history_column-50 history_column">
+                        <img src="assets/images/card/history_content-11.png" alt="image">
+                    </div>
+                </div>
+
+                <img src="assets/images/card/history_content-12.png" alt="image" style="margin-top: 20px;">
+
+                <div class="history_columns">
+                    <div class="history_column-66 history_column">
+                        <h3>
+                            Реконструкция
+                        </h3>
+
+                        <ul>
+                            <li>
+                                2008 - замена куполов и реконструкция колокольни
+                            </li>
+                            <li>
+                                2011  - строительство и освящение купели, молитвенной комнаты в больнице
+                            </li>
+                            <li>
+                                2015 - установка и освящение поклонных крестов
+                            </li>
+                            <li>
+                                2016 - капремонт в воскресной школе
+                            </li>
+                            <li>
+                                2017 - замена кровли храма
+                            </li>
+                        </ul>
+
+                        <img src="assets/images/card/history_content-13.png" alt="image">
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <!-- <div class="beforeAfter">
+                            <img src="assets/images/card/history_content-13.png"/>
+                            <img src="assets/images/card/history_content-14.png"/>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="history_columns">
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-15.png" alt="image">
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-16.png" alt="image">
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-17.png" alt="image">
+                    </div>
+                </div>
+
+                <h3 class="section_top_150">
+                    Икона, побывавшая в космосе
+                </h3>
+
+                <div class="history_columns">
+                    <div class="history_column-66 history_column">
+                       <p>
+                            Небольшая церквушка очень красива изнутри: прекрасные иконы, запоминающийся иконостас. Важнейшие святыни храма – это образ Гавриила Белостокского с частичкой мощей и Казанский образ Пресвятой Богородицы, побывавший в  космосе<br>
+                            и совершившая 112 оборотов вокруг Земли и и икона Млекопитетельницы, говорит о многом. Известно, что Алексий II благословил шесть десятков образов, направившихся в крестный путь вокруг планеты Земля. Это было очень торжественное и запоминающееся мероприятие мирового масштаба.
+                       </p>
+
+                       <p>
+                            В декабре 2005 года, Русская православная церковь получила в дар икону Казанской Божьей Матери, побывавшую на Международной космической станции. 
+                       </p>
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-18.png" alt="image">
+                        <span>
+                            Подпись к фотографиям
+                        </span>
+                    </div>
+                </div>
+
+                <div class="blockquote">
+                    <div class="blockquote_author">
+                        <img src="assets/images/card/blockquote_author_img.png" alt="image" class="blockquote_author_image">
+                        <div class="blockquote_author_name">
+                            Отец Вячеслав
+                        </div>
+                        <div class="blockquote_author_position">
+                            Настоятель храма
+                        </div>
+                    </div>
+
+                    <div class="blockquote_description">
+                        <p>
+                            - На праздник Успения Пресвятой Богородицы, после службы, ко мне подошел очень приятный и смиренный на вид незнакомец. Он сообщил, что хотел бы преподнести в дар храму икону, - рассказал корреспонденту "СОЮЗа" настоятель ивьевского храма Святого мученика младенца Гавриила Белостоцкого священник Вячеслав Пашкевич. - Я взял икону, но кроме нее незнакомец вручил и сертификат, свидетельствующий о том, что образ сделал 112 витков вокруг Земли. К сожалению, поговорить нам не удалось - человек очень спешил, я успел только спросить, как его зовут. Он ответил: "Шутов". И ушел. Позже я узнал, что полковник<br>
+                            Виктор Станиславович Шутов - начальник управления обеспечения реализации программ и бухгалтерского учета Российского Федерального космического агентства.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="history_columns">
+                    <div class="history_column-66 history_column">
+                        <p>Ссылки на СМИ:</p>
+                        <ul style="padding-left: 20px;">
+                            <li>                                
+                                <a href="#">
+                                    https://grodnonews.by/news/kultura/<br>pobyvala_na_mks_i_osvyatila_zemlyu_v_ive_khranitsya_unikalnaya_ikona.html
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    http://www.interfax-religion.ru/index.php/no-text8881453817294141294?act=news&div=8629
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    https://vgr.by/2009/05/20/v-ive-est-ikona-iz-kosmosa/
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    https://ctv.by/ikona-iz-kosmosa-gromadnyy-organ-i-starinnaya-mechet-pobyvali-v-ive-gorode-chetyryoh-konfessiy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    https://epizodyspace.ru/bibl/nk/2004/12/nk2004-12.pdf
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="history_column-33 history_column">
+                        <img src="assets/images/card/history_content-19.png" alt="image">
+                        <span>Фото С.Казака, <a href="#">ссылка на фотографию</a></span>
+                    </div>
                 </div>
             </div>
         </div>
