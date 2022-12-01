@@ -997,7 +997,7 @@ label.ask_question_radio-label {
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 190px 0px 30px 0px;
+    /* padding: 190px 0px 30px 0px; */
     position: relative;
 }
 
@@ -1861,7 +1861,7 @@ label.ask_question_radio-label {
 }
 
 .description_banner {
-    padding-top: 0px;
+    padding: 190px 0px 30px 0px;
 }
 
 .split_banner_image {
@@ -2505,4 +2505,300 @@ label.ask_question_radio-label {
 
 .school_swiper_years .swiper-slide {
     margin-right: 10px;
+}
+
+.types_read_book svg {
+    fill: #BABAB7;
+    transition: all 0.3s ease 0s;
+}
+
+.types_read_book a:hover svg {
+    fill: #FDFFFE;
+}
+
+.types_read_book {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.types_read_book a {
+    width: 100%;
+}
+
+.book_image img {
+    width: 100%;
+}
+
+.book_author {
+    font: normal 500 14px/20px Jost;
+    text-transform: uppercase;
+    color: #8B8B88;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.book_name {
+    font: normal 600 22px/130% Jost;
+    color: #2B2B2B;
+}
+
+.book_description {
+    font: normal 300 18px/130% Jost;
+    color: #20211B;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 1px solid #8B8B88;
+}
+
+.read_book.button_1 {
+    width: 100%;
+    padding: 13px 32px;
+    margin-bottom: 33px;
+}
+
+.types_read_book {
+    
+}
+
+.types_read_book a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.types_read_book a:nth-child(1) {
+    border: 1px solid #BABAB7;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.types_read_book a:nth-child(2) {
+    border: 1px solid #BABAB7;
+    border-right: none;
+    border-left: none;
+}
+
+.types_read_book a:nth-child(3) {
+    border: 1px solid #BABAB7;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.types_read_book a:hover {
+    background: #E7C99F;
+    border: 1px solid #E7C99F;
+}
+
+.books_search_form {
+    position: relative;
+    max-width: 410px;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.books_search_form input {
+    border: 1px solid #E7C99F;
+    border-radius: 12px;
+    padding: 13px 98px 13px 16px;
+    width: 100%;
+}
+
+.books_search_form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52px;
+    height: 100%;
+    background: #E7C99F;
+    border: none;
+}
+
+.movies_item {
+    padding: 20px 33px 30px 30px;
+    background: #EDECE6;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.movies_image {
+    max-width: 194px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.movies_image img {
+    width: 100%;
+}
+
+.movie_content_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie_category {
+    font: normal 500 14px/20px Jost;
+    text-transform: uppercase;
+    color: #8B8B88;
+}
+
+.movie_share {
+    font: normal 600 18px/26px Jost;
+    color: #8B8B88;
+}
+
+.movie_share svg {
+    margin-left: 5px;
+}
+
+.movie_name {
+    font: normal 600 22px/130% Jost;
+    color: #2B2B2B;
+}
+
+.movie_description {
+    margin-top: 10px;
+}
+
+.movie_description p {
+    font: normal 300 18px/130% Jost;
+    color: #20211B;
+}
+
+.movie_select_series .swiper-slide {
+    border-radius: 1000px;
+    width: 43px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.movie_select_series .swiper-slide span {
+    font: normal 700 20px/29px Jost;
+    color: #8B8B88;
+}
+
+.movie_select_series .swiper-slide:hover,
+.movie_select_series .swiper-slide.active {
+    background: #E7C99F;
+}
+
+.movie_select_series .swiper-slide.active span,
+.movie_select_series .swiper-slide:hover span {
+    font-weight: 700;
+    color: #2B2B2B;
+}
+
+.movie_select_series {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie_content_footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.movie_content_footer a {
+    width: 50%;
+}
+
+.movie_content_footer a:first-child {
+    margin-right: 30px;
+}
+
+.movie_select_series_title {
+    font: normal 500 14px/20px Jost;
+    text-transform: uppercase;
+    color: #8B8B88;
+    margin-bottom: 5px;
+}
+
+.movies_item {
+    margin-top: 80px;
+}
+
+.movies_item:first-child {
+    margin-top: 0;
+}
+
+.prayer_row {
+    width: 100%;
+}
+
+.prayer_col.w_33 {
+    width: 33%;
+    margin-right: 30px;
+}
+
+.prayer_col.w_66 {
+    width: 66%;
+}
+
+.prayer_row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.prayer_menu {
+    margin-top: 40px;
+}
+
+.prayer_menu ul {
+    padding-left: 19px;
+}
+
+.prayer_menu li a {
+    font: normal 400 18px/26px Jost;
+    color: #2B2B2B;
+    text-decoration: none;
+}
+
+.ask_question_toggle.prayer_content_tabs {
+    margin: 0;
+    margin-left: auto;
+    max-width: 586px;
+}
+
+.prayer_content {
+    margin-top: 50px;
+}
+
+.prayer_content h5 {
+    font: normal 600 22px/140% Jost;
+    color: #20211B;
+}
+
+.prayer_content p {
+    font: normal 300 20px/140% Jost;
+    color: #20211B;
+}
+
+.adblock {
+    background: linear-gradient(180deg, #E7C99F 0%, #EDECE6 100%);
+    border-radius: 20px;
+    padding: 30px 30px 30px 33px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.adblock_text {
+    font: normal 600 24px/120% Jost;
+    color: #20211B;
+}
+
+.adblock_links {
+    margin-top: 31px;
+}
+
+.adblock_links a:first-child {
+    margin-bottom: 11px;
+    display: block;
 }

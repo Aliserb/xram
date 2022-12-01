@@ -44,13 +44,6 @@ var moreNews = new Swiper(".more_news", {
     },
 });
 
-
-
-
-
-
-
-
 var schoolThumbs = new Swiper(".school_swiper_years", {
     spaceBetween: 0,
     slidesPerView: 14,
@@ -66,4 +59,13 @@ var schoolThumbsContent = new Swiper(".school_swiper_content", {
     thumbs: {
     swiper: schoolThumbs,
 },
+});
+
+var moreNews = new Swiper(".movie_select_series", {
+    slidesPerView: 10,
+    spaceBetween: 16,
+    navigation: {
+        nextEl: ".movie_select_next",
+        prevEl: ".movie_select_prev",
+    },
 });

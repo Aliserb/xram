@@ -64,8 +64,13 @@ h3 {
     margin-top: 30px;
 }
 
-.margint_top_60 {
+.margint_top_60,
+.margin_top_60 {
     margin-top: 60px;
+}
+
+.padding_bottom_180px {
+    padding-bottom: 180px;
 }
 
 /* .modal_style {
