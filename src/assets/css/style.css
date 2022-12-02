@@ -387,7 +387,8 @@
     padding: 30px 30px 30px 30px;
 }
 
-.stories_box .button_1 {
+.stories_box .button_1,
+.saints_box .button_1 {
     padding: 8px 32px;
     margin: 20px auto 0px auto;
 }
@@ -2728,23 +2729,21 @@ label.ask_question_radio-label {
     margin-top: 0;
 }
 
-.prayer_row {
+.prayer_row,
+.saints_inner_row,
+.saint_content_row {
     width: 100%;
-}
-
-.prayer_col.w_33 {
-    width: 33%;
-    margin-right: 30px;
-}
-
-.prayer_col.w_66 {
-    width: 66%;
-}
-
-.prayer_row {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.w_33 {
+    width: 33%;
+}
+
+.w_66 {
+    width: 66%;
 }
 
 .prayer_menu {
@@ -2776,7 +2775,8 @@ label.ask_question_radio-label {
     color: #20211B;
 }
 
-.prayer_content p {
+.prayer_content p,
+.saints_content p {
     font: normal 300 20px/140% Jost;
     color: #20211B;
 }
@@ -2801,4 +2801,122 @@ label.ask_question_radio-label {
 .adblock_links a:first-child {
     margin-bottom: 11px;
     display: block;
+}
+
+.saints_box {
+    border: 3px solid #E7C99F;
+    border-radius: 26px;
+    padding: 30px;
+}
+
+.saints_box_image {
+    max-width: 236px;
+    max-height: 320px;
+    margin: -160px auto 0 auto;
+}
+
+.saints_box_image,
+.saints_box_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.saints_item {
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+.banner_box span {
+    font: normal 600 24px/35px Jost;
+    text-transform: uppercase;
+    color: #FDFFFE;
+    margin-right: 20px;
+}
+
+.banner_box {
+    max-width: 440px;
+    width: 100%;
+    border: 3px solid #FDFFFE;
+    border-radius: 7px;
+    padding: 15px;
+    margin: 30px auto 0 auto;
+}
+
+.saints_inner_tabs {
+    max-width: 100%;
+    margin-top: 0;
+}
+
+.saint_content_item_images {
+    margin-left: 30px;
+}
+
+.saint_content_item_images img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.saint_content_item_images img:first-child {
+    margin-top: 0;
+}
+
+.saints_content {
+    background: #EDECE6;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.prayer_col:first-child,
+.saints_inner_col:first-child {
+    margin-right: 30px;
+}
+
+.saints_inner_menu_title {
+    font: normal 500 22px/32px Jost;
+    text-transform: uppercase;
+    color: #20211B;
+    border-bottom: 3px solid #E7C99F;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.saints_inner_menu {
+    margin-top: 30px;
+}
+
+.saints_inner_menu li a {
+    font: normal 400 18px/26px Jost;
+    color: #000000;
+    text-decoration: none;
+}
+
+.saints_inner_menu li.active a {
+    font-weight: 600;
+}
+
+.saints_inner_menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.saints_inner_menu ul li {
+    position: relative;
+    padding-left: 19px;
+    margin-top: 10px;
+}
+
+.saints_inner_menu ul li:first-child {
+    margin-top: 0;
+}
+
+.saints_inner_menu ul li::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    margin: auto;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background: #E7C99F;
+    border-radius: 50%;
 }
