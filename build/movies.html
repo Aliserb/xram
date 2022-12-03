@@ -10,18 +10,15 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/history.css"> -->
 
     <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/AmaticSC/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/raleway/stylesheet.css" rel="stylesheet" type="text/css"/>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <body>
     
-    <header class="header">
+    <header class="header inner_page_header">
         <div class="container">
             <div class="header_row">
                 <div class="header_top">
@@ -175,7 +172,7 @@
                             </li>
 
                             <li>
-                                <a href="school.html">
+                                <a href="#">
                                     Воскресная школа
                                 </a>
                             </li>
@@ -214,595 +211,207 @@
         </div>
     </header>
 
-    <section class="main_banner_section">
+    <section class="description_banner_section padding_bottom_180px" style="background-image: url('./assets/images/bg/movies_bg.png');">
         <div class="container">
-            <div class="main_banner_row" style="background-image: url(./assets/images/bg/main_banner_bg.png);">
-                <div class="main_banner_left">
-                    <div class="main_banner_subtitle">
-                        храм г.Ивье
+            <div class="description_banner">
+                <h1 class="description_banner_title">
+                    Фильмы и видео
+                </h1>
+
+                <p class="description_banner_text text-center">
+                    Слово Божие разгоняет уныние — сон души и уныние ума.
+                    <b>Святитель Феофан Затворник</b>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="news_category_section category_1_section">
+        <div class="container">
+            <div class="news_category_row">
+                <div class="news_category category_1">
+                    <div class="news_category_box category_1_box">
+                        Фото
                     </div>
+                </div>
+                <div class="news_category category_1">
+                    <div class="news_category_box category_1_box">
+                        Книги
+                    </div>
+                </div>
+                <div class="news_category category_1">
+                    <div class="news_category_box category_1_box">
+                        Фильмы
+                    </div>
+                </div>
+                <div class="news_category category_1">
+                    <div class="news_category_box category_1_box">
+                        Житие святых
+                    </div>
+                </div>
+                <div class="news_category category_1">
+                    <div class="news_category_box category_1_box">
+                        Молитослов
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <h3 class="main_banner_title">
-                        Гавриила
-                        Белостокского
-                    </h3>
-
-                    <button class="main_banner_button ask_question_trigger">
-                        Написать батюшке
+    <section class="movies_section">
+        <div class="container container_850">
+            <div class="books_search margin_top_60">
+                <form action="#" class="books_search_form">
+                    <input type="text" id="search" name="search" class="search_input" placeholder="Введите название книги или автора">
+                    <button type="submit">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.66347 12.9975C10.4852 12.9975 12.7725 10.6697 12.7725 7.79843C12.7725 4.92713 10.4852 2.5996 7.66347 2.5996C4.84177 2.5996 2.55423 4.92713 2.55423 7.79843C2.55423 10.6697 4.84177 12.9975 7.66347 12.9975ZM13.6351 12.6868L19.6264 18.7834C20.1238 19.2895 20.1261 20.1076 19.6238 20.6188C19.125 21.1264 18.3167 21.1268 17.8202 20.6216L11.721 14.4152C10.5444 15.1639 9.15362 15.5967 7.66364 15.5967C3.43112 15.5967 0 12.1053 0 7.79836C0 3.49144 3.43112 0 7.66364 0C11.8962 0 15.3273 3.49144 15.3273 7.79836C15.3273 9.64919 14.6937 11.3494 13.635 12.6867L13.6351 12.6868Z" fill="white"/>
+                        </svg>                            
                     </button>
-                </div>
+                </form>
+            </div>
 
-                <div class="main_banner_center">
-                    <img src="assets/images/bg/main_banner_image.png" alt="image">
-                </div>
-
-                <div class="main_banner_right">
-                    <div class="main_banner_subtitle">
-                        день памяти 3 мая (ст. ст. 20 апреля)
+            <div class="movies_row margin_top_60">
+                <div class="movies_item">
+                    <div class="movies_image">
+                        <img src="assets/images/card/movies-1.png" alt="movies preview">
                     </div>
 
-                    <h3 class="main_banner_title">
-                        покровитель детей и подростков
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="calendar_slider_section">
-        <div class="container">
-            <div class="calendar_slider">
-                <div class="swiper calendar_swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="calendar_item_date">
-                                чт
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                </svg>                                        
-                                18 окт
+                    <div class="movie_content">
+                        <div class="movie_content_header">
+                            <div class="movie_category">
+                                Категория фильма
                             </div>
 
-                            <div class="calendar_item_box">
-                                <div class="calendar_box_title">
-                                    Таинство
+                            <div class="movie_share">
+                                Поделиться 
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.20347 5.31496C2.15203 5.31336 1.16703 5.82654 0.568632 6.68779C-0.0297671 7.54904 -0.165128 8.64825 0.206591 9.62791C0.578436 10.6077 1.40973 11.3429 2.43043 11.5944C3.451 11.8459 4.53059 11.5816 5.318 10.8875L9.64822 13.2807C9.47866 14.277 9.79336 15.2943 10.4964 16.0225C11.1995 16.7507 12.2077 17.1036 13.2135 16.9734C14.2193 16.8433 15.1036 16.2457 15.5966 15.3627C16.0897 14.4797 16.1332 13.4161 15.7137 12.496C15.2943 11.5761 14.4618 10.9088 13.4698 10.6977C12.478 10.4865 11.4443 10.7567 10.6841 11.4256L6.35391 9.03234C6.41786 8.68119 6.41786 8.32137 6.35391 7.97018L10.6841 5.57695C11.4216 6.22423 12.4167 6.49785 13.3829 6.31893C14.3492 6.14014 15.1793 5.52868 15.634 4.66063C16.0888 3.79272 16.1178 2.76466 15.7126 1.87266C15.3074 0.98065 14.5131 0.32376 13.5584 0.091268C12.6038 -0.141363 11.5947 0.0762039 10.8221 0.681239C10.0494 1.28641 9.59884 2.21174 9.60021 3.1908C9.60132 3.36885 9.61744 3.54654 9.64817 3.72188L5.31796 6.11511C4.73517 5.59949 3.98282 5.31474 3.20343 5.315L3.20347 5.31496Z" fill="#8B8B88"/>
+                                </svg>                                    
+                            </div>
+                        </div>
+
+                        <div class="movie_content_body">
+                            <div class="movie_name">
+                                Название фильма
+                            </div>
+
+                            <div class="movie_description">
+                                <p>
+                                    Чешский педагог Ян Амос Коменский (1592-1670), написавший «Великую дидактику», был убеждён, что нет знания, которые невозможно пере-дать. Но есть плохие учителя, не способные изложить эти знания.<br>
+                                    В некотором роде, это выражение стало для меня девизом и стимуля-тором. В 1998 году мы открыли двери ВШ при храме г. Ивье. Храм наш освящён в честь мученика младенца Гавриила Белостокского. 
+                                </p>
+                            </div>
+
+                            <div class="movie_select_series_title">
+                                Выбрать серию
+                            </div>
+                            <div class="movie_select_series swiper">
+                                <div class="movie_select_prev movie_select_button">
+                                    <svg width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 8L3 15L10 22" stroke="#20211B" stroke-width="3" stroke-linecap="round"/>
+                                    </svg> 
                                 </div>
-
-                                <div class="calendar_box_list">
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide active">
+                                        <span>1</span>
                                     </div>
-
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
+                                    <div class="swiper-slide">
+                                        <span>2</span>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <div class="movie_select_next movie_select_button">
+                                    <svg width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 8L21 15L14 22" stroke="#20211B" stroke-width="3" stroke-linecap="round"/>
+                                    </svg> 
                                 </div>
                             </div>
                         </div>
 
-                        <div class="swiper-slide">
-                            <div class="calendar_item_date">
-                                чт
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                </svg>                                        
-                                18 окт
-                            </div>
-
-                            <div class="calendar_item_box">
-                                <div class="calendar_box_title">
-                                    Таинство
-                                </div>
-
-                                <div class="calendar_box_list">
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="calendar_item_date">
-                                чт
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                </svg>                                        
-                                18 окт
-                            </div>
-
-                            <div class="calendar_item_box">
-                                <div class="calendar_box_title">
-                                    Таинство
-                                </div>
-
-                                <div class="calendar_box_list">
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="calendar_item_date">
-                                чт
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                </svg>                                        
-                                18 окт
-                            </div>
-
-                            <div class="calendar_item_box">
-                                <div class="calendar_box_title">
-                                    Таинство
-                                </div>
-
-                                <div class="calendar_box_list">
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="calendar_box_list_item">
-                                        <div class="calendar_time">
-                                            12:00
-                                        </div>
-
-                                        <div class="calendar_description">
-                                            <div class="calendar_date_name">
-                                                Освящение воды
-                                            </div>
-
-                                            <p>
-                                                Многословная дополнительная информация для заполнения
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="calendar_swiper_buttons">
-                        <div class="calendar_swiper_prev calendar_swiper_button">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="20" cy="20" r="18.5" stroke="#DFC29E" stroke-width="3"/>
-                                <path d="M23 13L15.1333 18.9C14.0667 19.7 14.0667 21.3 15.1333 22.1L23 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"/>
-                            </svg>                                
-                        </div>
-
-                        <div class="calendar_swiper_next calendar_swiper_button">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle r="18.5" transform="matrix(-1 0 0 1 20 20)" stroke="#DFC29E" stroke-width="3"/>
-                                <path d="M17 13L24.8667 18.9C25.9333 19.7 25.9333 21.3 24.8667 22.1L17 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"/>
-                            </svg>                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about_section">
-        <div class="container">
-            <div class="about">
-                <div class="about_text">
-                    <h3 class="about_title">
-                        О храме
-                    </h3>
-
-                    <p>
-                        Святому младенцу молятся за детей, особенно за болящих детей, он же является небесный покровитель скорбящих матерей по своим детям.
-                    </p>
-
-                    <p>
-                        Гавриил Белостокский является образом мученичества. Он не просто
-                        страдал перед судом язычников или еретиков за исповедание веры, но страдал безвинно и умира, не сопротивляясь злу, чтобы таким образом последовать примеру Христа.
-                    </p>
-
-                    <p>
-                        Святой мученик Гавриил Белостокский считается целителем детей и их молитвенным покровителем. 
-                    </p>
-
-                    <a href="#" class="button_1">
-                        Узнать больше
-                    </a>
-                </div>
-
-                <div class="about_image">
-                    <img src="assets/images/card/about_img.png" alt="img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="quote_section">
-        <div class="container">
-            <div class="quote" style="background-image: url(./assets/images/bg/quote_bg.png);">
-                <div class="quote_top">
-                    <img src="assets/images/bg/quote_top.png" alt="top">
-                </div>
-
-                <div class="quote_box">
-                    <p class="quote_text">
-                        Старайтесь не о куске хлеба для детей своих, старайтесь о душе и совести. И не будут нуждаться дети ваши, и вы благословенны будете на земле и небесах.
-                    </p>
-
-                    <div class="quote_author">
-                        Николай Сербский
-                    </div>
-                </div>
-
-                <div class="quote_bottom">
-                    <img src="assets/images/bg/quote_bottom.png" alt="bottom">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="stories_section section_top_150">
-        <div class="container">
-            <div class="stories">
-                <h3 class="section_title">
-                    Истории прихожан
-                </h3>
-
-                <div class="stories_row row">
-                    <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box">
-                            <div class="stories_video">
-                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
-
-                                <video id="video-1" class="storie_video" width="400" height="300" loop muted>
-                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                </video>
-
-                                <span class="stories_video_play" id="video-play-1">
-                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
-                                    </svg>                                    
-                                </span>
-                            </div>
-    
-                            <div class="stories_name">
-                                Название истории
-                            </div>
-    
-                            <div class="stories_description">
-                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
-                            </div>
-
+                        <div class="movie_content_footer">
                             <a href="#" class="button_1">
-                                Читать подробнее
+                                Смотреть
                             </a>
-                        </div>
-                    </div>
 
-                    <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box">
-                            <div class="stories_video">
-                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
-
-                                <video id="video-2" class="storie_video" width="400" height="300" loop muted>
-                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                </video>
-
-                                <span class="stories_video_play" id="video-play-2">
-                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
-                                    </svg>                                    
-                                </span>
-                            </div>
-    
-                            <div class="stories_name">
-                                Название истории
-                            </div>
-    
-                            <div class="stories_description">
-                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
-                            </div>
-
-                            <a href="#" class="button_1">
-                                Читать подробнее
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box">
-                            <div class="stories_video">
-                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
-
-                                <video id="video-3" class="storie_video" width="400" height="300" loop muted>
-                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                </video>
-
-                                <span class="stories_video_play" id="video-play-3">
-                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
-                                    </svg>                                    
-                                </span>
-                            </div>
-    
-                            <div class="stories_name">
-                                Название истории
-                            </div>
-    
-                            <div class="stories_description">
-                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
-                            </div>
-
-                            <a href="#" class="button_1">
-                                Читать подробнее
+                            <a href="#" class="button_2">
+                                Трейлер
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="gallery_section section_top_150">
-        <div class="container">
-            <div class="gallery">
-                <div class="section_title">
-                    Жизнь прихода
-                </div>
-
-                <div class="gallery_row margint_top_100">
-                    <div class="gallery_item gallery_item-1">
-                        <div class="gallery_box">
-                            <div class="gallery_img">
-                                <img src="assets/images/card/gallery-1.png" alt="gallery">
-                            </div>
-    
-                            <div class="gallery_info">
-                                <span class="gallery_category">
-                                    Категория новости
-                                </span>
-    
-                                <h5 class="gallery_name">
-                                    <a href="#">
-                                        Cостоится Молебен перед началом учебного года
-                                    </a>
-                                </h5>
-    
-                                <div class="gallery_date">
-                                    <span>
-                                        4 часа назад
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="movies_item">
+                    <div class="movies_image">
+                        <img src="assets/images/card/movies-2.png" alt="movies preview">
                     </div>
 
-                    <div class="gallery_item gallery_item-2">
-                        <div class="gallery_box">
-                            <div class="gallery_img">
-                                <img src="assets/images/card/gallery-2.png" alt="gallery">
+                    <div class="movie_content">
+                        <div class="movie_content_header">
+                            <div class="movie_category">
+                                Категория фильма
                             </div>
-    
-                            <div class="gallery_info">
-                                <span class="gallery_category">
-                                    Категория новости
-                                </span>
-    
-                                <h5 class="gallery_name">
-                                    <a href="#">
-                                        Cостоится Молебен перед началом учебного года
-                                    </a>
-                                </h5>
-    
-                                <div class="gallery_date">
-                                    <span>
-                                        4 часа назад
-                                    </span>
-                                </div>
+
+                            <div class="movie_share">
+                                Поделиться 
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.20347 5.31496C2.15203 5.31336 1.16703 5.82654 0.568632 6.68779C-0.0297671 7.54904 -0.165128 8.64825 0.206591 9.62791C0.578436 10.6077 1.40973 11.3429 2.43043 11.5944C3.451 11.8459 4.53059 11.5816 5.318 10.8875L9.64822 13.2807C9.47866 14.277 9.79336 15.2943 10.4964 16.0225C11.1995 16.7507 12.2077 17.1036 13.2135 16.9734C14.2193 16.8433 15.1036 16.2457 15.5966 15.3627C16.0897 14.4797 16.1332 13.4161 15.7137 12.496C15.2943 11.5761 14.4618 10.9088 13.4698 10.6977C12.478 10.4865 11.4443 10.7567 10.6841 11.4256L6.35391 9.03234C6.41786 8.68119 6.41786 8.32137 6.35391 7.97018L10.6841 5.57695C11.4216 6.22423 12.4167 6.49785 13.3829 6.31893C14.3492 6.14014 15.1793 5.52868 15.634 4.66063C16.0888 3.79272 16.1178 2.76466 15.7126 1.87266C15.3074 0.98065 14.5131 0.32376 13.5584 0.091268C12.6038 -0.141363 11.5947 0.0762039 10.8221 0.681239C10.0494 1.28641 9.59884 2.21174 9.60021 3.1908C9.60132 3.36885 9.61744 3.54654 9.64817 3.72188L5.31796 6.11511C4.73517 5.59949 3.98282 5.31474 3.20343 5.315L3.20347 5.31496Z" fill="#8B8B88"/>
+                                </svg>                                    
                             </div>
                         </div>
-                    </div>
 
-                    <div class="gallery_item gallery_item-3">
-                        <div class="gallery_box">
-                            <div class="gallery_img">
-                                <img src="assets/images/card/gallery-3.png" alt="gallery">
+                        <div class="movie_content_body">
+                            <div class="movie_name">
+                                Название фильма
                             </div>
-    
-                            <div class="gallery_info">
-                                <span class="gallery_category">
-                                    Категория новости
-                                </span>
-    
-                                <h5 class="gallery_name">
-                                    <a href="#">
-                                        Cостоится Молебен перед началом учебного года
-                                    </a>
-                                </h5>
-    
-                                <div class="gallery_date">
-                                    <span>
-                                        4 часа назад
-                                    </span>
+
+                            <div class="movie_description">
+                                <p>
+                                    Чешский педагог Ян Амос Коменский (1592-1670), написавший «Великую дидактику», был убеждён, что нет знания, которые невозможно пере-дать. Но есть плохие учителя, не способные изложить эти знания.<br>
+                                    В некотором роде, это выражение стало для меня девизом и стимуля-тором. В 1998 году мы открыли двери ВШ при храме г. Ивье. Храм наш освящён в честь мученика младенца Гавриила Белостокского. 
+                                </p>
+                            </div>
+
+                            <!-- <div class="movie_select_series_title">
+                                Выбрать серию
+                            </div>
+                            <div class="movie_select_series swiper">
+                                <div class="movie_select_prev movie_select_button">
+                                    <svg width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 8L3 15L10 22" stroke="#20211B" stroke-width="3" stroke-linecap="round"/>
+                                    </svg> 
                                 </div>
-                            </div>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide active">
+                                        <span>1</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span>2</span>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <span>3</span>
+                                    </div>
+                                </div>
+                                <div class="movie_select_next movie_select_button">
+                                    <svg width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 8L21 15L14 22" stroke="#20211B" stroke-width="3" stroke-linecap="round"/>
+                                    </svg> 
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="movie_content_footer">
+                            <a href="#" class="button_1">
+                                Смотреть
+                            </a>
+
+                            <a href="#" class="button_2">
+                                Трейлер
+                            </a>
                         </div>
                     </div>
-
-                    <div class="gallery_item gallery_item-4">
-                        <div class="gallery_box">
-                            <div class="gallery_img">
-                                <img src="assets/images/card/gallery-4.png" alt="gallery">
-                            </div>
-    
-                            <div class="gallery_info">
-                                <span class="gallery_category">
-                                    Категория новости
-                                </span>
-    
-                                <h5 class="gallery_name">
-                                    <a href="#">
-                                        Cостоится Молебен перед началом учебного года
-                                    </a>
-                                </h5>
-    
-                                <div class="gallery_date">
-                                    <span>
-                                        4 часа назад
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery_item gallery_item-5">
-                        <div class="gallery_box">
-                            <div class="gallery_img">
-                                <img src="assets/images/card/gallery-5.png" alt="gallery">
-                            </div>
-    
-                            <div class="gallery_info">
-                                <span class="gallery_category">
-                                    Категория новости
-                                </span>
-    
-                                <h5 class="gallery_name">
-                                    <a href="#">
-                                        Cостоится Молебен перед началом учебного года
-                                    </a>
-                                </h5>
-    
-                                <div class="gallery_date">
-                                    <span>
-                                        4 часа назад
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery_item gallery_item-6">
-                        <div class="gallery_box">
-                            <div class="gallery_img">
-                                <img src="assets/images/card/gallery-6.png" alt="gallery">
-                            </div>
-    
-                            <div class="gallery_info">
-                                <span class="gallery_category">
-                                    Категория новости
-                                </span>
-    
-                                <h5 class="gallery_name">
-                                    <a href="#">
-                                        Cостоится Молебен перед началом учебного года
-                                    </a>
-                                </h5>
-    
-                                <div class="gallery_date">
-                                    <span>
-                                        4 часа назад
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="show_more">
-                    <button class="button_1">
-                        Перейти к новостям
-                    </button>
                 </div>
             </div>
         </div>
@@ -1095,8 +704,6 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.twentytwenty.js"></script>
-    <script src="assets/js/jquery.event.move.js"></script>
     <!-- <script src="assets/js/util.js"></script>
     <script src="assets/js/swipe-content.js"></script> 
     <script src="assets/js/main.js"></script> -->

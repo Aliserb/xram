@@ -8,6 +8,14 @@ h3 {
     color: #20211B;
 }
 
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: #E7C99F !important;
+}
+
 .button_1 {
     background: #E7C99F;
     border-radius: 16px; 
@@ -19,6 +27,50 @@ h3 {
     display: block;
     width: fit-content;
     border: none;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    overflow: hidden;
+}
+
+.button_1:hover {
+    background: #FFDDAD;
+    color: #20211B;
+}
+
+.button_1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    background: rgba(255, 255, 255, .2);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .5s ease-out;
+}
+
+.button_1.click::before {
+    width: 300px;
+    height: 300px;
+}
+
+.button_1.opacity_0::before {
+    opacity: 0;
+}
+
+.button_1.trans_duration_0::before {
+    transition-duration: 0s;
+}
+
+.button_1.dis::before {
+    width: 0;
+    height: 0;
+    opacity: 1;
+}
+
+.button_1.trans_duration_5::before {
+    transition-duration: .5s;
 }
 
 .thin_button_1 {
@@ -43,7 +95,7 @@ h3 {
     margin-left: 10px;
 }
 
-.button_1.disable {
+.button_1.disable-next {
     background: #BABAB7;
 }
 
@@ -94,8 +146,8 @@ h3 {
 
 
 .overlay {
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 200;
     width: 100%;
     height: 100%;
     background: #20211B;

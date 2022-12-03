@@ -8,6 +8,11 @@
     max-width: 1200px;
 }
 
+.header {
+    background: #fff;
+    position: relative;
+}
+
 .header_links .item {
     stroke: #20211B;
     fill: red;
@@ -28,6 +33,7 @@
     justify-content: space-between;
     height: 63px;
     margin-bottom: 10px;
+    transition: all 0.3s ease 0s;
 }
 
 .header_links {
@@ -143,6 +149,7 @@
     margin: 0 auto;
     width: 100%;
     color: #fff;
+    background: transparent;
 }
 
 .header.inner_page_header .header_links svg path,
@@ -153,6 +160,52 @@
 
 .header.inner_page_header .header_menu ul a {
     color: #fff;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    padding: 20px;
+}
+
+.sticky + .wrapper {
+    padding-top: 150px;
+}
+
+.sticky .header_top {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sticky .header_middle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sticky .header_middle::after,
+.sticky .header_middle::before {
+    content: none;
+}
+
+.logo,
+.logo img {
+    transition: all 0.3s ease 0s;
+}
+
+.sticky .logo {
+    width: 35px;
+    height: 35px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
 }
 
 .main_banner_section {
@@ -1056,6 +1109,24 @@ label.ask_question_radio-label {
     color: #8B8B88;
 }
 
+.share_post,
+.share_post svg path {
+    transition: all 0.3s eas 0s;
+    cursor: copy;
+}
+
+.share_post:hover,
+.share_post:hover svg path {
+    color: #FDFFFE;
+    fill: #FDFFFE;
+    stroke: #FDFFFE;
+}
+
+.share_post span {
+    color: #FDFFFE;
+    cursor: default;
+}
+
 .inner_banner_info .inner_banner_category {
     text-transform: uppercase;
 }
@@ -1228,10 +1299,11 @@ label.ask_question_radio-label {
     color: #8B8B88;
 }
 
-.news_feed_name a {
+.news_feed_name {
     font: normal 600 20px/130% Jost;
     color: #2B2B2B;
     text-decoration: none;
+    display: block;
 }
 
 .news_feed_name {
@@ -1251,7 +1323,7 @@ label.ask_question_radio-label {
     margin-top: 30px;
 }
 
-.more_news .news_name a {
+.more_news .news_name {
     font: normal 400 20px/130% Raleway; 
     color: #2B2B2B;
     text-decoration: none;

@@ -21,6 +21,24 @@ headerBurgerActive.addEventListener('click', () => {
 
 // header projects
 
+// header
+window.onscroll = function() {headerMini()};
+
+var header = document.getElementById("header");
+
+function headerMini() {
+    if(header) {
+        var sticky = header.offsetTop;
+
+        if (window.pageYOffset >= 1) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+}
+// header
+
 // stories video play
 let storieVideoPlay = document.querySelectorAll('.stories_video_play');
 
@@ -80,6 +98,29 @@ document.getElementById('triple_toggle-3').addEventListener('click', () => {
 })
 
 // ask question modal
+let askModalForm = document.forms["ask_question_form"];
+let askModalNext = document.querySelector('.ask_question_next .button_1');
+
+let disableAskButton = () => {
+    if(askModalNext) {
+        askModalNext.classList.add('disable-next');
+        askModalNext.setAttribute('disabled', '');
+    }
+}
+
+if(askModalForm) {
+    askModalForm.addEventListener('change', () => {
+        console.log(askModalForm["ask_question-message"].value);
+    
+        if (askModalForm['ask_question-message'].value == '' && askModalForm['ask_question-message'].value == '') {
+            disableAskButton();
+        } else {
+            askModalNext.classList.remove('disable-next');
+            delete trigger.dataset.disabled;
+        }
+    })
+}
+
 let askModalTrigger = document.querySelectorAll('.ask_question_trigger');
 let askModal = document.querySelector('.ask_question');
 
@@ -90,6 +131,7 @@ askModalTrigger.forEach(trigger => {
         } else {
             askModal.classList.add('active');
             document.body.classList.add('overflow_hidden');
+            disableAskButton();
         }
     })
 })
@@ -206,3 +248,55 @@ tabsTrigger.forEach(tab => {
 })
 // tabs
 
+// button_1
+var ableToClick = true;
+
+let button_1 = document.querySelectorAll('.button_1');
+
+button_1.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        if(!ableToClick) return;
+        ableToClick=false;
+
+        trigger.classList.add('click');
+        
+        setTimeout(function(){
+            trigger.classList.add('opacity_0');
+        }, 400);
+        
+        setTimeout(function(){
+            trigger.classList.add('trans_duration_0');
+        }, 1000);
+        
+        setTimeout(function(){
+            trigger.classList.add('dis');
+            trigger.classList.remove('click');
+            trigger.classList.remove('opacity_0');
+        }, 1100);
+        
+        setTimeout(function(){
+            ableToClick = true;
+            trigger.classList.remove('trans_duration_0');
+            trigger.classList.remove('dis');
+        }, 1200);
+    }) 
+})
+// button_1
+
+
+// copy button
+let copyButton = document.querySelectorAll('.copy-button');
+
+copyButton.forEach(text => {
+    text.addEventListener('click', () => {
+        let copyValue = text.dataset.link;
+        navigator.clipboard.writeText(copyValue)
+            .then(() => {
+                text.innerHTML = '<span>Скопировано</span>';
+            })
+            .catch(error => {
+                text.innerHTML = 'Что-то пошло не так';
+            })
+    })
+})
+// copy button
