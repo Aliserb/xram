@@ -69,3 +69,18 @@ var moreNews = new Swiper(".movie_select_series", {
         prevEl: ".movie_select_prev",
     },
 });
+
+var historyThumbs = new Swiper(".history_thumbs_swiper", {
+    slidesPerView: 8,
+    spaceBetween: 94,
+  });
+var historySwiper = new Swiper(".history_swiper", {
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".history_thumbs_next",
+        prevEl: ".history_thumbs_prev",
+},
+    thumbs: {
+    swiper: historyThumbs,
+},
+});
