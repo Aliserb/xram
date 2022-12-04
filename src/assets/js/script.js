@@ -251,7 +251,7 @@ tabsTrigger.forEach(tab => {
 // button_1
 var ableToClick = true;
 
-let button_1 = document.querySelectorAll('.button_1');
+let button_1 = document.querySelectorAll('.button_1, .click_anim');
 
 button_1.forEach(trigger => {
     trigger.addEventListener('click', () => {

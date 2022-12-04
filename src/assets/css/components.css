@@ -32,12 +32,23 @@ a:hover {
     overflow: hidden;
 }
 
+/* click animation */
 .button_1:hover {
     background: #FFDDAD;
-    color: #20211B;
+    color: #20211B !important;
 }
 
-.button_1::before {
+.click_anim {
+    position: relative;
+    overflow: hidden;
+}
+
+.click_anim.click_anim_visible {
+    overflow: visible;
+}
+
+.button_1::before,
+.click_anim::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -50,28 +61,34 @@ a:hover {
     transition: .5s ease-out;
 }
 
-.button_1.click::before {
-    width: 300px;
-    height: 300px;
+.button_1.click::before,
+.click_anim.click::before {
+    width: 100%;
+    height: 300%;
 }
 
-.button_1.opacity_0::before {
+.button_1.opacity_0::before,
+.click_anim.opacity_0::before {
     opacity: 0;
 }
 
-.button_1.trans_duration_0::before {
+.button_1.trans_duration_0::before,
+.click_anim.trans_duration_0::before {
     transition-duration: 0s;
 }
 
-.button_1.dis::before {
+.button_1.dis::before,
+.click_anim.dis::before {
     width: 0;
     height: 0;
     opacity: 1;
 }
 
-.button_1.trans_duration_5::before {
+.button_1.trans_duration_5::before,
+.click_anim.trans_duration_5::before {
     transition-duration: .5s;
 }
+/* click animation */
 
 .thin_button_1 {
     padding: 8px 34px;
