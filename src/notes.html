@@ -17,7 +17,7 @@
 </head>
 <body>
     
-    <header class="header inner_page_header">
+    <header class="header inner_page_header" id="header">
         <div class="container">
             <div class="header_row">
                 <div class="header_top">
@@ -238,10 +238,10 @@
     
         <section class="notes_order_section">
             <div class="container container_850">
-                <div class="notes_order">
+                <div class="notes_order accordion" id="notes_order_accordion">
                     <div class="notes_order_item">
                         <div class="notes_order_item_row">
-                            <div class="notes_order_col">
+                            <div class="notes_order_col" id="notes_order_heading-1">
                                 <div class="notes_order_name">
                                     О упокоении
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -250,7 +250,7 @@
                                     1 имя
                                 </div>
         
-                                <div class="news_order_more">
+                                <div class="news_order_more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notes_order_accordion-1" aria-expanded="true" aria-controls="notes_order_accordion-1">
                                     Узнать подробнее
                                     <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 3L5 7L9 3" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
@@ -262,13 +262,13 @@
                                     1 руб
                                 </div>
         
-                                <button class="notes_order_item_button button_1">
+                                <button class="notes_order_item_button button_1" data-bs-toggle="modal" data-bs-target="#notes_order_modal-1">
                                     Заказать
                                 </button>
                             </div>
                         </div>
-    
-                        <div class="notes_order_dropdown">
+
+                        <div class="notes_order_dropdown collapse" id="notes_order_accordion-1" class="accordion-collapse collapse show" aria-labelledby="notes_order_heading-1" data-bs-parent="#notes_order_accordion">
                             <p>
                                 Вверху записки изобразить восьмиконечный крест, затем надписать ее – «О здравии» или «Об упокоении». Далее крупным разборчивым почерком перечислить в родительном падеже полные имена (обычно 10–15 имен), данные при Крещении, тех людей, за которых просят молитв. Имена должны быть написаны в церковной форме, например, не Ивана, а Иоанна; не Семена, а Симеона; не Ульяны, а Иулиании.
                             </p>
@@ -277,7 +277,7 @@
     
                     <div class="notes_order_item">
                         <div class="notes_order_item_row">
-                            <div class="notes_order_col">
+                            <div class="notes_order_col" id="notes_order_heading-2">
                                 <div class="notes_order_name">
                                     О упокоении
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +286,7 @@
                                     1 имя
                                 </div>
         
-                                <div class="news_order_more">
+                                <div class="news_order_more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notes_order_accordion-2" aria-expanded="true" aria-controls="notes_order_accordion-2">
                                     Узнать подробнее
                                     <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 3L5 7L9 3" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
@@ -304,7 +304,7 @@
                             </div>
                         </div>
     
-                        <div class="notes_order_dropdown">
+                        <div class="notes_order_dropdown collapse" id="notes_order_accordion-2" class="accordion-collapse collapse show" aria-labelledby="notes_order_heading-2" data-bs-parent="#notes_order_accordion">
                             <p>
                                 Вверху записки изобразить восьмиконечный крест, затем надписать ее – «О здравии» или «Об упокоении». Далее крупным разборчивым почерком перечислить в родительном падеже полные имена (обычно 10–15 имен), данные при Крещении, тех людей, за которых просят молитв. Имена должны быть написаны в церковной форме, например, не Ивана, а Иоанна; не Семена, а Симеона; не Ульяны, а Иулиании.
                             </p>
@@ -313,7 +313,7 @@
     
                     <div class="notes_order_item">
                         <div class="notes_order_item_row">
-                            <div class="notes_order_col">
+                            <div class="notes_order_col" id="notes_order_heading-3">
                                 <div class="notes_order_name">
                                     О упокоении
                                     <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -322,7 +322,7 @@
                                     1 имя
                                 </div>
         
-                                <div class="news_order_more">
+                                <div class="news_order_more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notes_order_accordion-3" aria-expanded="true" aria-controls="notes_order_accordion-3">
                                     Узнать подробнее
                                     <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M1 3L5 7L9 3" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
@@ -340,7 +340,7 @@
                             </div>
                         </div>
     
-                        <div class="notes_order_dropdown">
+                        <div class="notes_order_dropdown collapse" id="notes_order_accordion-3" class="accordion-collapse collapse show" aria-labelledby="notes_order_heading-3" data-bs-parent="#notes_order_accordion">
                             <p>
                                 Вверху записки изобразить восьмиконечный крест, затем надписать ее – «О здравии» или «Об упокоении». Далее крупным разборчивым почерком перечислить в родительном падеже полные имена (обычно 10–15 имен), данные при Крещении, тех людей, за которых просят молитв. Имена должны быть написаны в церковной форме, например, не Ивана, а Иоанна; не Семена, а Симеона; не Ульяны, а Иулиании.
                             </p>
@@ -357,9 +357,9 @@
                         Часто задаваемые вопросы
                     </h3>
     
-                    <div class="notes_questions_row">
-                        <div class="notes_question">
-                            <div class="notes_question_item">
+                    <div class="notes_questions_row accordion" id="notes_question_accordion">
+                        <div class="notes_question" id="notes_question_heading-1">
+                            <div class="notes_question_item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notes_question_accordion-1" aria-expanded="true" aria-controls="notes_question_accordion-1">
                                 <div class="notes_question_name">
                                     Зачем в храмах пишут записки?
                                 </div>
@@ -369,7 +369,25 @@
                                 </div>
                             </div>
     
-                            <div class="notes_question_dropdown">
+                            <div class="notes_question_dropdown collapse" id="notes_question_accordion-1" class="accordion-collapse collapse show" aria-labelledby="notes_question_heading-1" data-bs-parent="#notes_question_accordion">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod illum quasi iusto numquam commodi dolorum voluptate impedit doloremque explicabo iste molestias laudantium eaque ea, corporis quas maiores autem dolores voluptates!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="notes_question" id="notes_question_heading-2">
+                            <div class="notes_question_item collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#notes_question_accordion-2" aria-expanded="true" aria-controls="notes_question_accordion-2">
+                                <div class="notes_question_name">
+                                    Зачем в храмах пишут записки?
+                                </div>
+    
+                                <div class="notes_question_icon">
+                                    <span></span>
+                                </div>
+                            </div>
+    
+                            <div class="notes_question_dropdown collapse" id="notes_question_accordion-2" class="accordion-collapse collapse show" aria-labelledby="notes_question_heading-2" data-bs-parent="#notes_question_accordion">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod illum quasi iusto numquam commodi dolorum voluptate impedit doloremque explicabo iste molestias laudantium eaque ea, corporis quas maiores autem dolores voluptates!
                                 </p>
@@ -751,7 +769,240 @@
         <div class="ask_question_overlay overlay ask_modal_close"></div>
     </section>
 
+    <div class="notes_order_modal modal fade" id="notes_order_modal-1" tabindex="-1" aria-labelledby="notes_order_label" aria-hidden="true">
+        <!-- <div class="modal-dialog">
+            <div class="order_modal">
+                <div class="order_modal_header">
+                    <button type="button" class="order_modal_close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#E7C99F"/>
+                            <path d="M15 15L20.625 9.375M15 15L9.375 20.625M15 15L20.625 20.625M15 15L9.375 9.375" stroke="#F5F7F5" stroke-width="3" stroke-linecap="round"/>
+                        </svg>                        
+                    </button>
+                    <div class="order_modal_title">
+                        О упокоении
+                    </div>
+    
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                      </div>
+                </div>
+        
+                <div class="order_modal_body">
+        
+                </div>
+        
+                <div class="order_modal_footer">
+        
+                </div>
+            </div>
+        </div> -->
+        <div class="modal-dialog order_modal">
+            <div class="modal-content">
+                <form action="#" class="order_form">
+                    <div class="order_modal_header">
+                        <button type="button" class="order_modal_close" data-bs-dismiss="modal" aria-label="Close">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="30" height="30" rx="15" fill="#E7C99F"/>
+                                <path d="M15 15L20.625 9.375M15 15L9.375 20.625M15 15L20.625 20.625M15 15L9.375 9.375" stroke="#F5F7F5" stroke-width="3" stroke-linecap="round"/>
+                            </svg>                        
+                        </button>
+                        <div class="order_modal_title">
+                            О упокоении
+                        </div>
+    
+                        <div class="order_tabs" id="order-tab" role="tablist">
+                            <button type="button" class="order_tab_item active" id="order_tab-1" data-bs-toggle="pill" data-bs-target="#order_tab_pane-1" type="button" role="tab" aria-controls="order_tab_pane-1" aria-selected="true">
+                                О здравии
+                            </button>
+    
+                            <button type="button" class="order_tab_item" id="order_tab-2" data-bs-toggle="pill" data-bs-target="#order_tab_pane-2" type="button" role="tab" aria-controls="order_tab_pane-2" aria-selected="false">
+                                Об упокоении
+                            </button>
+                        </div>   
+                    </div>
+    
+                    <div class="order_modal_body">
+                        <div class="order_tabs_content tab-content" id="order_tab_content">
+                            <div class="order_tabs_pane tab-pane fade show active" id="order_tab_pane-1" role="tabpanel" aria-labelledby="order_tab-1" tabindex="0">
+                                <svg class="order_type" width="122" height="132" viewBox="0 0 122 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_type-1"></use>
+                                </svg> 
+                                
+                                <ol class="order_list">
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+                                </ol>
+
+                                <div class="order_list_controls">
+                                    <div class="order_list_controls_col">
+                                        <button class="order_list_add">
+                                            Добавить еще 5 имен
+                                        </button>
+                                    </div>
+                                    <div class="order_list_controls_col order_list_buttons">
+                                        <div class="order_list_controls_item">
+                                            <button class="order_list_copy">
+                                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_list_copy"></use>
+                                                </svg> 
+                                            </button>
+                                        </div>
+                                        <div class="order_list_controls_item">
+                                            <button class="order_list_paste">
+                                                <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_list_paste"></use>
+                                                </svg> 
+                                            </button>
+                                        </div>
+                                        <div class="order_list_controls_item">
+                                            <button class="order_list_clear">
+                                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_list_clear"></use>
+                                                </svg> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order_list_ornament">
+                                    <svg width="380" height="27" viewBox="0 0 380 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#order_modal_ornament_light"></use>
+                                    </svg> 
+                                </div>
+                            </div>
+    
+                            <div class="order_tabs_pane tab-pane fade" id="order_tab_pane-2" role="tabpanel" aria-labelledby="order_tab-2" tabindex="0">
+                                <svg class="order_type" width="122" height="132" viewBox="0 0 122 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_type-2"></use>
+                                </svg> 
+                                
+                                <ol class="order_list">
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+
+                                    <li>
+                                        <input type="text" name="name[]">
+                                    </li>
+                                </ol>
+
+                                <div class="order_list_controls">
+                                    <div class="order_list_controls_col">
+                                        <button class="order_list_add">
+                                            Добавить еще 5 имен
+                                        </button>
+                                    </div>
+                                    <div class="order_list_controls_col order_list_buttons">
+                                        <div class="order_list_controls_item">
+                                            <button class="order_list_copy">
+                                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_list_copy"></use>
+                                                </svg> 
+                                            </button>
+                                        </div>
+                                        <div class="order_list_controls_item">
+                                            <button class="order_list_paste">
+                                                <svg width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_list_paste"></use>
+                                                </svg> 
+                                            </button>
+                                        </div>
+                                        <div class="order_list_controls_item">
+                                            <button class="order_list_clear">
+                                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#order_list_clear"></use>
+                                                </svg> 
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="order_list_ornament">
+                                    <svg width="380" height="27" viewBox="0 0 380 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#order_modal_ornament_black"></use>
+                                    </svg> 
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="order_modal_footer">
+                        <button class="order_submit button_1">
+                            Заказать
+                        </button>
+                    </div>
+                </form>
+            </div>
+          <!-- <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div> -->
+        </div>
+    </div>
+
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/script.js"></script>
 </body>

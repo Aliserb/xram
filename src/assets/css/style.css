@@ -1575,10 +1575,22 @@ label.ask_question_radio-label {
 }
 
 .notes_order_dropdown {
+    transition: all 0.15s ease 0s;
+}
+
+.news_order_more svg {
+    transform: rotate(180deg);
+    transition: all 0.3s ease 0s;
+}
+
+.news_order_more.collapsed svg {
+    transform: rotate(0deg);
+}
+
+.notes_order_dropdown.show {
     border-top: 1px solid #8B8B88;
     padding-top: 10px;
     margin-top: 30px;
-    display: none;
 }
 
 .notes_order_dropdown p {
@@ -1654,10 +1666,15 @@ label.ask_question_radio-label {
     bottom: 0;
 }
 
-.notes_question_icon span::after {
+.notes_question_item .notes_question_icon span::after {
     left: 0;
     right: 0;
-    transform: rotate(270deg);
+    transition: all 0.3s ease 0s;
+    transform: rotate(0deg);
+}
+
+.notes_question_item.collapsed .notes_question_icon span::after {
+    transform: rotate(90deg);
 }
 
 .notes_question_item {
@@ -1874,6 +1891,7 @@ label.ask_question_radio-label {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    z-index: -1;
 }
 
 .decor .container {
@@ -2121,6 +2139,7 @@ label.ask_question_radio-label {
     right: 0;
     left: 0;
     border-radius: 50%;
+    display: block;
 }
 
 .rector_card_image svg {
@@ -2182,6 +2201,114 @@ label.ask_question_radio-label {
     margin: auto;
     margin-left: 5px;
 }
+
+.rector_image_mark_tooltip {
+    position: absolute;
+    display: none;
+    align-items: center;
+    height: fit-content;
+    /* visibility: hidden;
+    opacity: 0; */
+    transition: all 0.3s ease 0s;
+    background: #EDECE6;
+    border-radius: 5px;
+    padding: 10px 20px 20px 20px;
+    max-width: 293px;
+    width: 100%;
+}
+
+#rector_image_mark-1:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 5%;
+    top: 45%;
+}
+
+#rector_image_mark-2:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 10%;
+    top: 63%;
+}
+
+#rector_image_mark-3:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 20%;
+    top: 80%;
+}
+
+#rector_image_mark-4:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 35%;
+    top: 92%;
+}
+
+#rector_image_mark-5:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 50%;
+    margin-left: 10px;
+    top: 100%;
+}
+
+#rector_image_mark-6:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 100%;
+    margin-left: -70px;
+    top: 100%;
+}
+
+#rector_image_mark-7:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 100%;
+    margin-left: -20px;
+    top: 92%;
+}
+
+#rector_image_mark-8:hover ~ .rector_image_mark_tooltip {
+    display: flex;
+    left: 100%;
+    bottom: -80px;
+    margin-left: 30px;
+}
+
+#rector_image_mark-9:hover ~ .rector_image_mark_tooltip {
+    /* visibility: visible;
+    opacity: 1; */
+    display: flex;
+    left: 100%;
+    bottom: -30px;
+    margin-left: 60px;
+}
+
+#rector_image_mark-10:hover ~ .rector_image_mark_tooltip {
+    /* visibility: visible;
+    opacity: 1; */
+    display: flex;
+    left: 100%;
+    bottom: 30px;
+    margin-left: 60px;
+}
+
+.rector_image_mark_tooltip::before {
+    content: ''; 
+    position: absolute;
+    right: 100%;
+    top: 15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #EDECE6;
+}
+
+.rector_tooltip_name {
+    font: normal 300 20px/110% Jost;
+    color: #20211B;
+}
+
+.rector_tooltip_desc {
+    margin-top: 10px;
+    font: normal 600 16px/140% Jost;
+    color: #20211B;
+}
+
+
+
 
 .quote_section.margint_top_60 {
     margin-top: 60px;
@@ -3082,4 +3209,173 @@ label.ask_question_radio-label {
     left: 100%;
     bottom: 20px;
     margin-left: -12.375px;
+}
+
+.notes_order_modal .modal-dialog {
+    background: #FDFFFE;
+    border: 3px solid #E7C99F;
+    border-radius: 24px;
+    padding: 30px 40px;
+}
+
+.order_modal_close {
+    margin-left: auto;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.order_modal_title {
+    font: normal 700 50px/63px Amatic SC;
+    text-align: center;
+    color: #20211B;
+}
+
+.order_modal .modal-content {
+    border: none;
+}
+
+.order_tab_item {
+    font: normal 400 20px/120% Jost;
+    color: #20211B;
+    border: none;
+    background: transparent;
+    padding-left: 30px;
+    position: relative;
+}
+
+.order_tab_item::after,
+.order_tab_item::before {
+    content: '';   
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+}
+
+.order_tab_item::before {
+    width: 10px;
+    height: 10px;
+    background: #E7C99F;
+    top: 7px;
+    left: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.order_tab_item.active::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.order_tab_item::after {
+    border: 2px solid #8B8B88;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+}
+
+.order_tab_item.active::after {
+    border: 2px solid #E7C99F;
+}
+
+.order_tab_item:first-child {
+    margin-right: 30px;
+}
+
+.order_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.order_type {
+    display: block;
+    margin: 30px auto 20px auto;
+}
+
+.order_list li {
+    margin-top: 10px;
+}
+
+.order_list li:first-child {
+    margin-top: 0;
+}
+
+.order_list {
+    counter-reset: orderListCounter;
+    padding: 0;
+}
+
+.order_list li {
+    list-style: none;
+    border-bottom: 1px solid #E7C99F;
+    padding-bottom: 5px;
+}
+
+.order_list li:before {
+    counter-increment: orderListCounter;
+    content:counter(orderListCounter) ".";
+    font: normal 300 20px/120% Jost;
+    color: #E7C99F;
+}
+
+.order_list li input {
+    border: none;
+    outline: none;
+    width: 90%;
+    font: normal 300 20px/120% Jost;
+    color: #20211B;
+}
+
+.order_list_controls,
+.order_list_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order_list_add {
+    padding: 8px 16px;
+    font: normal 400 14px/20px Jost;
+    text-align: center;
+    color: #20211B;
+    background: #F5F7F5;
+    border-radius: 12px;
+    border: none;
+}
+
+.order_list_controls_item button {
+    border: none;
+    background: transparent;
+}
+
+.order_list_controls_item {
+    margin-right: 10px;
+}
+
+.order_list_controls_item:last-child {
+    margin-right: 0;
+}
+
+.order_list_ornament {
+    margin-top: 20px;
+}
+
+.order_modal {
+    max-width: 440px;
+}
+
+.order_modal_footer {
+    margin-top: 20px;
+}
+
+.order_modal_footer button {
+    margin: 0 auto;
+}
+
+.order_tabs_pane:nth-child(2).active .order_list li:before  {
+    color: #20211B;
 }
