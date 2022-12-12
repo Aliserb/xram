@@ -6,6 +6,7 @@
 
 .container {
     max-width: 1200px;
+    padding: 0;
 }
 
 .header {
@@ -119,6 +120,8 @@
 .header_projects_title {
     display: flex;
     align-items: flex-end;
+    font: normal 600 18px/26px Jost;
+    color: #20211B;
 }
 
 .header_projects_button {
@@ -195,6 +198,7 @@
     height: 100%;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .sticky .header_middle::after,
@@ -461,7 +465,8 @@
 }
 
 .stories_row {
-    margin-top: 120px;
+    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .stories_video {
@@ -1395,10 +1400,79 @@ label.ask_question_radio-label {
     margin: 30px auto 15px auto;
     max-width: 380px;
     width: 100%;
+    position: relative;
 }
 
 .add_in_phone button {
     width: 100%;
+}
+
+.add_phone_buttons {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.add_phone_button {
+    width: 50%;
+    padding: 13px 4px;
+    border: 1px solid #BABAB7;
+    transition: all 0.3s ease 0s;
+}
+
+.add_phone_button:nth-child(1) {
+    border-radius: 12px 0px 0px 12px;
+    border-right: 0.5px solid #BABAB7;
+}
+
+.add_phone_button:nth-child(2) {
+    border-radius: 0px 12px 12px 0px;
+    border-left: 0.5px solid #BABAB7;
+}
+
+.add_phone_button a {
+    font: normal 400 20px/120% Jost;
+    color: #8B8B88;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_phone_button svg {
+    margin-right: 10px;
+    fill: #8B8B88;
+}
+
+.add_phone_button:hover {
+    background: #E7C99F;
+    border: 1px solid #E7C99F;
+}
+
+.add_phone_button:hover a,
+.add_phone_button a:hover {
+    color: #fff !important;
+}
+
+.add_phone_button:hover svg {
+    fill: #fff;
+}
+
+.add_in_phone button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10.5px 32px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.add_in_phone button.remove {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .save_print_version a {
@@ -1568,6 +1642,7 @@ label.ask_question_radio-label {
     padding: 24px 30px;
     border: 3px solid #E7C99F;
     border-radius: 20px;
+    position: relative;
 }
 
 .notes_order_section {
@@ -1576,6 +1651,25 @@ label.ask_question_radio-label {
 
 .notes_order_dropdown {
     transition: all 0.15s ease 0s;
+}
+
+.notes_order_dropdown::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F8F1E6;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+.notes_order_dropdown.show::before {
+    visibility: visible;
+    opacity: 1;
 }
 
 .news_order_more svg {
@@ -1986,6 +2080,7 @@ label.ask_question_radio-label {
 
 .split_banner_image img {
     height: 100%;
+    width: 100%;
 }
 
 .split_banner_image::before {
@@ -1996,6 +2091,10 @@ label.ask_question_radio-label {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.split_banner_image.split_banner_no::before {
+    content: none;
 }
 
 .split_banner .container {
@@ -2077,6 +2176,7 @@ label.ask_question_radio-label {
     width: fit-content;
     margin-top: 30px;
     width: 100%;
+    height: 100%;
 }
 
 .rector_info_box:first-child {
@@ -2115,6 +2215,9 @@ label.ask_question_radio-label {
 
 .rector_info_item {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .rector_info_item:first-child {
@@ -2474,21 +2577,24 @@ label.ask_question_radio-label {
 
 .history_columns {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     width: 100%;
     margin-top: 20px;
 }
 
 .history_column-33 {
     width: 33%;
+    position: relative;
 }
 
 .history_column-66 {
     width: 66%;
+    position: relative;
 }
 
 .history_column-55 {
     width: 55%;
+    position: relative;
 }
 
 .news_text b {
@@ -2666,12 +2772,35 @@ label.ask_question_radio-label {
     margin-right: 74px;
 }
 
-.school_blockquote_content {
-    padding: 20px 35px 30px 30px;
+.school_blockquote_wrap {
+    padding: 20px 10px 30px 30px;
     background: #EDECE6;
     border-radius: 20px;
+}
+
+.school_blockquote_content {
     max-height: 636px;
     overflow-y: scroll;
+    padding-right: 20px;
+}
+
+.school_blockquote_content::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(217, 217, 217, 0.5);
+}
+
+.school_blockquote_content::-webkit-scrollbar-thumb {
+    background: #E7C99F;
+    border-radius: 4px;
+}
+
+.school_swiper_content::-webkit-scrollbar {
+    width: 5px;
+    background: rgba(217, 217, 217, 0.5);
+}
+.school_swiper_content::-webkit-scrollbar-thumb {
+    background: #E7C99F;
+    border-radius: 4px;
 }
 
 .school_blockquote_title {
@@ -2694,13 +2823,15 @@ label.ask_question_radio-label {
     font: normal 700 20px/29px Jost; 
     text-align: center;
     color: #8B8B88;
+    margin: 0 auto;
+    display: block;
 }
 
-.school_swiper_years_item.active span {
+.swiper-slide-thumb-active .school_swiper_years_item span {
     color: #2B2B2B;
 }
 
-.school_swiper_years_item.active {
+.swiper-slide.swiper-slide-thumb-active .school_swiper_years_item {
     background: #E7C99F;
     border-radius: 1000px;
     padding: 0px 15px;
@@ -2716,6 +2847,7 @@ label.ask_question_radio-label {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-right: 20px;
 }
 
 .school_swiper_content .swiper-slide img {
@@ -2749,8 +2881,48 @@ label.ask_question_radio-label {
     width: 100%;
 }
 
+.book_image {
+    max-width: 339px;
+    max-height: 400px;
+    position: relative;
+}
+
 .book_image img {
     width: 100%;
+    height: 100%;
+    transform-origin: 0 50%;
+    transform: rotateY(0);
+    transition: all 0.45s ease;
+}
+
+.book_image:hover img {
+    transform: rotateY(-25deg);
+    box-shadow: 1px 1px 5px 5px rgb(0 0 0 / 20%);
+}
+
+.book_image::after, .book_image::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background: white;
+    border: 1px solid #d9d9d9;
+}
+
+.book_image::after, .book_image::before, .book_image img, .book_image {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.book_image::before {
+    left: -3px;
+}
+
+.book_image::after {
+    left: -6px;
 }
 
 .book_author {
@@ -2974,12 +3146,51 @@ label.ask_question_radio-label {
 
 .prayer_menu ul {
     padding-left: 19px;
+    list-style-type: none;
 }
 
 .prayer_menu li a {
     font: normal 400 18px/26px Jost;
     color: #2B2B2B;
     text-decoration: none;
+}
+
+.prayer_menu li.active > a {
+    font-weight: 600;
+}
+
+.prayer_menu li {
+    position: relative;
+    margin-top: 5px;
+}
+
+.prayer_menu li:first-child {
+    margin-top: 0;
+}
+
+.prayer_menu li.dropdown::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 100%;
+    width: 14px;
+    height: 14px;
+    background-size: 14px;
+    background-image: url(../images/icons/menu_arrow.svg);
+    margin-right: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.prayer_menu li.active::before {
+    transform: rotate(90deg);
+}
+
+.prayer_menu li.dropdown {
+    margin-top: 10px;
+}
+
+.prayer_menu li.dropdown:first-child {
+    margin-top: 0;
 }
 
 .ask_question_toggle.prayer_content_tabs {
@@ -2990,6 +3201,14 @@ label.ask_question_radio-label {
 
 .prayer_content {
     margin-top: 50px;
+}
+
+.prayer_content_pane {
+    display: none;
+}
+
+.prayer_content_pane.active {
+    display: block;
 }
 
 .prayer_content h5 {
@@ -3029,6 +3248,11 @@ label.ask_question_radio-label {
     border: 3px solid #E7C99F;
     border-radius: 26px;
     padding: 30px;
+    transition: all 0.3s ease 0s;
+}
+
+.saints_box:hover {
+    background: #FFEDD5; 
 }
 
 .saints_box_image {
@@ -3211,6 +3435,10 @@ label.ask_question_radio-label {
     margin-left: -12.375px;
 }
 
+.history_thumbs_slide.swiper-slide-visible:last-child span::after {
+    content: none;
+}
+
 .notes_order_modal .modal-dialog {
     background: #FDFFFE;
     border: 3px solid #E7C99F;
@@ -3379,3 +3607,112 @@ label.ask_question_radio-label {
 .order_tabs_pane:nth-child(2).active .order_list li:before  {
     color: #20211B;
 }
+
+
+/* before after */
+/* You can remove this page div in your website */
+#page{
+    width:100%;
+    height:100%;
+    position:absolute;
+  }
+  
+  /* Our normalize css */
+  *{
+    margin:0;
+    box-sizing: border-box;
+  }
+  
+  /* Our wrapper */
+  .before_after_wrapper{
+    width: 100%;
+    height: 486px;
+    position: relative;
+    overflow:hidden;
+  }
+  
+  /* Our image information */
+  .before,
+  .after {
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:0;
+    left:0;
+    pointer-events:none;
+    overflow: hidden;
+  }
+
+  .after img {
+    width: 380px;
+  }
+  
+  .content-image{
+    height:100%;
+    width: 100%;
+  }
+  
+  .after{
+    width:125px;
+  }
+  
+  .scroller{
+    width: 50px;
+    height:50px;
+    position: absolute;
+    left:100px;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:50%;
+    background-color: transparent;
+    pointer-events:auto;
+    cursor: pointer;
+  }
+  
+  .scrolling{
+    pointer-events:none;
+    opacity:1;
+    z-index: 1;
+  }
+  
+  .scroller__thumb{
+    width:100%;
+    height:100%;
+    padding:5px;
+  }
+  
+  .scroller:before,
+  .scroller:after{
+    content:" ";
+    display: block;
+    width: 7px;
+    height: 9999px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.5px;
+    z-index: 30;
+    transition:0.1s;
+  }
+  .scroller:before{
+    top:100%;
+  }
+  .scroller:after{
+    bottom:100%;
+  }
+  
+  /* If you want to cahnge the colors, make sure you change the fill in the svgs to match */
+  .scroller{
+    border: 5px solid #E7C99F;
+    background: #E7C99F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scroller:before,
+  .scroller:after{
+    background: #E7C99F;
+  }
+/* before after */

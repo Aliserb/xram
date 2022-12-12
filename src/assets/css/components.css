@@ -283,3 +283,21 @@ a:hover {
     padding: 0;
 }
 /* container */
+
+.tab_pane {
+    display: none;
+}
+
+.tab_pane.active {
+    display: block;
+}
+
+.top_button {
+    position: fixed;
+    right: 200px;
+    bottom: 200px;
+    background: none;
+    border-radius: 50%;
+    display: none;
+    border: none;
+}

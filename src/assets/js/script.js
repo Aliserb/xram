@@ -72,7 +72,6 @@ toggle.addEventListener('click', function() {
 		toggleContainer.style.backgroundColor = '#E7C99F';
         toggleContainer.style.border = '0px';
 	}
-	console.log(toggleNumber)
 });
 
 var toggleTriple = document.getElementById('containerTriple');
@@ -293,3 +292,102 @@ copyButton.forEach(text => {
     })
 })
 // copy button
+
+// save calendar
+let saveButtonWrap = document.querySelector('.add_in_phone button');
+
+if(saveButtonWrap) {
+    saveButtonWrap.addEventListener('click', button => {
+        setTimeout(() => {
+            saveButtonWrap.classList.add('remove');
+        }, 300);
+    })
+}
+// save calendar
+
+// before after
+// I hope this over-commenting helps. Let's do this!
+// Let's use the 'active' variable to let us know when we're using it
+let active = false;
+
+// First we'll have to set up our event listeners
+// We want to watch for clicks on our scroller
+if (document.querySelector('.scroller')) {
+    document.querySelector('.scroller').addEventListener('mousedown',function(){
+        active = true;
+        // Add our scrolling class so the scroller has full opacity while active
+        document.querySelector('.scroller').classList.add('scrolling');
+    });
+        // We also want to watch the body for changes to the state,
+        // like moving around and releasing the click
+        // so let's set up our event listeners
+        document.body.addEventListener('mouseup',function(){
+        active = false;
+        document.querySelector('.scroller').classList.remove('scrolling');
+    });
+    document.body.addEventListener('mouseleave',function(){
+        active = false;
+        document.querySelector('.scroller').classList.remove('scrolling');
+    });
+
+    // Let's figure out where their mouse is at
+    document.body.addEventListener('mousemove',function(e){
+    if (!active) return;
+    // Their mouse is here...
+    let x = e.pageX;
+    // but we want it relative to our wrapper
+    x -= document.querySelector('.before_after_wrapper').getBoundingClientRect().left;
+    // Okay let's change our state
+    scrollIt(x);
+  });
+  
+  // Let's use this function
+  function scrollIt(x){
+      let transform = Math.max(0,(Math.min(x,document.querySelector('.before_after_wrapper').offsetWidth)));
+      document.querySelector('.after').style.width = transform+"px";
+      document.querySelector('.scroller').style.left = transform-25+"px";
+  }
+  
+  // Let's set our opening state based off the width, 
+  // we want to show a bit of both images so the user can see what's going on
+  scrollIt(150);
+}
+
+// And finally let's repeat the process for touch events
+// first our middle scroller...
+if(document.querySelector('.scroller')) {
+    document.querySelector('.scroller').addEventListener('touchstart',function(){
+        active = true;
+        document.querySelector('.scroller').classList.add('scrolling');
+    });
+    document.body.addEventListener('touchend',function(){
+        active = false;
+        document.querySelector('.scroller').classList.remove('scrolling');
+    });
+    document.body.addEventListener('touchcancel',function(){
+        active = false;
+        document.querySelector('.scroller').classList.remove('scrolling');
+    });
+}
+// before after 
+
+// button top
+// window.onscroll = function() {scrollFunction()};
+
+// var topButton = document.getElementById("top_button");
+
+// function scrollFunction() {
+//     if (topButton) {
+//         if (window.pageYOffset >= 20) {
+//             topButton.style.display = "block";
+//         } else {
+//             topButton.style.display = "none";
+//         }
+//     }
+// }
+
+// function topFunction() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+// button top

@@ -1,10 +1,36 @@
 var calendar = new Swiper(".calendar_swiper", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     navigation: {
         nextEl: ".calendar_swiper_next",
         prevEl: ".calendar_swiper_prev",
     },
+    breakpoints: {
+        570: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        840: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+    }
+});
+
+var askQuestion = new Swiper(".stories_row", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    allowTouchMove: false,
+    breakpoints: {
+        570: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        840: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+    }
 });
 
 var askQuestion = new Swiper(".ask_question_swiper", {
