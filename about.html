@@ -18,7 +18,7 @@
 </head>
 <body>
     
-    <header class="header inner_page_header">
+    <header class="header inner_page_header" id="header">
         <div class="container">
             <div class="header_row">
                 <div class="header_top">
@@ -230,23 +230,23 @@
 
     <section class="news_category_section category_1_section">
         <div class="container">
-            <div class="news_category_row category_1_row row">
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+            <div class="news_category_row category_1_row">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Житие Гаавриила
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Настоятель
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         Святыни
                     </div>
                 </div>
-                <div class="news_category category_1 col-6 col-xl-3 col-lg-4">
+                <div class="news_category category_1">
                     <div class="news_category_box category_1_box">
                         История храма
                     </div>
@@ -341,6 +341,20 @@
                                 <svg id="rector_image_mark-10" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
                                 </svg>
+
+                                <div class="rector_image_mark_tooltip">
+                                    <div class="rector_tooltip_item">
+                                        <img src="assets/images/card/rector_image_tooltip-1.svg" alt="icon">
+                                    </div>
+                                    <div class="tooltip_item">
+                                        <div class="rector_tooltip_name">
+                                            Крест с украшениями
+                                        </div>
+                                        <div class="rector_tooltip_desc">
+                                            02.04.2021 г.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -572,7 +586,7 @@
 
                 <div class="stories_row row">
                     <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box">
+                        <div class="stories_box click_anim click_anim_visible">
                             <div class="stories_video">
                                 <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
 
@@ -602,7 +616,7 @@
                     </div>
 
                     <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box">
+                        <div class="stories_box click_anim click_anim_visible">
                             <div class="stories_video">
                                 <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
 
@@ -632,7 +646,7 @@
                     </div>
 
                     <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box">
+                        <div class="stories_box click_anim click_anim_visible">
                             <div class="stories_video">
                                 <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
 
@@ -665,152 +679,77 @@
         </div>
     </section>
 
-    <section class="history_about_section">
+    <section class="history_about_section section_top_150">
         <div class="container">
             <h3 class="section_title">
                 История храма
             </h3>
             
-            <div class="cd-h-timeline__container container">
-                <div class="cd-h-timeline__dates">
-                  <div class="cd-h-timeline__line">
-                    <ol>
-                      <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">16 Jan</a></li>
-                      <li><a href="#0" data-date="28/02/2014" class="cd-h-timeline__date">28 Feb</a></li>
-                      <li><a href="#0" data-date="20/04/2014" class="cd-h-timeline__date">20 Mar</a></li>
-                      <li><a href="#0" data-date="20/05/2014" class="cd-h-timeline__date">20 May</a></li>
-                      <li><a href="#0" data-date="09/07/2014" class="cd-h-timeline__date">09 Jul</a></li>
-                      <li><a href="#0" data-date="30/08/2014" class="cd-h-timeline__date">30 Aug</a></li>
-                      <li><a href="#0" data-date="15/09/2014" class="cd-h-timeline__date">15 Sep</a></li>
-                      <li><a href="#0" data-date="01/11/2014" class="cd-h-timeline__date">01 Nov</a></li>
-                      <li><a href="#0" data-date="10/12/2014" class="cd-h-timeline__date">10 Dec</a></li>
-                      <li><a href="#0" data-date="19/01/2015" class="cd-h-timeline__date">29 Jan</a></li>
-                      <li><a href="#0" data-date="03/03/2015" class="cd-h-timeline__date">3 Mar</a></li>
-                    </ol>
-          
-                    <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
-                  </div> <!-- .cd-h-timeline__line -->
-                </div> <!-- .cd-h-timeline__dates -->
-                  
-                <ul>
-                  <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
-                  <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
-                </ul>
-            </div> <!-- .cd-h-timeline__container -->
+            <div class="history_swiper swiper margin_top_60">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide history_swiper_slide">
+                        <div class="history_swiper_item">
+                            <img src="assets/images/card/history_swiper-1.png" alt="history photo">
+                        </div>
+                        <div class="history_swiper_item">
+                            <div class="history_slide_title">
+                                Освящение храма
+                            </div>
 
-            <div class="cd-h-timeline__events">
-                <ol>
-                  <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Horizontal Timeline</h2>
-                      <em class="cd-h-timeline__event-date">January 16th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
+                            <div class="history_slide_date">
+                                24.05.1993г 
+                            </div>
+
+                            <p>
+                                10 октября 1993 года прошло малое освящение церкви. Торжественный чин освящения храма провёл священник Князиковской церкви отец Анатолий (малым освящение называется потому, что оно проводилось внедостроенном и необорудованном, надлежащим образом,  храме).
+                            </p>
+                        </div>
                     </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">February 28th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
+
+                    <div class="swiper-slide history_swiper_slide">
+                        <div class="history_swiper_item">
+                            <img src="assets/images/card/history_swiper-2.png" alt="history photo">
+                        </div>
+                        <div class="history_swiper_item">
+                            <div class="history_slide_title">
+                                Какое-то событие
+                            </div>
+
+                            <div class="history_slide_date">
+                                24.05.1995г 
+                            </div>
+
+                            <p>
+                                До появления ивьевской церквушки, православные верующие местечка вынуждены были ездить на службы в соседние населенные пункты, что отнимало много времени и сил. Поэтому открытие православного храма в Ивье стало настоящим чудом и подарком для местных верующих. В праведных трудах его поддерживали и власти.
+                            </p>
+                        </div>
                     </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">March 20th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
+                </div>
+            </div>
+
+            <div class="history_thumbs_swiper swiper margin_top_30">
+                <div class="history_thumbs_prev">
+
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide history_thumbs_slide">
+                        <div class="history_thumbs_date">
+                            01/01/93
+                        </div>
+                        <span></span>
                     </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">May 20th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
+
+                    <div class="swiper-slide history_thumbs_slide">
+                        <div class="history_thumbs_date">
+                            01/01/93
+                        </div>
+                        <span></span>
                     </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">July 9th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">August 30th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">September 15th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">November 1st, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">December 10th, 2014</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">January 29th, 2015</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-          
-                  <li class="cd-h-timeline__event text-component">
-                    <div class="cd-h-timeline__event-content container">
-                      <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                      <em class="cd-h-timeline__event-date">March 3rd, 2015</em>
-                      <p class="cd-h-timeline__event-description color-contrast-medium"> 
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                      </p>
-                    </div>
-                  </li>
-                </ol>
-            </div> <!-- .cd-h-timeline__events -->
+                </div>
+                <div class="history_thumbs_next">
+
+                </div>
+            </div>
         </div>
     </section>
 
