@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <!-- <link rel="stylesheet" href="assets/css/history.css"> -->
 
+    <script src="assets/js/jquery.min.js"></script>
     <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/AmaticSC/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/raleway/stylesheet.css" rel="stylesheet" type="text/css"/>
@@ -172,7 +174,7 @@
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="school.html">
                                     Воскресная школа
                                 </a>
                             </li>
@@ -207,551 +209,874 @@
                         </ul>
                     </nav>
                 </div>
+
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="/">
+                            <img src="assets/images/logo.svg" alt="logotype">
+                        </a>
+                    </div>
+
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="mobile_dropdown">
+                    <div class="header_links">
+                        <div class="item">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_instagram"></use>
+                                </svg>                                  
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"> 
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_telegram "></use>
+                                </svg>                             
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_zen"></use>
+                                </svg>                                     
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3125 0.5H3.9375C2.89321 0.5 1.89169 0.914843 1.15327 1.65327C0.414843 2.39169 0 3.39321 0 4.4375V17.5625C0 18.6068 0.414843 19.6083 1.15327 20.3467C1.89169 21.0852 2.89321 21.5 3.9375 21.5H22.3125C23.3568 21.5 24.3583 21.0852 25.0967 20.3467C25.8352 19.6083 26.25 18.6068 26.25 17.5625V4.4375C26.25 3.39321 25.8352 2.39169 25.0967 1.65327C24.3583 0.914843 23.3568 0.5 22.3125 0.5ZM21.4331 3.125L13.125 9.35938L4.81687 3.125H21.4331ZM22.3125 18.875H3.9375C3.5894 18.875 3.25556 18.7367 3.00942 18.4906C2.76328 18.2444 2.625 17.9106 2.625 17.5625V4.76562L12.3375 12.05C12.5647 12.2204 12.841 12.3125 13.125 12.3125C13.409 12.3125 13.6853 12.2204 13.9125 12.05L23.625 4.76562V17.5625C23.625 17.9106 23.4867 18.2444 23.2406 18.4906C22.9944 18.7367 22.6606 18.875 22.3125 18.875Z" fill="#20211B"/>
+                                </svg>                 
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_470_390)">
+                                    <path d="M5.99664 11.2139H2.20335C1.7788 11.2139 1.43896 11.5571 1.43896 11.9863V14.3034C1.43896 14.7324 1.77861 15.0758 2.20335 15.0758H5.99664C6.42119 15.0758 6.76102 14.7326 6.76102 14.3034V11.9863C6.76102 11.5571 6.42118 11.2139 5.99664 11.2139Z" fill="#20211B"/>
+                                    <path d="M5.99676 17.25H2.20347C1.77892 17.25 1.43909 17.5932 1.43909 18.0224V20.3395C1.43909 20.7686 1.77873 21.112 2.20347 21.112H5.99676C6.42131 21.112 6.76114 20.7687 6.76114 20.3395V18.0224C6.76114 17.5932 6.42131 17.25 5.99676 17.25Z" fill="#20211B"/>
+                                    <path d="M13.4703 11.2139H9.67698C9.25243 11.2139 8.9126 11.5571 8.9126 11.9863V14.3034C8.9126 14.7324 9.25224 15.0758 9.67698 15.0758H13.4703C13.8948 15.0758 14.2347 14.7326 14.2347 14.3034V11.9863C14.2347 11.5571 13.895 11.2139 13.4703 11.2139Z" fill="#20211B"/>
+                                    <path d="M13.4703 17.25H9.67698C9.25243 17.25 8.9126 17.5932 8.9126 18.0224V20.3395C8.9126 20.7686 9.25224 21.112 9.67698 21.112H13.4703C13.8948 21.112 14.2347 20.7687 14.2347 20.3395V18.0224C14.2347 17.5932 13.895 17.25 13.4703 17.25Z" fill="#20211B"/>
+                                    <path d="M20.9439 11.2139H17.1506C16.7261 11.2139 16.3862 11.5571 16.3862 11.9863V14.3034C16.3862 14.7324 16.7259 15.0758 17.1506 15.0758H20.9439C21.3685 15.0758 21.7083 14.7326 21.7083 14.3034V11.9863C21.7083 11.5571 21.3686 11.2139 20.9439 11.2139Z" fill="#20211B"/>
+                                    <path d="M20.9437 17.25H17.1504C16.7258 17.25 16.386 17.5932 16.386 18.0224V20.3395C16.386 20.7686 16.7256 21.112 17.1504 21.112H20.9437C21.3682 21.112 21.708 20.7687 21.708 20.3395V18.0224C21.708 17.5932 21.3684 17.25 20.9437 17.25Z" fill="#20211B"/>
+                                    <path d="M21.9628 3.46152C21.4533 3.00377 20.8021 2.46018 20.2642 2.14551C17.9147 0.772434 14.8289 0 11.5735 0C8.31797 0 5.23234 0.772434 2.88273 2.17406C2.34481 2.48875 1.69377 3.03232 1.18411 3.49008C0.674661 3.9191 0.4764 4.60574 0.617993 5.26364L1.29745 8.41049C1.4106 8.92531 1.9485 9.23998 2.45815 9.0971L7.01583 7.63821C7.44037 7.49514 7.69528 7.09463 7.63861 6.66563L7.29897 4.14798C8.74266 3.71896 9.93157 3.49008 11.5735 3.49008C13.3286 3.49008 14.5175 3.74749 15.9047 4.17669L15.5933 6.63687C15.5366 7.06589 15.7916 7.49513 16.2161 7.60945L20.7456 9.06835C21.255 9.23995 21.7929 8.92527 21.9063 8.38173L22.5291 5.23488C22.6704 4.57718 22.4724 3.89057 21.9627 3.46152H21.9628Z" fill="#20211B"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_470_390">
+                                    <rect width="22" height="22" fill="white" transform="translate(0.25)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                         
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mobile_dropdown_title main_banner_title text-center">
+                        храм г.Ивье <br>
+                        Гавриила<br>
+                        Белостокского
+                    </div>
+
+                    <div class="mobile_dropdown_tabs">
+                        <div class="mobile_dropdown_tab tab_button" data-href="mobile_tab-1">
+                            Храм 
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="mobile_dropdown_pane tab_pane" data-id="mobile_tab-1">
+                            <nav class="mobile_dropdown_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            О храме
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Расписание
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Воскресная школа
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Записка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Помочь
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="mobile_dropdown_tabs">
+                        <div class="mobile_dropdown_tab tab_button" data-href="mobile_tab-2">
+                            Проекты
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg> 
+                        </div>
+
+                        <div class="mobile_dropdown_pane tab_pane" data-id="mobile_tab-2">
+                            <div class="mobile_projects_row row">
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="split_banner">
-        <div class="split_banner_image">
-            <img src="assets/images/bg/about_bg.png" alt="background">
-        </div>
-        <div class="container">
-            <div class="description_banner">
-                <h1 class="description_banner_title">
-                    О ХРАМЕ ГАВРИИЛА БЕЛОСТОКСКОГО Г.ИВЬЕ
-                </h1>
-
-                <p class="description_banner_text">
-                    Каждый человек, перешагивающий порог православного храма, оказывается в особой атмосфере и испытывает сопричастность иной реальности. Слова молитв, звуки хора, исполняющего богослужебные песнопения, лики икон — все уводит человека от сиюминутных забот и погружает в другую систему жизненного измерения.
-                </p>
+    <div class="wrapper">
+        <section class="split_banner">
+            <div class="split_banner_image">
+                <img src="assets/images/bg/about_bg.png" alt="background">
             </div>
-        </div>
-    </section>
+            <div class="container">
+                <div class="description_banner">
+                    <h1 class="description_banner_title">
+                        О ХРАМЕ ГАВРИИЛА БЕЛОСТОКСКОГО Г.ИВЬЕ
+                    </h1>
 
-    <section class="news_category_section category_1_section">
-        <div class="container">
-            <div class="news_category_row category_1_row">
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Житие Гаавриила
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Настоятель
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Святыни
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        История храма
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about_section about_page">
-        <div class="container">
-            <div class="about">
-                <div class="about_text">
-                    <h3 class="about_title">
-                        О покровителе храма
-                    </h3>
-
-                    <p>
-                        Святому младенцу молятся за детей, особенно за болящих детей, он же является небесный покровитель скорбящих матерей по своим детям.
+                    <p class="description_banner_text">
+                        Каждый человек, перешагивающий порог православного храма, оказывается в особой атмосфере и испытывает сопричастность иной реальности. Слова молитв, звуки хора, исполняющего богослужебные песнопения, лики икон — все уводит человека от сиюминутных забот и погружает в другую систему жизненного измерения.
                     </p>
-
-                    <p>
-                        Гавриил Белостокский является образом мученичества. Он не просто
-                        страдал перед судом язычников или еретиков за исповедание веры, но страдал безвинно и умира, не сопротивляясь злу, чтобы таким образом последовать примеру Христа.
-                    </p>
-
-                    <p>
-                        Святой мученик Гавриил Белостокский считается целителем детей и их молитвенным покровителем. 
-                    </p>
-
-                    <a href="#" class="button_1">
-                        Читать житие
-                    </a>
-                </div>
-
-                <div class="about_image">
-                    <img src="assets/images/card/about_about.png" alt="img">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about_video_section section_top_150">
-        <div class="container">
-            <h3 class="section_title">
-                Видео о храме
-            </h3>
-
-            <div class="about_video">
-                <iframe width="100%" height="667" src="https://www.youtube.com/embed/vDAmd0hTnbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
-
-    <section class="rector_about_section section_top_150">
-        <div class="container">
-            <h3 class="section_title">
-                Настоятель храма
-            </h3>
-            <div class="rector_about">
-                <div class="rector_about_col">
-                    <div class="rector_card">
-                        <div class="rector_card_image">
-                            <img src="assets/images/card/rector_card.png" alt="rector">
-                            <div class="rector_image_mark">
-                                <svg id="rector_image_mark-1" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-2" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-3" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-4" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-5" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-6" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-7" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-8" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-9" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-                                <svg id="rector_image_mark-10" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
-                                </svg>
-
-                                <div class="rector_image_mark_tooltip">
-                                    <div class="rector_tooltip_item">
-                                        <img src="assets/images/card/rector_image_tooltip-1.svg" alt="icon">
-                                    </div>
-                                    <div class="tooltip_item">
-                                        <div class="rector_tooltip_name">
-                                            Крест с украшениями
-                                        </div>
-                                        <div class="rector_tooltip_desc">
-                                            02.04.2021 г.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <section class="news_category_section category_1_section">
+            <div class="container">
+                <div class="news_category_row category_1_row">
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Житие Гаавриила
                         </div>
-                        
-                        <div class="rector_card_info">
-                            протоиерей
-                        </div>
-
-                        <div class="rector_card_name">
-                            Вячеслав Пашкевич
-                        </div>
-
-                        <div class="rector_card_desc">
-                            благочинный Ивьевского округа 
-                            Новогрудской епархии, 
-                            настоятель храма г.Ивье
-                        </div>
-
-                        <buttton class="button_1 rector_card_button">
-                            Написать батюшке
-                        </buttton>
                     </div>
-                </div>
-                <div class="rector_about_col">
-                    <div class="rector_info_wrap">
-                        <div class="rector_info_item">
-                            <div class="rector_info_box">
-                                <div class="rector_info_box_title">
-                                    Хиротонии
-                                </div>
-
-                                <p>
-                                    <strong>
-                                        Диаконская хиротония
-                                    </strong><br>
-                                    Свято-Духов собор г.Минск<br>
-                                    <b>24.05.1993г </b>
-                                </p>
-
-                                <p>
-                                    <strong>Пресвитерская хиротония</strong><br>
-                                    храм св.Константина <br>и Елены г.Воложин  <br>
-                                    <b>03.06.1993г</b>
-                                </p>
-                            </div>
-
-                            <div class="rector_info_box">
-                                <div class="rector_info_box_title">
-                                    Награды
-                                </div>
-
-                                <p>
-                                    <strong>
-                                        24.05.1993г
-                                    </strong>
-                                    набедренник<br>
-                                    <strong>
-                                        03.05.2004
-                                    </strong>
-                                    камилавка<br>
-                                    <strong>
-                                        23.04.2006
-                                    </strong>
-                                    наперсный Крест<br>
-                                    <strong>
-                                        27.04.2008
-                                    </strong>
-                                    сан протоиерея<br>
-                                    <strong>
-                                        05.05.2013
-                                    </strong>
-                                    палица<br>
-                                    <strong>
-                                        02.04.2021
-                                    </strong>
-                                    крест с украшениями
-                                </p>
-                            </div>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Настоятель
                         </div>
-                        <div class="rector_info_item">
-                            <div class="rector_info_box">
-                                <div class="rector_info_box_title">
-                                    Небесный покровитель
-                                </div>
-
-                                <p>
-                                    <strong>
-                                        Святой Вячеслав, князь Чешский
-                                    </strong><br>
-                                    Святой благоверный князь Вячеслав Чешский был внуком святой мученицы княгини Людмилы (память 16 сентября) и был воспитан ею в глубоком благочестии. Он начал княжить 18-ти лет после смерти своего отца князя Вратислава († 920).
-                                </p>
-                            </div>
-
-                            <div class="rector_info_box">
-                                <div class="rector_info_box_title">
-                                    День ангела / рождения
-                                </div>
-
-                                <p>
-                                    11 октября / 27 декабря
-                                </p>
-                            </div>
-
-                            <div class="rector_info_box">
-                                <div class="rector_info_box_title">
-                                    Духовное образование
-                                </div>
-
-                                <p>
-                                    Минская духовная семинария
-                                </p>
-                            </div>
+                    </div>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Святыни
+                        </div>
+                    </div>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            История храма
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="quote_section margint_top_60">
-        <div class="container">
-            <div class="quote" style="background-image: url(./assets/images/bg/quote_bg.png);">
-                <div class="quote_top">
-                    <img src="assets/images/bg/quote_top.png" alt="top">
-                </div>
+        <section class="about_section about_page">
+            <div class="container">
+                <div class="about">
+                    <div class="about_text">
+                        <h3 class="about_title">
+                            О покровителе храма
+                        </h3>
 
-                <div class="quote_box">
-                    <p class="quote_text">
-                        "...Единодушие в храме - мечта каждого настоятеля"
-                    </p>
+                        <p>
+                            Святому младенцу молятся за детей, особенно за болящих детей, он же является небесный покровитель скорбящих матерей по своим детям.
+                        </p>
 
-                    <div class="quote_author">
-                        прот. Вячеслав Пашкевич
+                        <p>
+                            Гавриил Белостокский является образом мученичества. Он не просто
+                            страдал перед судом язычников или еретиков за исповедание веры, но страдал безвинно и умира, не сопротивляясь злу, чтобы таким образом последовать примеру Христа.
+                        </p>
+
+                        <p>
+                            Святой мученик Гавриил Белостокский считается целителем детей и их молитвенным покровителем. 
+                        </p>
+
+                        <a href="#" class="button_1">
+                            Читать житие
+                        </a>
                     </div>
-                </div>
 
-                <div class="quote_bottom">
-                    <img src="assets/images/bg/quote_bottom.png" alt="bottom">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="peoples_section margint_top_100">
-        <div class="container">
-            <h3 class="section_title">
-                Попечители храма
-            </h3>
-
-            <p class="peoples_section_desc">
-                Вскоре приближался праздник Святой Пасхи. В это время в дом забрался арендатор-еврей, приласкал дитя и тайно увез его в г. Белосток, где младенца предали мучениям: распяли, прокололи бока, постепенно испуская кровь. На девятый день ребенок скончался, его бросили в поле у опушки леса, близ деревни Зверки. Голодные 
-            </p>
-
-            <div class="peoples_row">
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_1.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_2.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_3.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_4.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
+                    <div class="about_image">
+                        <img src="assets/images/card/about_about.png" alt="img">
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="peoples_row">
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_1.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_2.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_3.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-
-                <div class="peoples_item">
-                    <img src="assets/images/card/human_4.png" alt="human">
-
-                    <div class="peoples_item_name">
-                        Мария Ивановна
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="stories_section section_top_150">
-        <div class="container">
-            <div class="stories">
+        <section class="about_video_section section_top_150">
+            <div class="container">
                 <h3 class="section_title">
-                    Святыни храма
+                    Видео о храме
                 </h3>
 
-                <div class="stories_row row">
-                    <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box click_anim click_anim_visible">
-                            <div class="stories_video">
-                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+                <div class="about_video">
+                    <iframe width="100%" height="667" src="https://www.youtube.com/embed/vDAmd0hTnbs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
 
-                                <video id="video-1" class="storie_video" width="400" height="300" loop muted>
-                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                </video>
+        <section class="rector_about_section section_top_150">
+            <div class="container">
+                <h3 class="section_title">
+                    Настоятель храма
+                </h3>
+                <div class="rector_about">
+                    <div class="rector_about_col">
+                        <div class="rector_card">
+                            <div class="rector_card_image">
+                                <img src="assets/images/card/rector_card.png" alt="rector">
+                                <div class="rector_image_mark">
+                                    <svg id="rector_image_mark-1" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-2" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-3" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-4" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-5" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-6" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-7" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-8" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-9" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
+                                    <svg id="rector_image_mark-10" width="42" height="44" viewBox="0 0 42 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#rector_card_mark"></use>
+                                    </svg>
 
-                                <span class="stories_video_play" id="video-play-1">
-                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
+                                    <div class="rector_image_mark_tooltip">
+                                        <div class="rector_tooltip_item">
+                                            <img src="assets/images/card/rector_image_tooltip-1.svg" alt="icon">
+                                        </div>
+                                        <div class="tooltip_item">
+                                            <div class="rector_tooltip_name">
+                                                Крест с украшениями
+                                            </div>
+                                            <div class="rector_tooltip_desc">
+                                                02.04.2021 г.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="rector_card_info">
+                                протоиерей
+                            </div>
+
+                            <div class="rector_card_name">
+                                Вячеслав Пашкевич
+                            </div>
+
+                            <div class="rector_card_desc">
+                                благочинный Ивьевского округа 
+                                Новогрудской епархии, 
+                                настоятель храма г.Ивье
+                            </div>
+
+                            <div class="rector_awards">
+                                <div class="rector_awards_showing tab_button active" data-href="rector_award">
+                                    Полученные награды
+                                    <svg width="10" height="9" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
                                     </svg>                                    
-                                </span>
-                            </div>
-    
-                            <div class="stories_name">
-                                Название истории
-                            </div>
-    
-                            <div class="stories_description">
-                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                                </div>
+
+                                <div class="rector_awards_wrap tab_pane active" data-id="rector_award">
+                                    <div class="rector_award_show">
+                                        <div class="rector_image_mark_tooltip">
+                                            <div class="rector_tooltip_item">
+                                                <img src="assets/images/card/rector_image_tooltip-1.svg" alt="icon">
+                                            </div>
+                                            <div class="tooltip_item">
+                                                <div class="rector_tooltip_name">
+                                                    Крест с украшениями
+                                                </div>
+                                                <div class="rector_tooltip_desc">
+                                                    02.04.2021 г.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="rector_awards_items">
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                        <div class="rector_award_item">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <a href="#" class="button_1">
-                                Читать подробнее
-                            </a>
+                            <buttton class="button_1 rector_card_button">
+                                Написать батюшке
+                            </buttton>
                         </div>
                     </div>
+                    <div class="rector_about_col">
+                        <div class="rector_info_wrap">
+                            <div class="rector_info_item">
+                                <div class="rector_info_box">
+                                    <div class="rector_info_box_title">
+                                        Хиротонии
+                                    </div>
 
-                    <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box click_anim click_anim_visible">
-                            <div class="stories_video">
-                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+                                    <p>
+                                        <strong>
+                                            Диаконская хиротония
+                                        </strong><br>
+                                        Свято-Духов собор г.Минск<br>
+                                        <b>24.05.1993г </b>
+                                    </p>
 
-                                <video id="video-2" class="storie_video" width="400" height="300" loop muted>
-                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                </video>
+                                    <p>
+                                        <strong>Пресвитерская хиротония</strong><br>
+                                        храм св.Константина <br>и Елены г.Воложин  <br>
+                                        <b>03.06.1993г</b>
+                                    </p>
+                                </div>
 
-                                <span class="stories_video_play" id="video-play-2">
-                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
-                                    </svg>                                    
-                                </span>
+                                <div class="rector_info_box">
+                                    <div class="rector_info_box_title">
+                                        Награды
+                                    </div>
+
+                                    <p>
+                                        <strong>
+                                            24.05.1993г
+                                        </strong>
+                                        набедренник<br>
+                                        <strong>
+                                            03.05.2004
+                                        </strong>
+                                        камилавка<br>
+                                        <strong>
+                                            23.04.2006
+                                        </strong>
+                                        наперсный Крест<br>
+                                        <strong>
+                                            27.04.2008
+                                        </strong>
+                                        сан протоиерея<br>
+                                        <strong>
+                                            05.05.2013
+                                        </strong>
+                                        палица<br>
+                                        <strong>
+                                            02.04.2021
+                                        </strong>
+                                        крест с украшениями
+                                    </p>
+                                </div>
                             </div>
-    
-                            <div class="stories_name">
-                                Название истории
-                            </div>
-    
-                            <div class="stories_description">
-                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
-                            </div>
+                            <div class="rector_info_item">
+                                <div class="rector_info_box">
+                                    <div class="rector_info_box_title">
+                                        Небесный покровитель
+                                    </div>
 
-                            <a href="#" class="button_1">
-                                Читать подробнее
-                            </a>
-                        </div>
-                    </div>
+                                    <p>
+                                        <strong>
+                                            Святой Вячеслав, князь Чешский
+                                        </strong><br>
+                                        Святой благоверный князь Вячеслав Чешский был внуком святой мученицы княгини Людмилы (память 16 сентября) и был воспитан ею в глубоком благочестии. Он начал княжить 18-ти лет после смерти своего отца князя Вратислава († 920).
+                                    </p>
+                                </div>
 
-                    <div class="stories_item col-12 col-xl-4 col-lg-6">
-                        <div class="stories_box click_anim click_anim_visible">
-                            <div class="stories_video">
-                                <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+                                <div class="rector_info_box">
+                                    <div class="rector_info_box_title">
+                                        День ангела / рождения
+                                    </div>
 
-                                <video id="video-3" class="storie_video" width="400" height="300" loop muted>
-                                    <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-                                </video>
+                                    <p>
+                                        11 октября / 27 декабря
+                                    </p>
+                                </div>
 
-                                <span class="stories_video_play" id="video-play-3">
-                                    <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
-                                    </svg>                                    
-                                </span>
+                                <div class="rector_info_box">
+                                    <div class="rector_info_box_title">
+                                        Духовное образование
+                                    </div>
+
+                                    <p>
+                                        Минская духовная семинария
+                                    </p>
+                                </div>
                             </div>
-    
-                            <div class="stories_name">
-                                Название истории
-                            </div>
-    
-                            <div class="stories_description">
-                                Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
-                            </div>
-
-                            <a href="#" class="button_1">
-                                Читать подробнее
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="history_about_section section_top_150">
-        <div class="container">
-            <h3 class="section_title">
-                История храма
-            </h3>
+        <section class="quote_section margint_top_60">
+            <div class="container">
+                <div class="quote" style="background-image: url(./assets/images/bg/quote_bg.png);">
+                    <div class="quote_top">
+                        <img src="assets/images/bg/quote_top.png" alt="top">
+                    </div>
+
+                    <div class="quote_box">
+                        <p class="quote_text">
+                            "...Единодушие в храме - мечта каждого настоятеля"
+                        </p>
+
+                        <div class="quote_author">
+                            прот. Вячеслав Пашкевич
+                        </div>
+                    </div>
+
+                    <div class="quote_bottom">
+                        <img src="assets/images/bg/quote_bottom.png" alt="bottom">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="peoples_section margint_top_100">
+            <div class="container">
+                <h3 class="section_title">
+                    Попечители храма
+                </h3>
+
+                <p class="peoples_section_desc">
+                    Вскоре приближался праздник Святой Пасхи. В это время в дом забрался арендатор-еврей, приласкал дитя и тайно увез его в г. Белосток, где младенца предали мучениям: распяли, прокололи бока, постепенно испуская кровь. На девятый день ребенок скончался, его бросили в поле у опушки леса, близ деревни Зверки. Голодные 
+                </p>
+
+                <div class="peoples_swiper">
+                    <div class="peoples_swiper_wrapper">
+                        <div class="swiper-slide">
+                            <div class="peoples_row">
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_1.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_2.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_3.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_4.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="peoples_row">
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_1.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_2.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_3.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                
+                                <div class="peoples_item">
+                                    <img src="assets/images/card/human_4.png" alt="human">
+                
+                                    <div class="peoples_item_name">
+                                        Мария Ивановна
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper_pagination">
+
+                    </div>
+                </div>
+
             
-            <div class="history_swiper swiper margin_top_60">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide history_swiper_slide">
-                        <div class="history_swiper_item">
-                            <img src="assets/images/card/history_swiper-1.png" alt="history photo">
+            </div>
+        </section>
+
+        <section class="stories_section section_top_150">
+            <div class="container">
+                <div class="stories">
+                    <h3 class="section_title">
+                        Истории прихожан
+                    </h3>
+
+                    <div class="stories_row row swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide stories_item col-12 col-xl-4 col-lg-6">
+                                <div class="stories_box click_anim click_anim_visible">
+                                    <div class="stories_video">
+                                        <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+        
+                                        <video id="video-1" class="storie_video" width="400" height="300" loop muted>
+                                            <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                        </video>
+        
+                                        <span class="stories_video_play" id="video-play-1">
+                                            <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
+                                            </svg>                                    
+                                        </span>
+                                    </div>
+            
+                                    <div class="stories_name">
+                                        Название истории
+                                    </div>
+            
+                                    <div class="stories_description">
+                                        Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                                    </div>
+        
+                                    <a href="#" class="button_1">
+                                        Читать подробнее
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide stories_item col-12 col-xl-4 col-lg-6">
+                                <div class="stories_box click_anim click_anim_visible">
+                                    <div class="stories_video">
+                                        <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+        
+                                        <video id="video-2" class="storie_video" width="400" height="300" loop muted>
+                                            <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                        </video>
+        
+                                        <span class="stories_video_play" id="video-play-2">
+                                            <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
+                                            </svg>                                    
+                                        </span>
+                                    </div>
+            
+                                    <div class="stories_name">
+                                        Название истории
+                                    </div>
+            
+                                    <div class="stories_description">
+                                        Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                                    </div>
+        
+                                    <a href="#" class="button_1">
+                                        Читать подробнее
+                                    </a>
+                                </div>
+                                <div class="test">
+                                    <a href="#" class="link">
+
+                                    </a>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide stories_item col-12 col-xl-4 col-lg-6">
+                                <div class="stories_box click_anim click_anim_visible">
+                                    <div class="stories_video">
+                                        <img class="storie_video_poster" src="assets/videos/poster_1.png" alt="poster">
+        
+                                        <video id="video-3" class="storie_video" width="400" height="300" loop muted>
+                                            <source src="assets/videos/video-1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                                        </video>
+        
+                                        <span class="stories_video_play" id="video-play-3">
+                                            <svg width="69" height="81" viewBox="0 0 69 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="./assets/other-files/sprites/sprite.svg#stories_video_svg"></use>
+                                            </svg>                                    
+                                        </span>
+                                    </div>
+            
+                                    <div class="stories_name">
+                                        Название истории
+                                    </div>
+            
+                                    <div class="stories_description">
+                                        Дополнительный текст описывающий содержание видео несколькими не короткими предложениями, которые частично расскажут историю и заполнят контейнер текста
+                                    </div>
+        
+                                    <a href="#" class="button_1">
+                                        Читать подробнее
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="history_swiper_item">
-                            <div class="history_slide_title">
-                                Освящение храма
+
+                        <div class="stories_swiper_buttons">
+                            <div class="stories_swiper_button stories_swiper_prev">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="18.5" stroke="#DFC29E" stroke-width="3"></circle>
+                                    <path d="M23 13L15.1333 18.9C14.0667 19.7 14.0667 21.3 15.1333 22.1L23 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"></path>
+                                </svg>
                             </div>
-
-                            <div class="history_slide_date">
-                                24.05.1993г 
+                            <div class="stories_swiper_button stories_swiper_next">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle r="18.5" transform="matrix(-1 0 0 1 20 20)" stroke="#DFC29E" stroke-width="3"></circle>
+                                    <path d="M17 13L24.8667 18.9C25.9333 19.7 25.9333 21.3 24.8667 22.1L17 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"></path>
+                                </svg>
                             </div>
-
-                            <p>
-                                10 октября 1993 года прошло малое освящение церкви. Торжественный чин освящения храма провёл священник Князиковской церкви отец Анатолий (малым освящение называется потому, что оно проводилось внедостроенном и необорудованном, надлежащим образом,  храме).
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide history_swiper_slide">
-                        <div class="history_swiper_item">
-                            <img src="assets/images/card/history_swiper-2.png" alt="history photo">
-                        </div>
-                        <div class="history_swiper_item">
-                            <div class="history_slide_title">
-                                Какое-то событие
-                            </div>
-
-                            <div class="history_slide_date">
-                                24.05.1995г 
-                            </div>
-
-                            <p>
-                                До появления ивьевской церквушки, православные верующие местечка вынуждены были ездить на службы в соседние населенные пункты, что отнимало много времени и сил. Поэтому открытие православного храма в Ивье стало настоящим чудом и подарком для местных верующих. В праведных трудах его поддерживали и власти.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="history_thumbs_swiper swiper margin_top_30">
-                <div class="history_thumbs_prev">
+        <section class="history_about_section section_top_150">
+            <div class="container">
+                <h3 class="section_title">
+                    История храма
+                </h3>
+                
+                <div class="history_swiper swiper margin_top_60">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide history_swiper_slide">
+                            <div class="history_swiper_item">
+                                <img src="assets/images/card/history_swiper-1.png" alt="history photo">
+                            </div>
+                            <div class="history_swiper_item">
+                                <div class="history_slide_title">
+                                    Освящение храма
+                                </div>
 
-                </div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide history_thumbs_slide">
-                        <div class="history_thumbs_date">
-                            01/01/93
+                                <div class="history_slide_date">
+                                    24.05.1993г 
+                                </div>
+
+                                <p>
+                                    10 октября 1993 года прошло малое освящение церкви. Торжественный чин освящения храма провёл священник Князиковской церкви отец Анатолий (малым освящение называется потому, что оно проводилось внедостроенном и необорудованном, надлежащим образом,  храме).
+                                </p>
+                            </div>
                         </div>
-                        <span></span>
-                    </div>
 
-                    <div class="swiper-slide history_thumbs_slide">
-                        <div class="history_thumbs_date">
-                            01/01/93
+                        <div class="swiper-slide history_swiper_slide">
+                            <div class="history_swiper_item">
+                                <img src="assets/images/card/history_swiper-2.png" alt="history photo">
+                            </div>
+                            <div class="history_swiper_item">
+                                <div class="history_slide_title">
+                                    Какое-то событие
+                                </div>
+
+                                <div class="history_slide_date">
+                                    24.05.1995г 
+                                </div>
+
+                                <p>
+                                    До появления ивьевской церквушки, православные верующие местечка вынуждены были ездить на службы в соседние населенные пункты, что отнимало много времени и сил. Поэтому открытие православного храма в Ивье стало настоящим чудом и подарком для местных верующих. В праведных трудах его поддерживали и власти.
+                                </p>
+                            </div>
                         </div>
-                        <span></span>
                     </div>
                 </div>
-                <div class="history_thumbs_next">
 
+                <div class="history_thumbs_swiper swiper margin_top_30">
+                    <div class="history_thumbs_prev">
+
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+
+                        <div class="swiper-slide history_thumbs_slide">
+                            <div class="history_thumbs_date">
+                                01/01/93
+                            </div>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="history_thumbs_next">
+
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer class="footer section_top_150">
         <div class="container">
