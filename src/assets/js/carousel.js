@@ -18,19 +18,23 @@ var calendar = new Swiper(".calendar_swiper", {
 });
 
 var askQuestion = new Swiper(".stories_row", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 30,
     allowTouchMove: false,
     breakpoints: {
-        570: {
+        620: {
           slidesPerView: 2,
           spaceBetween: 30
         },
-        840: {
+        880: {
             slidesPerView: 3,
             spaceBetween: 30
         },
-    }
+    },
+    navigation: {
+        nextEl: ".stories_swiper_next",
+        prevEl: ".stories_swiper_prev",
+    },
 });
 
 var askQuestion = new Swiper(".ask_question_swiper", {
@@ -42,11 +46,33 @@ var askQuestion = new Swiper(".ask_question_swiper", {
     },
 });
 
+var askQuestion = new Swiper(".split_banner_swiper", {
+    slidesPerView: 1,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 5000,
+    },
+    breakpoints: {
+        440: {
+          slidesPerView: 2,
+        },
+        720: {
+            slidesPerView: 3,
+        },
+    },
+});
+
 var newsGallery = new Swiper(".news_gallery_thumblains", {
-    spaceBetween: 37,
-    slidesPerView: 4,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+    spaceBetween: 13,
+    breakpoints: {
+        1100: {
+            slidesPerView: 4,
+            spaceBetween: 37,
+        },
+    },
 });
 
 var newsGalleryThumbs = new Swiper(".news_gallery", {
@@ -62,19 +88,35 @@ var newsGalleryThumbs = new Swiper(".news_gallery", {
 });
 
 var moreNews = new Swiper(".more_news", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
+    spaceBetween: 0,
     navigation: {
         nextEl: ".more_news_next",
         prevEl: ".more_news_prev",
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1000: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
     },
 });
 
 var schoolThumbs = new Swiper(".school_swiper_years", {
     spaceBetween: 0,
-    slidesPerView: 14,
+    slidesPerView: 'auto',
     freeMode: true,
     watchSlidesProgress: true,
+    breakpoints: {
+        1100: {
+            slidesPerView: 14,
+            spaceBetween: 0,
+        },
+    },
   });
 var schoolThumbsContent = new Swiper(".school_swiper_content", {
     spaceBetween: 0,
@@ -97,8 +139,18 @@ var moreNews = new Swiper(".movie_select_series", {
 });
 
 var historyThumbs = new Swiper(".history_thumbs_swiper", {
-    slidesPerView: 8,
+    slidesPerView: 4,
     spaceBetween: 94,
+    breakpoints: {
+        720: {
+            slidesPerView: 6,
+            spaceBetween: 94,
+        },
+        840: {
+            slidesPerView: 8,
+            spaceBetween: 94,
+        },
+    },
   });
 var historySwiper = new Swiper(".history_swiper", {
     spaceBetween: 0,
@@ -109,4 +161,43 @@ var historySwiper = new Swiper(".history_swiper", {
     thumbs: {
     swiper: historyThumbs,
 },
+});
+
+var moreNews = new Swiper(".saint_content_item_images_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+        el: '.saints_swiper_pagination',
+        clickable: true,
+    },
+});
+
+
+window.addEventListener('resize', () => {
+    let peoplesSwiper = document.querySelectorAll('.peoples_swiper');
+    let peoplesSwiperCount = 0;
+
+    peoplesSwiper.forEach(people => {
+        let peopleSwiperWrapper = people.querySelector('.peoples_swiper_wrapper');
+        peoplesSwiperCount += 1;
+        let peoplesSwiperId = 'people_swiper_number-' + peoplesSwiperCount;
+        people.classList.add(peoplesSwiperId);
+        
+        if (document.documentElement.clientWidth < 940) {
+            people.classList.add('swiper');
+            peopleSwiperWrapper.classList.add('swiper-wrapper');
+
+            var peoplesSlider = new Swiper('.' + peoplesSwiperId, {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.' + peoplesSwiperId + ' .swiper_pagination',
+                    clickable: true,
+                },
+            });
+        } else {
+            people.classList.remove('swiper');
+            peopleSwiperWrapper.classList.remove('swiper-wrapper'); 
+        }
+    })
 });

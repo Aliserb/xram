@@ -1,3 +1,56 @@
+// mobile burger
+let burgerButton = document.querySelector('.burger');
+
+if (burgerButton) {
+    burgerButton.addEventListener('click', () => {
+        let burgerDropdown = document.querySelector('.mobile_dropdown');
+        if (burgerDropdown.classList.contains('active')) {
+            burgerDropdown.classList.remove('active');
+            burgerButton.classList.remove('active');
+            document.body.classList.remove('overflow_hidden');
+        } else {
+            burgerDropdown.classList.add('active');
+            burgerButton.classList.add('active');
+            document.body.classList.add('overflow_hidden');
+        }
+    })
+}
+// mobile burger
+
+// menu
+let menuButton = document.querySelector('.prayer_section_header .button_1');
+
+if (menuButton) {
+    let menuDropdown = document.querySelector('.prayer_section .container > .prayer_row .prayer_col.w_33');
+
+    menuButton.addEventListener('click', () => {
+        console.log(menuDropdown);
+        if (menuDropdown.classList.contains('active')) {
+            menuDropdown.classList.remove('active');
+            menuButton.classList.remove('active');
+            document.body.classList.remove('overflow_hidden');
+        } else {
+            menuDropdown.classList.add('active');
+            menuButton.classList.add('active');
+            document.body.classList.add('overflow_hidden');
+        }
+    })
+
+    let menuClose = document.querySelector('.menu_close');
+    menuClose.addEventListener('click', close => {
+        if (menuDropdown.classList.contains('active')) {
+            menuDropdown.classList.remove('active');
+            menuButton.classList.remove('active');
+            document.body.classList.remove('overflow_hidden');
+        } else {
+            menuDropdown.classList.add('active');
+            menuButton.classList.add('active');
+            document.body.classList.add('overflow_hidden');
+        }
+    })
+}
+// menu
+
 // header projects
 let headerBurger = document.querySelector('.header_projects_button');
 let headerProjects = document.querySelector('.header_project_row');
@@ -225,14 +278,16 @@ let tabsTrigger = document.querySelectorAll('.tab_button');
 tabsTrigger.forEach(tab => {
     let tabHref = tab.dataset.href;
     let tabPane = document.querySelectorAll('.tab_pane');
-    tab.addEventListener('click', trigger => {
-        trigger.target.classList.add('active');
-        console.log(trigger.target.previousSibling);
-        $(trigger.target).siblings().removeClass('active');
-        tabPane.forEach(pane => {
-            if(tabHref == pane.dataset.id) {
+    tabPane.forEach(pane => {
+        tab.addEventListener('click', trigger => {
+            if (pane.classList.contains('active')) {
+                tab.classList.remove('active');
+                pane.classList.remove('active');
+            } else if (tabHref == pane.dataset.id) {
+                tab.classList.add('active');
                 pane.classList.add('active');
             } else {
+                tab.classList.remove('active');
                 pane.classList.remove('active');
             }
         })
