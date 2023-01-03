@@ -7,6 +7,7 @@
     <title>Xram</title>
 
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/choices.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -101,7 +102,7 @@
                         <div class="header_projects_wrap">
                             <div class="header_project_row">
                                 <div class="header_project_title">
-                                    Наши другие проекты
+                                    <span>Наши другие проекты</span>
                                     
                                     <div class="header_projects_button header_projects_button-active">
                                         <div class="header_projects_button">
@@ -192,12 +193,12 @@
 
                             <li>
                                 <a href="notes.html">
-                                    Записка
+                                    Записки
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a class="xram_modal_button" data-xram-modal-href="donat-1">
                                     Помочь
                                 </a>
                             </li>
@@ -633,14 +634,14 @@
                         </div>
     
                         <div class="calendar_swiper_buttons">
-                            <div class="calendar_swiper_prev calendar_swiper_button">
+                            <div class="calendar_swiper_prev calendar_swiper_button scale_animation_button">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="20" cy="20" r="18.5" stroke="#DFC29E" stroke-width="3"/>
                                     <path d="M23 13L15.1333 18.9C14.0667 19.7 14.0667 21.3 15.1333 22.1L23 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"/>
                                 </svg>                                
                             </div>
     
-                            <div class="calendar_swiper_next calendar_swiper_button">
+                            <div class="calendar_swiper_next calendar_swiper_button scale_animation_button">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle r="18.5" transform="matrix(-1 0 0 1 20 20)" stroke="#DFC29E" stroke-width="3"/>
                                     <path d="M17 13L24.8667 18.9C25.9333 19.7 25.9333 21.3 24.8667 22.1L17 28" stroke="#E7C99F" stroke-width="3" stroke-linecap="round"/>
@@ -713,7 +714,7 @@
             <div class="container">
                 <div class="stories">
                     <h3 class="section_title">
-                        Истории прихожан
+                        Святыни храма
                     </h3>
     
                     <div class="stories_row row swiper">
@@ -1326,14 +1327,242 @@
         <div class="ask_question_overlay overlay ask_modal_close"></div>
     </section>
 
+    <section class="xram_modal" data-xram-modal-id="donat-1">
+        <div class="xram_modal_content xram_donat_content">
+            <div class="xram_modal_box">
+                <div class="xram_modal_header">
+                    <div class="xram_modal_title">
+                        Пожертвование
+                    </div>
+
+                    <div class="xram_modal_close">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#E7C99F"/>
+                            <path d="M15 15L20.625 9.375M15 15L9.375 20.625M15 15L20.625 20.625M15 15L9.375 9.375" stroke="#F5F7F5" stroke-width="3" stroke-linecap="round"/>
+                        </svg> 
+                    </div>
+                </div>
+
+                <div class="xram_modal_body donat_modal_body tab_wrap">
+                    <div class="xram_tabs">
+                        <div class="new_tab_button active" data-href-tab="xram_tab-1">
+                            Онлайн перевод
+                        </div>
+
+                        <div class="new_tab_button" data-href-tab="xram_tab-2">
+                            Реквизиты
+                        </div>
+                    </div>
+
+                    <div class="xram_pane">
+                        <div class="new_tab_pane active" data-id-tab="xram_tab-1">
+                            <form action="#" class="donat_form">
+                                <div class="donat_form_item donat_form_item-1">
+                                    <div class="donat_item_name">
+                                        Укажите цель пожертвования
+                                    </div>
+
+                                    <div class="donat_type">
+                                        <div class="donat_type_item">
+                                            <input type="radio" id="donat_remont" name="donat_type" value="Ремонтные работы" class="donat_type_item_input" checked>
+                                            <label for="donat_remont" class="donat_type_item_label">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#donat_remont"></use>
+                                                </svg>    
+                                                Ремонтные работы
+                                            </label>
+                                        </div>
+                                        <div class="donat_type_item">
+                                            <input type="radio" id="donat_school" name="donat_type" value="Воскресная школа" class="donat_type_item_input">
+                                            <label for="donat_school" class="donat_type_item_label">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#donat_school"></use>
+                                                </svg>    
+                                                Воскресная школа
+                                            </label>
+                                        </div>
+                                        <div class="donat_type_item">
+                                            <input type="radio" id="donat_soc-meropr" name="donat_type" value="Соц. мероприятия" class="donat_type_item_input">
+                                            <label for="donat_soc-meropr" class="donat_type_item_label">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#donat_soc-meropr"></use>
+                                                </svg>    
+                                                Соц. мероприятия
+                                            </label>
+                                        </div>
+                                        <div class="donat_type_item">
+                                            <input type="radio" id="donat_soderj-xrama" name="donat_type" value="Содержание храма" class="donat_type_item_input">
+                                            <label for="donat_soderj-xrama" class="donat_type_item_label">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#donat_soderj-xrama"></use>
+                                                </svg>    
+                                                Содержание храма
+                                            </label>
+                                        </div>
+
+                                        <div class="donat_type_other">
+                                            <input type="text" id="donat_type-other" name="donat_type"  placeholder="Ввести иную цель">
+                                        </div>
+                                    </div>
+
+                                    <div class="donat_item">
+                                        <label for="count_donat">
+                                            сумма пожертвования
+                                        </label>
+
+                                        <div class="count_donat">
+                                            <input type="number" name="count_donat" id="count_donat">
+
+                                            <select name="select_currency" id="select_currency" class="count_donat_select">
+                                                <option value="BYN">BYN</option>
+                                                <option value="RUB">RUB</option>
+                                                <option value="TNG">TNG</option>
+                                                <option value="USD">USD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="button_1 disable-next donat_form_item_next">
+                                        Продолжить
+
+                                        <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.6842 13.3385L19.6106 24.1443C19.1685 24.6186 18.4737 24.6186 18.0631 24.1443C17.6211 23.6701 17.6211 22.9249 18.0631 22.4844L26.2736 13.6772L1.10537 13.6774C0.505316 13.6774 0 13.1354 0 12.4917C0 11.848 0.50531 11.306 1.10537 11.306H26.242L18.0316 2.49873C17.5895 2.0245 17.5895 1.27926 18.0316 0.838837C18.2527 0.601604 18.5369 0.5 18.821 0.5C19.1052 0.5 19.3893 0.601604 19.6105 0.838837L29.6841 11.6447C29.9053 11.8819 30 12.1527 30 12.4915C30 12.8304 29.8738 13.1013 29.6842 13.3385Z" fill="#20211B"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="donat_form_item tab_wrap donat_form_item-2">
+                                    <div class="ask_question_toggle " id="container-2">
+                                        <div class="inner-container">
+                                            <div class="toggle new_tab_button" data-href-tab="russia">
+                                                <p>Россия</p>
+                                            </div>
+                                            <div class="toggle new_tab_button active" data-href-tab="belarus">
+                                                <p>Беларусь</p>
+                                            </div>
+                                        </div>
+                                        <div class="inner-container" id="toggle-container-2" style="clip-path: inset(0px 50% 0px 0px); background-color: rgb(231, 201, 159); border: 0px;">
+                                            <div class="toggle new_tab_button" data-href-tab="russia">
+                                                <p>Россия</p>
+                                            </div>
+                                            <div class="toggle new_tab_button active" data-href-tab="belarus">
+                                                <p>Беларусь</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="donat_form_pane">
+                                        <div class="new_tab_pane active" data-id-tab="belarus">
+                                            <div class="form_item">
+                                                <div class="form_name">
+                                                    Выберите способ оплаты
+                                                </div>
+                                                <div class="form_radio">
+                                                    <div class="form_radio_item">
+                                                        <input type="radio" name="type_payment" id="bank_card_online" class="form_radio_item-input">
+                                                        <label for="bank_card_online" class="form_radio_item-label">Через карту онлайн</label>
+                                                    </div>
+
+                                                    <div class="form_radio_item">
+                                                        <input type="radio" name="type_payment" id="apple_pay" class="form_radio_item-input">
+                                                        <label for="apple_pay" class="form_radio_item-label">Через Apple Pay</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon_payment_systems">
+                                                <img src="assets/images/icons/payment_system-1.png" alt="">
+                                                <img src="assets/images/icons/payment_system-2.png" alt="">
+                                                <img src="assets/images/icons/payment_system-3.png" alt="">
+                                                <img src="assets/images/icons/payment_system-4.png" alt="">
+                                                <img src="assets/images/icons/payment_system-5.png" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="new_tab_pane" data-id-tab="russia">
+                                            <div class="form_item">
+                                                <div class="form_name">
+                                                    Выберите способ оплаты
+                                                </div>
+                                                <div class="form_radio">
+                                                    <div class="form_radio_item">
+                                                        <input type="radio" name="type_payment" id="bank_card_online-ru" class="form_radio_item-input">
+                                                        <label for="bank_card_online-ru" class="form_radio_item-label">Через карту онлайн</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="icon_payment_systems">
+                                                <img src="assets/images/icons/payment_system-2.png" alt="">
+                                                <img src="assets/images/icons/payment_system-3.png" alt="">
+                                                <img src="assets/images/icons/payment_system-4.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="new_tab_pane" data-id-tab="xram_tab-2">
+                            <div class="xram_requisites">
+                                <p>
+                                    <b>
+                                        Религиозная община
+                                    </b>
+                                </p>
+                                <p>
+                                    Приход храма Святого мученика младенца Гавриила Белостокского, Слуцкого г.Ивье Лидской епархии Белорусской Православной Церкви
+                                </p>
+                                <br>
+                                <p>
+                                    <b>УНП</b>
+                                </p>
+                                <p>
+                                    500064009
+                                </p>
+                                <br>
+                                <p>
+                                    <b>
+                                        Счет
+                                    </b>
+                                </p>
+                                <p>
+                                    №BY81AKBB30150041006114000000
+                                </p>
+                                <br>
+                                <p>
+                                    <b>
+                                        Банк
+                                    </b>
+                                </p>
+                                <p>
+                                    ЦБУ №410 филиал №400 Гродненского областного управления ОАО “АСБ Беларусбанк” в г.Ивье
+                                </p>
+                                <br>
+                                <p>
+                                    <b>
+                                        БИК
+                                    </b>
+                                </p>
+                                <p>
+                                    AKBBBY21400
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="xram_modal_overlay xram_modal_close"></div>
+    </section>
+
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/choices.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery.twentytwenty.js"></script>
-    <script src="assets/js/jquery.event.move.js"></script>
-    <!-- <script src="assets/js/util.js"></script>
-    <script src="assets/js/swipe-content.js"></script> 
-    <script src="assets/js/main.js"></script> -->
+    <!-- <script src="assets/js/jquery.twentytwenty.js"></script>
+    <script src="assets/js/jquery.event.move.js"></script> -->
 </body>
 </html>
