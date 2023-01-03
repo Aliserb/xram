@@ -15,10 +15,13 @@
     <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/AmaticSC/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/raleway/stylesheet.css" rel="stylesheet" type="text/css"/>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <body>
-    
-    <header class="header inner_page_header" id="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header_row">
                 <div class="header_top">
@@ -160,19 +163,19 @@
                     <nav class="header_left_menu header_menu">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="about.html">
                                     О храме
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="calendar.html">
                                     Расписание
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="school.html">
                                     Воскресная школа
                                 </a>
                             </li>
@@ -188,8 +191,8 @@
                             </li>
 
                             <li>
-                                <a href="#">
-                                    Записка
+                                <a href="notes.html">
+                                    Записки
                                 </a>
                             </li>
 
@@ -200,7 +203,7 @@
                             </li>
 
                             <li>
-                                <a href="#">
+                                <a href="contacts.html">
                                     Контакты
                                 </a>
                             </li>
@@ -384,272 +387,36 @@
     </header>
 
     <div class="wrapper">
-        <section class="description_banner_section" style="background-image: url('./assets/images/bg/calendar.png');">
-            <div class="container">
-                <div class="description_banner">
-                    <h1 class="description_banner_title">
-                        РАСПИСАНИЕ БОГОСЛУЖЕНИЙ
-                    </h1>
-
-                    <p class="description_banner_text">
-                        Общественные богослужения или, как говорят в народе, церковные службы — это главное, для чего предназначаются наши храмы. Ежедневно Православная Церковь совершает в храмах вечерние, утренние и дневные богослужения. Каждое из этих богослужений состоит в свою очередь из трех видов богослужений, в совокупности объединенных в суточный круг богослужений.
-                    </p>
-                    
-                    <div class="add_in_phone">
-                        <button class="button_1">
-                            Добавить в телефон
-                        </button>
-
-                        <div class="add_phone_buttons">
-                            <div class="add_phone_button">
-                                <a href="#">
-                                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#add_iphone"></use>
-                                    </svg>                                   
-                                    IOS
-                                </a>
-                            </div>
-                            <div class="add_phone_button">
-                                <a href="#">
-                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#add_android"></use>
-                                    </svg> 
-                                    Android
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="save_print_version">
-                        <a href="#">
-                            Скачать версию для печати
-                            <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.8289 12.0197C18.4503 11.3873 18.0023 10.3189 17.1156 10.3189H14.9967C14.4444 10.3189 13.9967 9.8712 13.9967 9.31891V1.5C13.9967 0.947716 13.549 0.5 12.9967 0.5H5.99797C5.44569 0.5 4.99797 0.947715 4.99797 1.5V9.31891C4.99797 9.8712 4.55026 10.3189 3.99797 10.3189H1.88342C0.996907 10.3189 0.548778 11.387 1.1699 12.0195L8.78378 19.7736C9.17565 20.1726 9.81865 20.1727 10.2106 19.7738L17.8289 12.0197Z" fill="#8B8B88"/>
-                            </svg>                            
-                        </a>
-                    </div>
+        <div class="container">
+            <div class="not_found_wrap">
+                <div class="not_found_img not_found_img-1">
+                    <img src="assets/images/bg/404-1.svg" alt="decor">
                 </div>
-            </div>
-        </section>
-
-        <div class="calendar_section">
-            <div class="container">
-                <div class="calendar_row">
-                    <div class="calendar_col col-12 col-xl-6 col-lg-6">
-                        <div class="calendar_scroll">
-                            <div class="calendar_item">
-                                <div class="calendar_item_date">
-                                    чт
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                    </svg>                                        
-                                    18 окт
-                                </div>
-
-                                <div class="calendar_item_box">
-                                    <div class="calendar_box_title">
-                                        Таинство
-                                    </div>
-
-                                    <div class="calendar_box_list">
-                                        <div class="calendar_box_list_item">
-                                            <div class="calendar_time">
-                                                12:00
-                                            </div>
-
-                                            <div class="calendar_description">
-                                                <div class="calendar_date_name">
-                                                    Освящение воды
-                                                </div>
-
-                                                <p>
-                                                    Многословная дополнительная информация для заполнения
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="calendar_box_list_item">
-                                            <div class="calendar_time">
-                                                12:00
-                                            </div>
-
-                                            <div class="calendar_description">
-                                                <div class="calendar_date_name">
-                                                    Освящение воды
-                                                </div>
-
-                                                <p>
-                                                    Многословная дополнительная информация для заполнения
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="calendar_item">
-                                <div class="calendar_item_date">
-                                    чт
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                    </svg>                                        
-                                    18 окт
-                                </div>
-
-                                <div class="calendar_item_box">
-                                    <div class="calendar_box_title">
-                                        Таинство
-                                    </div>
-
-                                    <div class="calendar_box_list">
-                                        <div class="calendar_box_list_item">
-                                            <div class="calendar_time">
-                                                12:00
-                                            </div>
-
-                                            <div class="calendar_description">
-                                                <div class="calendar_date_name">
-                                                    Освящение воды
-                                                </div>
-
-                                                <p>
-                                                    Многословная дополнительная информация для заполнения
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="calendar_box_list_item">
-                                            <div class="calendar_time">
-                                                12:00
-                                            </div>
-
-                                            <div class="calendar_description">
-                                                <div class="calendar_date_name">
-                                                    Освящение воды
-                                                </div>
-
-                                                <p>
-                                                    Многословная дополнительная информация для заполнения
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="calendar_item">
-                                <div class="calendar_item_date">
-                                    чт
-                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="5" cy="5" r="5" fill="#E7C99F"/>
-                                    </svg>                                        
-                                    18 окт
-                                </div>
-
-                                <div class="calendar_item_box">
-                                    <div class="calendar_box_title">
-                                        Таинство
-                                    </div>
-
-                                    <div class="calendar_box_list">
-                                        <div class="calendar_box_list_item">
-                                            <div class="calendar_time">
-                                                12:00
-                                            </div>
-
-                                            <div class="calendar_description">
-                                                <div class="calendar_date_name">
-                                                    Освящение воды
-                                                </div>
-
-                                                <p>
-                                                    Многословная дополнительная информация для заполнения
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div class="calendar_box_list_item">
-                                            <div class="calendar_time">
-                                                12:00
-                                            </div>
-
-                                            <div class="calendar_description">
-                                                <div class="calendar_date_name">
-                                                    Освящение воды
-                                                </div>
-
-                                                <p>
-                                                    Многословная дополнительная информация для заполнения
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    
+                <div class="not_found_content">
+                    <div class="not_found_title">
+                        404
                     </div>
-
-                    <div class="calendar_col col-12 col-xl-6 col-lg-6">
-                        <div class="calendar">
-                            <div class="calendar_header">
-                                <button class="calendar_buttons calendar_button_left">
-                                    <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#arrow"></use>
-                                    </svg> 
-                                </button>
-
-                                <span>
-                                    Октябрь 2022
-                                </span>
-
-                                <button class="calendar_buttons calendar_button_next">
-                                    <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
-                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#arrow"></use>
-                                    </svg> 
-                                </button>
-                            </div>
-
-                            <div class="calendar_body">
-                                <ul class="calendar_weekdays">
-                                    <li>
-                                        Пн
-                                    </li>
-
-                                    <li>
-                                        Вт
-                                    </li>
-
-                                    <li>
-                                        Ср
-                                    </li>
-
-                                    <li>
-                                        Чт
-                                    </li>
-
-                                    <li>
-                                        Пт
-                                    </li>
-
-                                    <li>
-                                        Сб
-                                    </li>
-
-                                    <li>
-                                        Вс
-                                    </li>
-                                </ul>
-
-                                <ul class="calendar_days">
-                                    
-                                </ul>
-                            </div>
-
-                            <div class="calendar_footer">
-
-                            </div>
-                        </div>
+    
+                    <div class="not_found_subtitle">
+                        <span>
+                            Такой страницы нет
+                        </span>
                     </div>
+    
+                    <div class="not_found_text">
+                        <span>
+                            но есть много других полезных страниц:
+                        </span>
+                    </div>
+    
+                    <a href="/" class="button_1">
+                        Назад на главную страницу
+                    </a>
+                </div>
+    
+                <div class="not_found_img not_found_img-2">
+                    <img src="assets/images/bg/404-2.svg" alt="decor">
                 </div>
             </div>
         </div>
@@ -669,7 +436,7 @@
 
                     <div class="footer_item">
                         <a href="/" class="footer_logo">
-                            <img src="assets/images/footer-logo.svg" alt="logotype">
+                            <img src="assets/images/footer-logo.png" alt="logotype" style="width: 129px; height: 130px;">
                         </a>
                     </div>
 
@@ -744,7 +511,7 @@
                             </div>
 
                             <div class="footer_contact_item">
-                                <a href="email:info@xram.by">
+                                <a href="mailto:info@xram.by">
                                     info@xram.by
                                 </a>
                             </div>
@@ -784,163 +551,171 @@
                         <path d="M15 15L20.625 9.375M15 15L9.375 20.625M15 15L20.625 20.625M15 15L9.375 9.375" stroke="#F5F7F5" stroke-width="3" stroke-linecap="round"/>
                     </svg>                    
                 </div>
-
-                <div class="ask_question_swiper swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <h3 class="modal_title ask_question_title">
-                                задать вопрос
-                            </h3>
-                
-                            <div class="ask_question_toggle" id="container">
-                                <div class="inner-container">
-                                    <div class="toggle">
-                                        <p>Батюшке</p>
+    
+                <form action="#" class="ask_question_form" name="ask_question_form" id="ask_question_form">
+                    <div class="ask_question_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3 class="modal_title ask_question_title">
+                                    задать вопрос
+                                </h3>
+                    
+                                <div class="ask_question_toggle" id="container">
+                                    <div class="inner-container">
+                                        <div class="toggle">
+                                            <p>Батюшке</p>
+                                        </div>
+                                        <div class="toggle">
+                                            <p>Матушке</p>
+                                        </div>
                                     </div>
-                                    <div class="toggle">
-                                        <p>Матушке</p>
-                                    </div>
-                                </div>
-                                <div class="inner-container" id='toggle-container'>
-                                    <div class="toggle">
-                                        <p>Батюшке</p>
-                                    </div>
-                                    <div class="toggle">
-                                        <p>Матушке</p>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="ask_question_field">
-                                <label for="ask_question-name">
-                                    Ваше имя
-                                </label>
-                                <input type="text" name="ask_question-name" id="ask_question-name" class="ask_question_input" placeholder="Введите ваше имя">
-                            </div>
-                
-                            <div class="ask_question_field">
-                                <label for="ask_question-message">
-                                    Ваш вопрос
-                                </label>
-                                <textarea name="ask_question-message" id="ask_question-message" cols="30" rows="6" placeholder="test"></textarea>
-                            </div>
-
-                            <div class="ask_question_next">
-                                <button class="button_1 disable">
-                                    Продолжить
-                                    <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M29.6842 13.3385L19.6106 24.1443C19.1685 24.6186 18.4737 24.6186 18.0631 24.1443C17.6211 23.6701 17.6211 22.9249 18.0631 22.4844L26.2736 13.6772L1.10537 13.6774C0.505316 13.6774 0 13.1354 0 12.4917C0 11.848 0.50531 11.306 1.10537 11.306H26.242L18.0316 2.49873C17.5895 2.0245 17.5895 1.27926 18.0316 0.838837C18.2527 0.601604 18.5369 0.5 18.821 0.5C19.1052 0.5 19.3893 0.601604 19.6105 0.838837L29.6841 11.6447C29.9053 11.8819 30 12.1527 30 12.4915C30 12.8304 29.8738 13.1013 29.6842 13.3385Z" fill="#20211B"/>
-                                    </svg>                                    
-                                </button>
-                            </div>
-
-                            <div class="ask_question_confidentiality">
-                                Это конфиденциально.<br>
-                                Мы не храним, не передаем третьим лицам Ваше сообщение и данные.  
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <h3 class="modal_title ask_question_title">
-                                Как ответить на вопрос?
-                            </h3>
-                
-                            <div class="ask_question_toggle triple_toggle" id="containerTriple">
-                                <div class="inner-container triple_toggle">
-                                    <div class="triple_toggle" id="triple_toggle-1">
-                                        <p>Сообщение</p>
-                                    </div>
-                                    <div class="triple_toggle" id="triple_toggle-2">
-                                        <p>Звонок</p>
-                                    </div>
-                                    <div class="triple_toggle" id="triple_toggle-3">
-                                        <p>E-mail</p>
+                                    <div class="inner-container" id='toggle-container'>
+                                        <div class="toggle">
+                                            <p>Батюшке</p>
+                                        </div>
+                                        <div class="toggle">
+                                            <p>Матушке</p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="inner-container triple_toggle" id='toggle-container-triple'>
-                                    <div class="triple_toggle">
-                                        <p>Сообщение</p>
-                                    </div>
-                                    <div class="triple_toggle">
-                                        <p>Звонок</p>
-                                    </div>
-                                    <div class="triple_toggle">
-                                        <p>E-mail</p>
-                                    </div>
-                                </div>
-                            </div>
-                
-                            <div class="ask_question_field ask_question_radio_field">
-                                <div class="ask_question_radio_title">
-                                    Выберите мессенджер
-                                </div>
-
-                                <div class="ask_question_radio" id="ask_question_tooltip">
-                                    <input type="radio" name="choice_messenger" id="messenger-telegram" value="telegram">
-                                    <label for="messenger-telegram" class="ask_question_radio-label">
-                                        Telegram                                       
+                    
+                                <div class="ask_question_field">
+                                    <label for="ask_question-name">
+                                        Ваше имя
                                     </label>
-
-                                    <div class="ask_question_tooltip" data-tooltip="Убедитесь, пожалуйста, что настройки конфиденциальности позволяют Вас найти по номеру телефона.">
-                                        <svg id="telegram_tooltip" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10 0.000171335C7.34783 0.000171335 4.80435 1.05369 2.9289 2.92905C1.05353 4.8044 0 7.34807 0 10.0001C0 12.6521 1.05353 15.1957 2.9289 17.0711C4.80427 18.9465 7.34796 20 10 20C12.652 20 15.1956 18.9465 17.0711 17.0711C18.9465 15.1958 20 12.6521 20 10.0001C20 8.24477 19.538 6.52028 18.6604 4.99991C17.7826 3.47981 16.5201 2.21736 15 1.33964C13.4797 0.462045 11.7552 0 9.99983 0L10 0.000171335ZM10 18.0003C7.8782 18.0003 5.84331 17.1574 4.3432 15.657C2.84284 14.1568 1.99991 12.122 1.99991 10.0003C1.99991 7.87856 2.84284 5.8436 4.3432 4.34351C5.8434 2.84316 7.87828 2.00024 10 2.00024C12.1217 2.00024 14.1567 2.84316 15.6568 4.34351C17.1572 5.84369 18.0001 7.87856 18.0001 10.0003C18.0001 11.4045 17.6304 12.7841 16.9281 14.0002C16.226 15.2165 15.2162 16.2263 13.9999 16.9284C12.7838 17.6307 11.4042 18.0004 9.99991 18.0004L10 18.0003Z" fill="#8B8B88"/>
-                                            <path d="M10.1898 5H9.80977C9.06443 5 8.34978 5.29615 7.82275 5.82316C7.29573 6.35001 6.99976 7.06487 6.99976 7.80999V8C6.99976 8.35725 7.19044 8.68739 7.49982 8.86602C7.8092 9.04465 8.19039 9.04465 8.49978 8.86602C8.80916 8.68739 8.99984 8.35726 8.99984 8V7.80999C8.99984 7.5952 9.08506 7.38928 9.23707 7.23728C9.38891 7.08544 9.595 7.00006 9.80978 7.00006H10.1898C10.4163 7.00224 10.6319 7.098 10.7853 7.26474C10.9388 7.43131 11.0163 7.65414 10.9998 7.88013C11.0006 8.03164 10.9589 8.18046 10.8794 8.30956C10.7999 8.43863 10.6857 8.54276 10.5498 8.61006C10.0812 8.83992 9.68708 9.19751 9.41287 9.64164C9.13865 10.0856 8.99551 10.5982 8.99987 11.12C8.99987 11.4773 9.19038 11.8074 9.49976 11.9861C9.80914 12.1647 10.1905 12.1647 10.4999 11.9861C10.8093 11.8074 10.9998 11.4773 10.9998 11.12C10.9989 10.9685 11.0408 10.8197 11.1203 10.6906C11.1998 10.5615 11.314 10.4574 11.4498 10.3901C12.213 10.0017 12.7613 9.29091 12.9428 8.45416C13.1244 7.61728 12.92 6.74321 12.3863 6.07356C11.8526 5.40391 11.0462 5.00967 10.1899 4.99994L10.1898 5Z" fill="#8B8B88"/>
-                                            <path d="M10.7102 13.2903L10.5602 13.1703L10.3802 13.0802V13.0804C10.3206 13.0499 10.2565 13.0296 10.1902 13.0203C10.0619 12.9905 9.92851 12.9905 9.80011 13.0203L9.62014 13.0802L9.44017 13.1703L9.29017 13.2903C9.19909 13.3854 9.12778 13.4976 9.08023 13.6203C8.97326 13.8624 8.97326 14.1383 9.08023 14.3803C9.13079 14.5015 9.20177 14.6132 9.29017 14.7103C9.478 14.8996 9.73349 15.0061 10.0001 15.0061C10.2668 15.0061 10.5223 14.8996 10.7101 14.7103C10.7985 14.6132 10.8695 14.5015 10.9201 14.3803C11.027 14.1382 11.027 13.8623 10.9201 13.6203C10.8725 13.4976 10.8012 13.3854 10.7101 13.2903L10.7102 13.2903Z" fill="#8B8B88"/>
-                                        </svg> 
+                                    <input type="text" name="ask_question-name" id="ask_question-name" class="ask_question_input ask_first_inputs" placeholder="Введите ваше имя">
+                                </div>
+                    
+                                <div class="ask_question_field">
+                                    <label for="ask_question-message">
+                                        Ваш вопрос
+                                    </label>
+                                    <textarea name="ask_question-message" id="ask_question-message" class="ask_first_inputs" cols="30" rows="6" placeholder="test"></textarea>
+                                </div>
+        
+                                <div class="ask_question_next">
+                                    <button class="button_1" id="ask_modal_next disable-next">
+                                        Продолжить
+                                        <svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.6842 13.3385L19.6106 24.1443C19.1685 24.6186 18.4737 24.6186 18.0631 24.1443C17.6211 23.6701 17.6211 22.9249 18.0631 22.4844L26.2736 13.6772L1.10537 13.6774C0.505316 13.6774 0 13.1354 0 12.4917C0 11.848 0.50531 11.306 1.10537 11.306H26.242L18.0316 2.49873C17.5895 2.0245 17.5895 1.27926 18.0316 0.838837C18.2527 0.601604 18.5369 0.5 18.821 0.5C19.1052 0.5 19.3893 0.601604 19.6105 0.838837L29.6841 11.6447C29.9053 11.8819 30 12.1527 30 12.4915C30 12.8304 29.8738 13.1013 29.6842 13.3385Z" fill="#20211B"/>
+                                        </svg>                                    
+                                    </button>
+                                </div>
+        
+                                <div class="ask_question_confidentiality">
+                                    Это конфиденциально.<br>
+                                    Мы не храним, не передаем третьим лицам Ваше сообщение и данные.  
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <h3 class="modal_title ask_question_title">
+                                    Как ответить на вопрос?
+                                </h3>
+                    
+                                <div class="ask_question_toggle triple_toggle" id="containerTriple">
+                                    <div class="inner-container triple_toggle">
+                                        <div class="triple_toggle" id="triple_toggle-1">
+                                            <p>Сообщение</p>
+                                        </div>
+                                        <div class="triple_toggle" id="triple_toggle-2">
+                                            <p>Звонок</p>
+                                        </div>
+                                        <div class="triple_toggle" id="triple_toggle-3">
+                                            <p>E-mail</p>
+                                        </div>
+                                    </div>
+                                    <div class="inner-container triple_toggle" id='toggle-container-triple'>
+                                        <div class="triple_toggle">
+                                            <p>Сообщение</p>
+                                        </div>
+                                        <div class="triple_toggle">
+                                            <p>Звонок</p>
+                                        </div>
+                                        <div class="triple_toggle">
+                                            <p>E-mail</p>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div class="ask_question_radio">
-                                    <input type="radio" name="choice_messenger" id="messenger-viber" value="viber">
-                                    <label for="messenger-viber" class="ask_question_radio-label">
-                                        Viber
-                                    </label>
+                    
+                                <div class="ask_question_field ask_question_radio_field">
+                                    <div class="ask_question_radio_title">
+                                        Выберите мессенджер
+                                    </div>
+        
+                                    <div class="ask_question_radio" id="ask_question_tooltip">
+                                        <input type="radio" name="choice_messenger" id="messenger-telegram" value="telegram">
+                                        <label for="messenger-telegram" class="ask_question_radio-label">
+                                            Telegram                                       
+                                        </label>
+        
+                                        <div class="ask_question_tooltip" data-tooltip="Убедитесь, пожалуйста, что настройки конфиденциальности позволяют Вас найти по номеру телефона.">
+                                            <svg id="telegram_tooltip" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 0.000171335C7.34783 0.000171335 4.80435 1.05369 2.9289 2.92905C1.05353 4.8044 0 7.34807 0 10.0001C0 12.6521 1.05353 15.1957 2.9289 17.0711C4.80427 18.9465 7.34796 20 10 20C12.652 20 15.1956 18.9465 17.0711 17.0711C18.9465 15.1958 20 12.6521 20 10.0001C20 8.24477 19.538 6.52028 18.6604 4.99991C17.7826 3.47981 16.5201 2.21736 15 1.33964C13.4797 0.462045 11.7552 0 9.99983 0L10 0.000171335ZM10 18.0003C7.8782 18.0003 5.84331 17.1574 4.3432 15.657C2.84284 14.1568 1.99991 12.122 1.99991 10.0003C1.99991 7.87856 2.84284 5.8436 4.3432 4.34351C5.8434 2.84316 7.87828 2.00024 10 2.00024C12.1217 2.00024 14.1567 2.84316 15.6568 4.34351C17.1572 5.84369 18.0001 7.87856 18.0001 10.0003C18.0001 11.4045 17.6304 12.7841 16.9281 14.0002C16.226 15.2165 15.2162 16.2263 13.9999 16.9284C12.7838 17.6307 11.4042 18.0004 9.99991 18.0004L10 18.0003Z" fill="#8B8B88"/>
+                                                <path d="M10.1898 5H9.80977C9.06443 5 8.34978 5.29615 7.82275 5.82316C7.29573 6.35001 6.99976 7.06487 6.99976 7.80999V8C6.99976 8.35725 7.19044 8.68739 7.49982 8.86602C7.8092 9.04465 8.19039 9.04465 8.49978 8.86602C8.80916 8.68739 8.99984 8.35726 8.99984 8V7.80999C8.99984 7.5952 9.08506 7.38928 9.23707 7.23728C9.38891 7.08544 9.595 7.00006 9.80978 7.00006H10.1898C10.4163 7.00224 10.6319 7.098 10.7853 7.26474C10.9388 7.43131 11.0163 7.65414 10.9998 7.88013C11.0006 8.03164 10.9589 8.18046 10.8794 8.30956C10.7999 8.43863 10.6857 8.54276 10.5498 8.61006C10.0812 8.83992 9.68708 9.19751 9.41287 9.64164C9.13865 10.0856 8.99551 10.5982 8.99987 11.12C8.99987 11.4773 9.19038 11.8074 9.49976 11.9861C9.80914 12.1647 10.1905 12.1647 10.4999 11.9861C10.8093 11.8074 10.9998 11.4773 10.9998 11.12C10.9989 10.9685 11.0408 10.8197 11.1203 10.6906C11.1998 10.5615 11.314 10.4574 11.4498 10.3901C12.213 10.0017 12.7613 9.29091 12.9428 8.45416C13.1244 7.61728 12.92 6.74321 12.3863 6.07356C11.8526 5.40391 11.0462 5.00967 10.1899 4.99994L10.1898 5Z" fill="#8B8B88"/>
+                                                <path d="M10.7102 13.2903L10.5602 13.1703L10.3802 13.0802V13.0804C10.3206 13.0499 10.2565 13.0296 10.1902 13.0203C10.0619 12.9905 9.92851 12.9905 9.80011 13.0203L9.62014 13.0802L9.44017 13.1703L9.29017 13.2903C9.19909 13.3854 9.12778 13.4976 9.08023 13.6203C8.97326 13.8624 8.97326 14.1383 9.08023 14.3803C9.13079 14.5015 9.20177 14.6132 9.29017 14.7103C9.478 14.8996 9.73349 15.0061 10.0001 15.0061C10.2668 15.0061 10.5223 14.8996 10.7101 14.7103C10.7985 14.6132 10.8695 14.5015 10.9201 14.3803C11.027 14.1382 11.027 13.8623 10.9201 13.6203C10.8725 13.4976 10.8012 13.3854 10.7101 13.2903L10.7102 13.2903Z" fill="#8B8B88"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ask_question_radio">
+                                        <input type="radio" name="choice_messenger" id="messenger-viber" value="viber">
+                                        <label for="messenger-viber" class="ask_question_radio-label">
+                                            Viber
+                                        </label>
+                                    </div>
+        
+                                    <div class="ask_question_radio">
+                                        <input type="radio" name="choice_messenger" id="messenger-whatsapp" value="whatsapp">
+                                        <label for="messenger-whatsapp" class="ask_question_radio-label">
+                                            WhatsApp
+                                        </label>
+                                    </div>
+        
+                                    <div class="ask_question_radio">
+                                        <input type="radio" name="choice_messenger" id="messenger-instagram" value="instagram">
+                                        <label for="messenger-instagram" class="ask_question_radio-label">
+                                            Instagram
+                                        </label>
+                                    </div>
+        
+                                    <div class="ask_question_radio">
+                                        <input type="radio" name="choice_messenger" id="messenger-sms" value="СМС">
+                                        <label for="messenger-sms" class="ask_question_radio-label"> 
+                                            СМС
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div class="ask_question_radio">
-                                    <input type="radio" name="choice_messenger" id="messenger-whatsapp" value="whatsapp">
-                                    <label for="messenger-whatsapp" class="ask_question_radio-label">
-                                        WhatsApp
+        
+                                <div class="ask_question_field">
+                                    <label for="ask_question-login">
+                                        номер Телефона или ник
                                     </label>
+                                    <input type="text" name="ask_question-login" id="ask_question-login" class="ask_question_input" placeholder="Введите ваш телефон или ник">
                                 </div>
-
-                                <div class="ask_question_radio">
-                                    <input type="radio" name="choice_messenger" id="messenger-instagram" value="instagram">
-                                    <label for="messenger-instagram" class="ask_question_radio-label">
-                                        Instagram
-                                    </label>
+        
+                                <div class="ask_question_submit">
+                                    <button type="submit" class="button_1">
+                                        Отправить вопрос
+                                    </button>
                                 </div>
-
-                                <div class="ask_question_radio">
-                                    <input type="radio" name="choice_messenger" id="messenger-sms" value="СМС">
-                                    <label for="messenger-sms" class="ask_question_radio-label"> 
-                                        СМС
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="ask_question_field">
-                                <label for="ask_question-login">
-                                    номер Телефона или ник
-                                </label>
-                                <input type="text" name="ask_question-login" id="ask_question-login" class="ask_question_input" placeholder="Введите ваш телефон или ник">
-                            </div>
-
-                            <div class="ask_question_submit">
-                                <button type="submit" class="button_1">
-                                    Отправить вопрос
-                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
         <div class="ask_question_overlay overlay ask_modal_close"></div>
     </section>
 
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/carousel.js"></script>
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.twentytwenty.js"></script>
+    <script src="assets/js/jquery.event.move.js"></script>
+    <!-- <script src="assets/js/util.js"></script>
+    <script src="assets/js/swipe-content.js"></script> 
+    <script src="assets/js/main.js"></script> -->
 </body>
-</html>≈
+</html>

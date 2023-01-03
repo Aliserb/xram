@@ -17,6 +17,20 @@ if (burgerButton) {
 }
 // mobile burger
 
+// save calendar
+let dnlButton = document.querySelectorAll('.types_read_book_preview');
+
+if(dnlButton) {
+    dnlButton.forEach(button => {
+        button.addEventListener('click', click => {
+            setTimeout(() => {
+                button.classList.add('remove');
+            }, 150);
+        })
+    })
+}
+// save calendar
+
 // menu
 let menuButton = document.querySelector('.prayer_section_header .button_1');
 
@@ -58,24 +72,31 @@ let headerBurgerActive = document.querySelector('.header_projects_button-active'
 
 headerBurger.addEventListener('click', () => {
     if (headerBurger.classList.contains('active') || headerBurgerActive.classList.contains('active')) {
+        document.body.classList.remove('overflow_hidden');
         headerProjects.classList.remove('active');
         headerBurgerActive.classList.remove('active');
     } else {
+        document.body.classList.add('overflow_hidden');
         headerProjects.classList.add('active');
         headerBurgerActive.classList.add('active');
+        setTimeout(function(){
+            headerProjects.classList.add('border_radius_0');
+        }, 100);
     }
 })
 
 headerBurgerActive.addEventListener('click', () => {
     if (headerProjects.classList.contains('active')) {
         headerProjects.classList.remove('active');
+        document.body.classList.remove('overflow_hidden');
     }
 })
 
 // header projects
 
 // header
-window.onscroll = function() {headerMini()};
+window.onscroll = function() {headerMini(), scrollFunction()};
+//window.onscroll = function() {headerMini()};
 
 var header = document.getElementById("header");
 
@@ -83,7 +104,7 @@ function headerMini() {
     if(header) {
         var sticky = header.offsetTop;
 
-        if (window.pageYOffset >= 1) {
+        if (window.pageYOffset >= 62) {
             header.classList.add("sticky");
         } else {
             header.classList.remove("sticky");
@@ -91,6 +112,29 @@ function headerMini() {
     }
 }
 // header
+
+// button top
+var topButton = document.getElementById("top_button");
+
+if (topButton) {
+    // window.onscroll = function() {};
+
+    function scrollFunction() {
+        if (topButton) {
+            if (window.pageYOffset >= 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+}
+// button top
 
 // stories video play
 let storieVideoPlay = document.querySelectorAll('.stories_video_play');
@@ -126,6 +170,25 @@ toggle.addEventListener('click', function() {
         toggleContainer.style.border = '0px';
 	}
 });
+
+var toggleTwo = document.getElementById('container-2');
+var toggleContainerTwo = document.getElementById('toggle-container-2');
+var toggleNumberTwo;
+
+if(toggleTwo) {
+    toggleTwo.addEventListener('click', function() {
+        toggleNumberTwo = !toggleNumberTwo;
+        if (toggleNumberTwo) {
+            toggleContainerTwo.style.clipPath = 'inset(0 0 0 50%)';
+            toggleContainerTwo.style.backgroundColor = '#E7C99F';
+            toggleContainerTwo.style.border = '0px';
+        } else {
+            toggleContainerTwo.style.clipPath = 'inset(0 50% 0 0)';
+            toggleContainerTwo.style.backgroundColor = '#E7C99F';
+            toggleContainerTwo.style.border = '0px';
+        }
+    });
+}
 
 var toggleTriple = document.getElementById('containerTriple');
 var toggleContainerTriple = document.getElementById('toggle-container-triple');
@@ -286,14 +349,36 @@ tabsTrigger.forEach(tab => {
             } else if (tabHref == pane.dataset.id) {
                 tab.classList.add('active');
                 pane.classList.add('active');
-            } else {
-                tab.classList.remove('active');
-                pane.classList.remove('active');
             }
         })
     })
 })
 // tabs
+
+// new tabs
+let tabWraps = document.querySelectorAll('.tab_wrap');
+
+tabWraps.forEach(wrap => {
+    let tabButton = wrap.querySelectorAll('.new_tab_button');
+    tabButton.forEach(tab => {
+        let buttonHref = tab.dataset.hrefTab;
+
+        let tabPane = wrap.querySelectorAll('.new_tab_pane');
+        tab.addEventListener('click', () => {
+            $(tab).siblings().removeClass('active');
+            tabPane.forEach(pane => {
+                let paneId = pane.dataset.idTab;
+
+                if (buttonHref == paneId) {
+                    tab.classList.add('active');
+                    pane.classList.add('active');
+                    $(pane).siblings().removeClass('active');
+                }
+            })
+        })
+    })
+})
+// new tabs
 
 // button_1
 var ableToClick = true;
@@ -348,17 +433,7 @@ copyButton.forEach(text => {
 })
 // copy button
 
-// save calendar
-let saveButtonWrap = document.querySelector('.add_in_phone button');
 
-if(saveButtonWrap) {
-    saveButtonWrap.addEventListener('click', button => {
-        setTimeout(() => {
-            saveButtonWrap.classList.add('remove');
-        }, 300);
-    })
-}
-// save calendar
 
 // before after
 // I hope this over-commenting helps. Let's do this!
@@ -426,23 +501,121 @@ if(document.querySelector('.scroller')) {
 }
 // before after 
 
-// button top
-// window.onscroll = function() {scrollFunction()};
+// xram modal
+let xramModalButton = document.querySelectorAll('.xram_modal_button');
 
-// var topButton = document.getElementById("top_button");
+xramModalButton.forEach(button => {
+    let xramModal = document.querySelectorAll('.xram_modal');
 
-// function scrollFunction() {
-//     if (topButton) {
-//         if (window.pageYOffset >= 20) {
-//             topButton.style.display = "block";
-//         } else {
-//             topButton.style.display = "none";
-//         }
-//     }
-// }
+    xramModal.forEach(modal => {
+        button.addEventListener('click', trigger => {
+            if (button.dataset.xramModalHref == modal.dataset.xramModalId && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                document.body.classList.remove('overflow_hidden');
+            } else {
+                modal.classList.add('active');
+                document.body.classList.add('overflow_hidden');
+            }
+        })
+    
+        let xramModalClose = modal.querySelectorAll('.xram_modal_close');
 
-// function topFunction() {
-//     document.body.scrollTop = 0;
-//     document.documentElement.scrollTop = 0;
-// }
-// button top
+        xramModalClose.forEach(close => {
+            close.addEventListener('click', closeClick => {
+                if (modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                    document.body.classList.remove('overflow_hidden');
+                }
+            })
+        })
+    })
+})
+// xram modal
+
+// mask input phone
+document.addEventListener("DOMContentLoaded", function () {
+    var eventCalllback = function (e) {
+        var el = e.target,
+            clearVal = el.dataset.phoneClear,
+            pattern = el.dataset.phonePattern,
+            matrix_def = "+375 (___) ___ __ __",
+            matrix = pattern ? pattern : matrix_def,
+            i = 0,
+            def = matrix.replace(/\D/g, ""),
+            val = e.target.value.replace(/\D/g, "");
+        if (clearVal !== 'false' && e.type === 'blur') {
+            if (val.length < matrix.match(/([\_\d])/g).length) {
+                e.target.value = '';
+                return;
+            }
+        }
+        if (def.length >= val.length) val = def;
+        e.target.value = matrix.replace(/./g, function (a) {
+            return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+        });
+    }
+    var phone_inputs = document.querySelectorAll('[data-phone-pattern]');
+    for (let elem of phone_inputs) {
+        for (let ev of ['input', 'blur', 'focus']) {
+            elem.addEventListener(ev, eventCalllback);
+        }
+    }
+});
+// mask input phone
+
+// scale button
+let scaleButton = document.querySelectorAll('.scale_animation_button');
+
+scaleButton.forEach(button => {
+    button.addEventListener('click', click => {
+        button.style.transform = 'scale(.8)';
+
+        setTimeout(function(){
+            button.style.transform = 'scale(1)';
+        }, 100);
+    })
+})
+// scale button
+
+const donatSelect = () => {
+    const element = document.querySelector('.count_donat_select');
+    const choices = new Choices(element, {
+        searchEnabled: false,
+        itemSelectText: '',
+    });
+}
+
+donatSelect();
+
+// donat form next
+let donatItemNext = document.querySelector('.donat_form_item_next');
+
+donatItemNext.addEventListener('click', click => {
+    document.querySelector('.donat_form_item-1').classList.add('inactive');
+    document.querySelector('.donat_form_item-2').classList.add('active');
+    setTimeout(function(){
+        document.querySelector('.donat_form_item-1').style.display = 'none';
+    }, 200);
+
+    setTimeout(function(){
+        document.querySelector('.donat_form_item-2').style.transform = 'scale(1)';
+    }, 400);
+})
+
+// donat form input radio text
+let donatTypeText = document.getElementById('donat_type-other');
+let donatTypeRadio = document.querySelectorAll('.donat_type_item_input');
+
+donatTypeText.addEventListener('click', clickTextInput => {
+    donatTypeRadio.forEach(item => {
+        item.checked = false;
+    })
+})
+
+donatTypeRadio.forEach(donatTypeItem => {
+    donatTypeItem.addEventListener('click', item => {
+        donatTypeText.value = '';
+    })
+})
+// donat form input radio text
+// donat form next

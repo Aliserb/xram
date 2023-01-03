@@ -205,7 +205,8 @@ a:hover {
 
 /* category_1 */
 .category_1_box {
-    padding: 12px 20px;
+    /* padding: 12px 20px; */
+    padding: 12px 2px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,7 +214,7 @@ a:hover {
     background: #20211B;
     border-radius: 16px;
     transition: all 0.3s ease 0s;
-    font: normal 600 20px/130% Jost;
+    font: normal 600 20px/100% Jost;
     text-align: center;
     color: #FDFFFE;
     border: 6px solid #20211B;
@@ -284,20 +285,23 @@ a:hover {
 }
 /* container */
 
-.tab_pane {
+.tab_pane,
+.new_tab_pane {
     display: none;
 }
 
-.tab_pane.active {
+.tab_pane.active,
+.new_tab_pane.active {
     display: block;
 }
 
 .top_button {
     position: fixed;
-    right: 200px;
-    bottom: 200px;
+    right: 20%;
+    bottom: 20%;
     background: none;
     border-radius: 50%;
     display: none;
     border: none;
+    z-index: 500;
 }

@@ -408,7 +408,7 @@
                 <div class="news_category_row">
                     <div class="news_category category_1">
                         <div class="news_category_box category_1_box">
-                            Фото
+                            О школе
                         </div>
                     </div>
                     <div class="news_category category_1">
@@ -567,7 +567,7 @@
                 </div>
 
                 <div class="enroll_school">
-                    <button class="button_1">
+                    <button class="button_1 xram_modal_button" data-xram-modal-href="calendar_modal_1">
                         Записаться в школу
                     </button>
 
@@ -600,7 +600,7 @@
                             (диплом Слонимского<br> Духовного училища)
                         </div>
 
-                        <button class="button_1 thin_button_1">
+                        <button class="button_1 thin_button_1 ask_question_trigger">
                             Написать матушке
                         </button>
                     </div>
@@ -991,6 +991,60 @@
             </div>
         </div>
         <div class="ask_question_overlay overlay ask_modal_close"></div>
+    </section>
+
+    <section class="xram_modal" data-xram-modal-id="calendar_modal_1">
+        <div class="xram_modal_content">
+            <div class="xram_modal_box">
+                <div class="xram_modal_header">
+                    <div class="xram_modal_title">
+                        Запись в школу
+                    </div>
+
+                    <div class="xram_modal_close">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="30" rx="15" fill="#E7C99F"/>
+                            <path d="M15 15L20.625 9.375M15 15L9.375 20.625M15 15L20.625 20.625M15 15L9.375 9.375" stroke="#F5F7F5" stroke-width="3" stroke-linecap="round"/>
+                        </svg> 
+                    </div>
+                </div>
+
+                <div class="xram_modal_body">
+                    <form action="#">
+                        <div class="xram_form_item">
+                            <label for="child_name">
+                                имя ребенка
+                            </label>
+
+                            <input type="text" placeholder="Введите имя ребенка" id="child_name" name="child_name">
+                        </div>
+
+                        <div class="xram_form_item">
+                            <label for="age_child">
+                                возраст ребенка
+                            </label>
+
+                            <input type="number" placeholder="возраст ребенка" id="age_child" name="age_child">
+                        </div>
+
+                        <div class="xram_form_item">
+                            <label for="phone">
+                                номер Телефона для уточнения деталей
+                            </label>
+
+                            <input type="text" placeholder="+375 (__) ___ __ __" id="phone" name="phone" data-phone-pattern>
+                        </div>
+
+                        <div class="xram_form_submit">
+                            <button class="button_1" type="submit">
+                                Записаться
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="xram_modal_overlay xram_modal_close"></div>
     </section>
 
     <script src="assets/js/swiper-bundle.min.js"></script>

@@ -147,8 +147,8 @@ var historyThumbs = new Swiper(".history_thumbs_swiper", {
             spaceBetween: 94,
         },
         840: {
-            slidesPerView: 8,
-            spaceBetween: 94,
+            slidesPerView: 10,
+            spaceBetween: 30,
         },
     },
   });
@@ -200,4 +200,13 @@ window.addEventListener('resize', () => {
             peopleSwiperWrapper.classList.remove('swiper-wrapper'); 
         }
     })
+});
+
+var rectorAwards = new Swiper(".rector_awards_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+        el: '.rector_awards_items',
+        clickable: true,
+    },
 });

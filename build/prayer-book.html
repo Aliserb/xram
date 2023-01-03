@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
     <!-- <link rel="stylesheet" href="assets/css/history.css"> -->
 
     <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
@@ -209,205 +210,411 @@
                         </ul>
                     </nav>
                 </div>
+                
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="/">
+                            <img src="assets/images/logo.svg" alt="logotype">
+                        </a>
+                    </div>
+
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="mobile_dropdown">
+                    <div class="header_links">
+                        <div class="item">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_instagram"></use>
+                                </svg>                                  
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"> 
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_telegram "></use>
+                                </svg>                             
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_zen"></use>
+                                </svg>                                     
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3125 0.5H3.9375C2.89321 0.5 1.89169 0.914843 1.15327 1.65327C0.414843 2.39169 0 3.39321 0 4.4375V17.5625C0 18.6068 0.414843 19.6083 1.15327 20.3467C1.89169 21.0852 2.89321 21.5 3.9375 21.5H22.3125C23.3568 21.5 24.3583 21.0852 25.0967 20.3467C25.8352 19.6083 26.25 18.6068 26.25 17.5625V4.4375C26.25 3.39321 25.8352 2.39169 25.0967 1.65327C24.3583 0.914843 23.3568 0.5 22.3125 0.5ZM21.4331 3.125L13.125 9.35938L4.81687 3.125H21.4331ZM22.3125 18.875H3.9375C3.5894 18.875 3.25556 18.7367 3.00942 18.4906C2.76328 18.2444 2.625 17.9106 2.625 17.5625V4.76562L12.3375 12.05C12.5647 12.2204 12.841 12.3125 13.125 12.3125C13.409 12.3125 13.6853 12.2204 13.9125 12.05L23.625 4.76562V17.5625C23.625 17.9106 23.4867 18.2444 23.2406 18.4906C22.9944 18.7367 22.6606 18.875 22.3125 18.875Z" fill="#20211B"/>
+                                </svg>                 
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_470_390)">
+                                    <path d="M5.99664 11.2139H2.20335C1.7788 11.2139 1.43896 11.5571 1.43896 11.9863V14.3034C1.43896 14.7324 1.77861 15.0758 2.20335 15.0758H5.99664C6.42119 15.0758 6.76102 14.7326 6.76102 14.3034V11.9863C6.76102 11.5571 6.42118 11.2139 5.99664 11.2139Z" fill="#20211B"/>
+                                    <path d="M5.99676 17.25H2.20347C1.77892 17.25 1.43909 17.5932 1.43909 18.0224V20.3395C1.43909 20.7686 1.77873 21.112 2.20347 21.112H5.99676C6.42131 21.112 6.76114 20.7687 6.76114 20.3395V18.0224C6.76114 17.5932 6.42131 17.25 5.99676 17.25Z" fill="#20211B"/>
+                                    <path d="M13.4703 11.2139H9.67698C9.25243 11.2139 8.9126 11.5571 8.9126 11.9863V14.3034C8.9126 14.7324 9.25224 15.0758 9.67698 15.0758H13.4703C13.8948 15.0758 14.2347 14.7326 14.2347 14.3034V11.9863C14.2347 11.5571 13.895 11.2139 13.4703 11.2139Z" fill="#20211B"/>
+                                    <path d="M13.4703 17.25H9.67698C9.25243 17.25 8.9126 17.5932 8.9126 18.0224V20.3395C8.9126 20.7686 9.25224 21.112 9.67698 21.112H13.4703C13.8948 21.112 14.2347 20.7687 14.2347 20.3395V18.0224C14.2347 17.5932 13.895 17.25 13.4703 17.25Z" fill="#20211B"/>
+                                    <path d="M20.9439 11.2139H17.1506C16.7261 11.2139 16.3862 11.5571 16.3862 11.9863V14.3034C16.3862 14.7324 16.7259 15.0758 17.1506 15.0758H20.9439C21.3685 15.0758 21.7083 14.7326 21.7083 14.3034V11.9863C21.7083 11.5571 21.3686 11.2139 20.9439 11.2139Z" fill="#20211B"/>
+                                    <path d="M20.9437 17.25H17.1504C16.7258 17.25 16.386 17.5932 16.386 18.0224V20.3395C16.386 20.7686 16.7256 21.112 17.1504 21.112H20.9437C21.3682 21.112 21.708 20.7687 21.708 20.3395V18.0224C21.708 17.5932 21.3684 17.25 20.9437 17.25Z" fill="#20211B"/>
+                                    <path d="M21.9628 3.46152C21.4533 3.00377 20.8021 2.46018 20.2642 2.14551C17.9147 0.772434 14.8289 0 11.5735 0C8.31797 0 5.23234 0.772434 2.88273 2.17406C2.34481 2.48875 1.69377 3.03232 1.18411 3.49008C0.674661 3.9191 0.4764 4.60574 0.617993 5.26364L1.29745 8.41049C1.4106 8.92531 1.9485 9.23998 2.45815 9.0971L7.01583 7.63821C7.44037 7.49514 7.69528 7.09463 7.63861 6.66563L7.29897 4.14798C8.74266 3.71896 9.93157 3.49008 11.5735 3.49008C13.3286 3.49008 14.5175 3.74749 15.9047 4.17669L15.5933 6.63687C15.5366 7.06589 15.7916 7.49513 16.2161 7.60945L20.7456 9.06835C21.255 9.23995 21.7929 8.92527 21.9063 8.38173L22.5291 5.23488C22.6704 4.57718 22.4724 3.89057 21.9627 3.46152H21.9628Z" fill="#20211B"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_470_390">
+                                    <rect width="22" height="22" fill="white" transform="translate(0.25)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                         
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mobile_dropdown_title main_banner_title text-center">
+                        храм г.Ивье <br>
+                        Гавриила<br>
+                        Белостокского
+                    </div>
+
+                    <div class="mobile_dropdown_tabs">
+                        <div class="mobile_dropdown_tab tab_button" data-href="mobile_tab-1">
+                            Храм 
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="mobile_dropdown_pane tab_pane" data-id="mobile_tab-1">
+                            <nav class="mobile_dropdown_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            О храме
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Расписание
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Воскресная школа
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Записка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Помочь
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="mobile_dropdown_tabs">
+                        <div class="mobile_dropdown_tab tab_button" data-href="mobile_tab-2">
+                            Проекты
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg> 
+                        </div>
+
+                        <div class="mobile_dropdown_pane tab_pane" data-id="mobile_tab-2">
+                            <div class="mobile_projects_row row">
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="description_banner_section padding_bottom_180px" style="background-image: url('./assets/images/bg/prayer-book.png');">
-        <div class="container">
-            <div class="description_banner">
-                <h1 class="description_banner_title">
-                    Молитвослов
-                </h1>
+    <div class="wrapper">
+        <section class="description_banner_section padding_bottom_180px" style="background-image: url('./assets/images/bg/prayer-book.png');">
+            <div class="container">
+                <div class="description_banner">
+                    <h1 class="description_banner_title">
+                        Молитвослов
+                    </h1>
 
-                <p class="description_banner_text text-center">
-                    Слово Божие разгоняет уныние — сон души и уныние ума.
-                    <b>Святитель Феофан Затворник</b>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="news_category_section category_1_section">
-        <div class="container">
-            <div class="news_category_row">
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Фото
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Книги
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Фильмы
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Житие святых
-                    </div>
-                </div>
-                <div class="news_category category_1">
-                    <div class="news_category_box category_1_box">
-                        Молитослов
-                    </div>
+                    <p class="description_banner_text text-center">
+                        Слово Божие разгоняет уныние — сон души и уныние ума.
+                        <b>Святитель Феофан Затворник</b>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="prayer_section margin_top_60">
-        <div class="container">
-            <div class="prayer_row">
-                <div class="prayer_col w_33">
-                    <div class="books_search">
-                        <form action="#" class="books_search_form">
-                            <input type="text" id="search" name="search" class="search_input" placeholder="Введите название молитвы">
-                            <button type="submit">
-                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.66347 12.9975C10.4852 12.9975 12.7725 10.6697 12.7725 7.79843C12.7725 4.92713 10.4852 2.5996 7.66347 2.5996C4.84177 2.5996 2.55423 4.92713 2.55423 7.79843C2.55423 10.6697 4.84177 12.9975 7.66347 12.9975ZM13.6351 12.6868L19.6264 18.7834C20.1238 19.2895 20.1261 20.1076 19.6238 20.6188C19.125 21.1264 18.3167 21.1268 17.8202 20.6216L11.721 14.4152C10.5444 15.1639 9.15362 15.5967 7.66364 15.5967C3.43112 15.5967 0 12.1053 0 7.79836C0 3.49144 3.43112 0 7.66364 0C11.8962 0 15.3273 3.49144 15.3273 7.79836C15.3273 9.64919 14.6937 11.3494 13.635 12.6867L13.6351 12.6868Z" fill="white"/>
-                                </svg>                            
-                            </button>
-                        </form>
-                    </div>
-
-                    <nav class="prayer_menu">
-                        <ul>
-                            <li class="dropdown active">
-                                <a href="#">
-                                    Молитвослов
-                                    <ul>
-                                        <li class="dropdown active">
-                                            <a href="#">
-                                                Молитвы утренние
-                                            </a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">
-                                                        Молитвы утренние
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">
-                                                        Молитвы вечерние
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">
-                                                Молитвы вечерние
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">
-                                    Каноны
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">
-                                    Акафисты
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">
-                                    Псалтирь
-                                </a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">
-                                    Богослужение
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="adblock margin_top_60">
-                        <div class="adblock_item">
-                            <div class="adblock_text">
-                                Приложение Молитвослов доступно для скачивания 
-                            </div>
-
-                            <div class="adblock_links">
-                                <a href="#">
-                                    <img src="assets/images/card/google_play.svg" alt="google play">
-                                </a>
-                                <a href="#">
-                                    <img src="assets/images/card/app_store.svg" alt="appstore">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="adblock_item">
-                            <img src="assets/images/card/iPhone.svg" alt="iphone">
+        <section class="news_category_section category_1_section">
+            <div class="container">
+                <div class="news_category_row">
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Фото
                         </div>
                     </div>
-                </div>
-                <div class="prayer_col w_66">
-                    <div class="ask_question_toggle prayer_content_tabs" id="container">
-                        <div class="inner-container">
-                            <div class="toggle prayer_content_tab tab_button" data-href="prayer_tab-2">
-                                <p>Церковнославянский</p>
-                            </div>
-                            <div class="toggle prayer_content_tab tab_button active" data-href="prayer_tab-1">
-                                <p>Русский</p>
-                            </div>
-                        </div>
-                        <div class="inner-container" id="toggle-container" style="clip-path: inset(0px 50% 0px 0px); background-color: rgb(231, 201, 159); border: 0px;">
-                            <div class="toggle tab_button" data-href="prayer_tab-2">
-                                <p>Церковнославянский</p>
-                            </div>
-                            <div class="toggle tab_button active" data-href="prayer_tab-1">
-                                <p>Русский</p>
-                            </div>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Книги
                         </div>
                     </div>
-
-                    <div class="prayer_content">
-                        <div class="prayer_content_pane tab_pane" data-id="prayer_tab-2">
-                            <h5>
-                                Начало 2
-                            </h5>
-                            <p>
-                                Востав от сна, прежде всякого другого дела, стань благоговейно, представляя себя пред Всевидящим Богом, и, совершая крестное знамение, произнеси:
-                            </p>
-
-                            <p>
-                                Во и́мя Отцá, и Сы́на, и Святáго Ду́ха. Ами́нь.
-                            </p>
-
-                            <p>
-                                Пак-шот притягивает подтекст, признавая определенные рыночные тенденции. Сегмент рынка, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, диссонирует формат события. Бренд, как справедливо считает И.Гальперин, отражает рекламный блок, именно поэтому голос автора романа не имеет никаких преимуществ перед голосами персонажей.
-                            </p>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Фильмы
                         </div>
-                        <div class="prayer_content_pane active tab_pane" data-id="prayer_tab-1">
-                            <h5>
-                                Начало
-                            </h5>
-                            <p>
-                                Востав от сна, прежде всякого другого дела, стань благоговейно, представляя себя пред Всевидящим Богом, и, совершая крестное знамение, произнеси:
-                            </p>
-
-                            <p>
-                                Во и́мя Отцá, и Сы́на, и Святáго Ду́ха. Ами́нь.
-                            </p>
-
-                            <p>
-                                Пак-шот притягивает подтекст, признавая определенные рыночные тенденции. Сегмент рынка, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, диссонирует формат события. Бренд, как справедливо считает И.Гальперин, отражает рекламный блок, именно поэтому голос автора романа не имеет никаких преимуществ перед голосами персонажей.
-                            </p>
+                    </div>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Житие святых
+                        </div>
+                    </div>
+                    <div class="news_category category_1">
+                        <div class="news_category_box category_1_box">
+                            Молитослов
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="prayer_section margin_top_60">
+            <div class="container">
+                <div class="prayer_section_header">
+                    <div class="prayer_row">
+                        <div class="prayer_col w_33">
+                            <div class="books_search">
+                                <form action="#" class="books_search_form">
+                                    <input type="text" id="search" name="search" class="search_input" placeholder="Введите название молитвы">
+                                    <button type="submit">
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.66347 12.9975C10.4852 12.9975 12.7725 10.6697 12.7725 7.79843C12.7725 4.92713 10.4852 2.5996 7.66347 2.5996C4.84177 2.5996 2.55423 4.92713 2.55423 7.79843C2.55423 10.6697 4.84177 12.9975 7.66347 12.9975ZM13.6351 12.6868L19.6264 18.7834C20.1238 19.2895 20.1261 20.1076 19.6238 20.6188C19.125 21.1264 18.3167 21.1268 17.8202 20.6216L11.721 14.4152C10.5444 15.1639 9.15362 15.5967 7.66364 15.5967C3.43112 15.5967 0 12.1053 0 7.79836C0 3.49144 3.43112 0 7.66364 0C11.8962 0 15.3273 3.49144 15.3273 7.79836C15.3273 9.64919 14.6937 11.3494 13.635 12.6867L13.6351 12.6868Z" fill="white"/>
+                                        </svg>                            
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="prayer_col w_66">
+                            <div class="ask_question_toggle prayer_content_tabs" id="container">
+                                <div class="inner-container">
+                                    <div class="toggle prayer_content_tab tab_button" data-href="prayer_tab-2">
+                                        <p>Церковнославянский</p>
+                                    </div>
+                                    <div class="toggle prayer_content_tab tab_button active" data-href="prayer_tab-1">
+                                        <p>Русский</p>
+                                    </div>
+                                </div>
+                                <div class="inner-container" id="toggle-container" style="clip-path: inset(0px 50% 0px 0px); background-color: rgb(231, 201, 159); border: 0px;">
+                                    <div class="toggle tab_button" data-href="prayer_tab-2">
+                                        <p>Церковнославянский</p>
+                                    </div>
+                                    <div class="toggle tab_button active" data-href="prayer_tab-1">
+                                        <p>Русский</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="button_1">
+                        <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="4" rx="2" fill="#2B2B2B"/>
+                            <rect y="9" width="30" height="4" rx="2" fill="#2B2B2B"/>
+                            <rect y="18" width="30" height="4" rx="2" fill="#2B2B2B"/>
+                        </svg>                        
+                        Меню выбора молитв
+                    </button>
+                </div>
+
+                <div class="prayer_row">
+                    <div class="prayer_col w_33">
+                        <div class="books_search mobile_search">
+                            <form action="#" class="books_search_form">
+                                <input type="text" id="search" name="search" class="search_input" placeholder="Введите название молитвы">
+                                <button type="submit">
+                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66347 12.9975C10.4852 12.9975 12.7725 10.6697 12.7725 7.79843C12.7725 4.92713 10.4852 2.5996 7.66347 2.5996C4.84177 2.5996 2.55423 4.92713 2.55423 7.79843C2.55423 10.6697 4.84177 12.9975 7.66347 12.9975ZM13.6351 12.6868L19.6264 18.7834C20.1238 19.2895 20.1261 20.1076 19.6238 20.6188C19.125 21.1264 18.3167 21.1268 17.8202 20.6216L11.721 14.4152C10.5444 15.1639 9.15362 15.5967 7.66364 15.5967C3.43112 15.5967 0 12.1053 0 7.79836C0 3.49144 3.43112 0 7.66364 0C11.8962 0 15.3273 3.49144 15.3273 7.79836C15.3273 9.64919 14.6937 11.3494 13.635 12.6867L13.6351 12.6868Z" fill="white"/>
+                                    </svg>                            
+                                </button>
+                            </form>
+                        </div>
+
+                        <nav class="prayer_menu">
+                            <ul>
+                                <li class="dropdown active">
+                                    <a href="#">
+                                        Молитвослов
+                                        <ul>
+                                            <li class="dropdown active">
+                                                <a href="#">
+                                                    Молитвы утренние
+                                                </a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            Молитвы утренние
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            Молитвы вечерние
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#">
+                                                    Молитвы вечерние
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        Каноны
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        Акафисты
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        Псалтирь
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        Богослужение
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="adblock margin_top_60">
+                            <div class="adblock_item">
+                                <div class="adblock_text">
+                                    Приложение Молитвослов доступно для скачивания 
+                                </div>
+
+                                <div class="adblock_links">
+                                    <a href="#">
+                                        <img src="assets/images/card/google_play.svg" alt="google play">
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/images/card/app_store.svg" alt="appstore">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="adblock_item">
+                                <img src="assets/images/card/iPhone.svg" alt="iphone">
+                            </div>
+                        </div>
+
+                        <div class="menu_close">
+                            Закрыть меню
+                        </div>
+                    </div>
+                    <div class="prayer_col w_66">
+                        <div class="prayer_content">
+                            <div class="prayer_content_pane tab_pane" data-id="prayer_tab-2">
+                                <h5>
+                                    Начало 2
+                                </h5>
+                                <p>
+                                    Востав от сна, прежде всякого другого дела, стань благоговейно, представляя себя пред Всевидящим Богом, и, совершая крестное знамение, произнеси:
+                                </p>
+
+                                <p>
+                                    Во и́мя Отцá, и Сы́на, и Святáго Ду́ха. Ами́нь.
+                                </p>
+
+                                <p>
+                                    Пак-шот притягивает подтекст, признавая определенные рыночные тенденции. Сегмент рынка, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, диссонирует формат события. Бренд, как справедливо считает И.Гальперин, отражает рекламный блок, именно поэтому голос автора романа не имеет никаких преимуществ перед голосами персонажей.
+                                </p>
+                            </div>
+                            <div class="prayer_content_pane active tab_pane" data-id="prayer_tab-1">
+                                <h5>
+                                    Начало
+                                </h5>
+                                <p>
+                                    Востав от сна, прежде всякого другого дела, стань благоговейно, представляя себя пред Всевидящим Богом, и, совершая крестное знамение, произнеси:
+                                </p>
+
+                                <p>
+                                    Во и́мя Отцá, и Сы́на, и Святáго Ду́ха. Ами́нь.
+                                </p>
+
+                                <p>
+                                    Пак-шот притягивает подтекст, признавая определенные рыночные тенденции. Сегмент рынка, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, диссонирует формат события. Бренд, как справедливо считает И.Гальперин, отражает рекламный блок, именно поэтому голос автора романа не имеет никаких преимуществ перед голосами персонажей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer class="footer section_top_150">
         <div class="container">

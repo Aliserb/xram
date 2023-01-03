@@ -67,6 +67,11 @@
     .books_search_form {
         max-width: 100%;
     }
+
+    .top_button {
+        right: 5%;
+        bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -214,6 +219,14 @@
     .history_column ul {
         overflow-x: scroll;
     }
+
+    .not_found_img-1 {
+        max-width: 221px;
+    }
+
+    .not_found_img-2 {
+        max-width: 162px;
+    }
 }
 
 .rector_awards {
@@ -253,6 +266,31 @@
         margin-bottom: 30px;
     }
 }
+
+.rector_awards_wrap.active .rector_image_mark_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rector_awards_showing svg {
+    transition: all 0.3s ease 0s;
+}
+
+.rector_awards_showing.active svg {
+    transform: rotate(0deg);
+}
+
+.rector_awards_items span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+}
+
+.rector_awards_items span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #E7C99F;
+}
+
 @media screen and (max-width: 940px) { 
     .footer_bottom .footer_item a, .copyright {
         font-size: 16px;
@@ -302,7 +340,7 @@
         margin-top: 10px;
     }
 
-    .rector_award_item span {
+    .rector_award_items span {
         width: 10px;
         height: 10px;
         border-radius: 50%;
@@ -485,6 +523,25 @@
         width: 100%;
         justify-content: center;
     }
+
+    .not_found_img-1 {
+        max-width: 122px;
+    }
+
+    .not_found_img-2 {
+        max-width: 122px;
+    }
+
+    .not_found_wrap {
+        margin-top: 30px;
+        max-height: 400px;
+        min-height: auto;
+    }
+}
+
+.notes_cart_item.notes_order_item_delete .mobile_cart_item_remove,
+.mobile_cart_item {
+    display: none;
 }
 
 @media screen and (max-width: 760px) {
@@ -585,7 +642,8 @@
         margin: 0px 10px;
     }
 
-    .notes_order_item_delete svg.mobile_cart_item_remove {
+    .notes_cart_item.notes_order_item_delete .mobile_cart_item_remove,
+    .mobile_cart_item {
         display: block;
     }
 
@@ -1150,6 +1208,30 @@
 
     .saint_content_item:nth-child(2) {
         margin: 0;
+    }
+
+    .not_found_img {
+        display: none;
+    }
+
+    .not_found_content {
+        margin: 0 auto;
+    }
+
+    .not_found_title {
+        font-size: 120px;
+        line-height: 100%;
+        text-align: center;
+    }
+
+    .not_found_subtitle {
+        font-size: 25px;
+        line-height: 120%;
+    }
+
+    .not_found_text {
+        font-size: 18px;
+        line-height: 120%;
     }
 }
 

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
     <link href="assets/fonts/jost/stylesheet.css" rel="stylesheet" type="text/css"/>
     <link href="assets/fonts/AmaticSC/stylesheet.css" rel="stylesheet" type="text/css"/>
@@ -17,7 +18,7 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header_row">
                 <div class="header_top">
@@ -206,195 +207,369 @@
                         </ul>
                     </nav>
                 </div>
+
+                <div class="mobile_header">
+                    <div class="mobile_logo">
+                        <a href="/">
+                            <img src="assets/images/logo.svg" alt="logotype">
+                        </a>
+                    </div>
+
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="mobile_dropdown">
+                    <div class="header_links">
+                        <div class="item">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_instagram"></use>
+                                </svg>                                  
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#"> 
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_telegram "></use>
+                                </svg>                             
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#header_zen"></use>
+                                </svg>                                     
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.3125 0.5H3.9375C2.89321 0.5 1.89169 0.914843 1.15327 1.65327C0.414843 2.39169 0 3.39321 0 4.4375V17.5625C0 18.6068 0.414843 19.6083 1.15327 20.3467C1.89169 21.0852 2.89321 21.5 3.9375 21.5H22.3125C23.3568 21.5 24.3583 21.0852 25.0967 20.3467C25.8352 19.6083 26.25 18.6068 26.25 17.5625V4.4375C26.25 3.39321 25.8352 2.39169 25.0967 1.65327C24.3583 0.914843 23.3568 0.5 22.3125 0.5ZM21.4331 3.125L13.125 9.35938L4.81687 3.125H21.4331ZM22.3125 18.875H3.9375C3.5894 18.875 3.25556 18.7367 3.00942 18.4906C2.76328 18.2444 2.625 17.9106 2.625 17.5625V4.76562L12.3375 12.05C12.5647 12.2204 12.841 12.3125 13.125 12.3125C13.409 12.3125 13.6853 12.2204 13.9125 12.05L23.625 4.76562V17.5625C23.625 17.9106 23.4867 18.2444 23.2406 18.4906C22.9944 18.7367 22.6606 18.875 22.3125 18.875Z" fill="#20211B"/>
+                                </svg>                 
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="#">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_470_390)">
+                                    <path d="M5.99664 11.2139H2.20335C1.7788 11.2139 1.43896 11.5571 1.43896 11.9863V14.3034C1.43896 14.7324 1.77861 15.0758 2.20335 15.0758H5.99664C6.42119 15.0758 6.76102 14.7326 6.76102 14.3034V11.9863C6.76102 11.5571 6.42118 11.2139 5.99664 11.2139Z" fill="#20211B"/>
+                                    <path d="M5.99676 17.25H2.20347C1.77892 17.25 1.43909 17.5932 1.43909 18.0224V20.3395C1.43909 20.7686 1.77873 21.112 2.20347 21.112H5.99676C6.42131 21.112 6.76114 20.7687 6.76114 20.3395V18.0224C6.76114 17.5932 6.42131 17.25 5.99676 17.25Z" fill="#20211B"/>
+                                    <path d="M13.4703 11.2139H9.67698C9.25243 11.2139 8.9126 11.5571 8.9126 11.9863V14.3034C8.9126 14.7324 9.25224 15.0758 9.67698 15.0758H13.4703C13.8948 15.0758 14.2347 14.7326 14.2347 14.3034V11.9863C14.2347 11.5571 13.895 11.2139 13.4703 11.2139Z" fill="#20211B"/>
+                                    <path d="M13.4703 17.25H9.67698C9.25243 17.25 8.9126 17.5932 8.9126 18.0224V20.3395C8.9126 20.7686 9.25224 21.112 9.67698 21.112H13.4703C13.8948 21.112 14.2347 20.7687 14.2347 20.3395V18.0224C14.2347 17.5932 13.895 17.25 13.4703 17.25Z" fill="#20211B"/>
+                                    <path d="M20.9439 11.2139H17.1506C16.7261 11.2139 16.3862 11.5571 16.3862 11.9863V14.3034C16.3862 14.7324 16.7259 15.0758 17.1506 15.0758H20.9439C21.3685 15.0758 21.7083 14.7326 21.7083 14.3034V11.9863C21.7083 11.5571 21.3686 11.2139 20.9439 11.2139Z" fill="#20211B"/>
+                                    <path d="M20.9437 17.25H17.1504C16.7258 17.25 16.386 17.5932 16.386 18.0224V20.3395C16.386 20.7686 16.7256 21.112 17.1504 21.112H20.9437C21.3682 21.112 21.708 20.7687 21.708 20.3395V18.0224C21.708 17.5932 21.3684 17.25 20.9437 17.25Z" fill="#20211B"/>
+                                    <path d="M21.9628 3.46152C21.4533 3.00377 20.8021 2.46018 20.2642 2.14551C17.9147 0.772434 14.8289 0 11.5735 0C8.31797 0 5.23234 0.772434 2.88273 2.17406C2.34481 2.48875 1.69377 3.03232 1.18411 3.49008C0.674661 3.9191 0.4764 4.60574 0.617993 5.26364L1.29745 8.41049C1.4106 8.92531 1.9485 9.23998 2.45815 9.0971L7.01583 7.63821C7.44037 7.49514 7.69528 7.09463 7.63861 6.66563L7.29897 4.14798C8.74266 3.71896 9.93157 3.49008 11.5735 3.49008C13.3286 3.49008 14.5175 3.74749 15.9047 4.17669L15.5933 6.63687C15.5366 7.06589 15.7916 7.49513 16.2161 7.60945L20.7456 9.06835C21.255 9.23995 21.7929 8.92527 21.9063 8.38173L22.5291 5.23488C22.6704 4.57718 22.4724 3.89057 21.9627 3.46152H21.9628Z" fill="#20211B"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_470_390">
+                                    <rect width="22" height="22" fill="white" transform="translate(0.25)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>                         
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mobile_dropdown_title main_banner_title text-center">
+                        храм г.Ивье <br>
+                        Гавриила<br>
+                        Белостокского
+                    </div>
+
+                    <div class="mobile_dropdown_tabs">
+                        <div class="mobile_dropdown_tab tab_button" data-href="mobile_tab-1">
+                            Храм 
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>                                
+                        </div>
+
+                        <div class="mobile_dropdown_pane tab_pane" data-id="mobile_tab-1">
+                            <nav class="mobile_dropdown_menu">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            О храме
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Расписание
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Воскресная школа
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Записка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Помочь
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="mobile_dropdown_tabs">
+                        <div class="mobile_dropdown_tab tab_button" data-href="mobile_tab-2">
+                            Проекты
+                            <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6.5L5 2.5L1 6.5" stroke="#20211B" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg> 
+                        </div>
+
+                        <div class="mobile_dropdown_pane tab_pane" data-id="mobile_tab-2">
+                            <div class="mobile_projects_row row">
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mobile_project">
+                                        <img src="assets/images/card/mobile_project.png">
+                                        <a href="#">
+                                            Православные<br> платья
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="contacts_section">
-        <div class="container container_850">
-            <h1 class="section_title text-center">
-                Контакты
-            </h1>
+    <div class="wrapper">
+        <section class="contacts_section">
+            <div class="container container_850">
+                <h1 class="section_title text-center">
+                    Контакты
+                </h1>
 
-            <div class="contacts_wrap">
-                <div class="contacts_col">
-                    <div class="contact_map">
-                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d07096acefa1e19f5db988421c8ea9f465170d964ffc4ea8414a754d019386b&amp;width=492&amp;height=492&amp;lang=ru_RU&amp;scroll=true"></script>
-                    </div>
-                </div>
-                <div class="contacts_col">
-                    <div class="contacts_items">
-                        <div class="contacts_item">
-                            <div class="contacts_item_title">
-                                Адрес:
-                            </div>
-
-                            <div class="contacts_item_desc">
-                                231337 Республика Беларусь, Гродненская область, г.Ивье, ул.1 Мая, 67
-                            </div>
-                        </div>
-
-                        <div class="contacts_item">
-                            <div class="contacts_item_title">
-                                Настоятель:
-                            </div>
-
-                            <div class="contacts_item_desc">
-                                Протоиерей Вячеслав Пашкевич
-                            </div>
-                        </div>
-
-                        <div class="contacts_item">
-                            <div class="contacts_item_title">
-                                Социальные сети:
-                            </div>
-
-                            <div class="contacts_item_desc">
-                                info@xram.by <br>
-                                +375 (25) 123 45 67
-                            </div>
-
-                            <div class="contact_links">
-                                <div class="contact_links_item">
-                                    <a href="#">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_instagram"></use>
-                                        </svg> 
-                                    </a>
-                                </div>
-
-                                <div class="contact_links_item">
-                                    <a href="#">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_telegram"></use>
-                                        </svg> 
-                                    </a>
-                                </div>
-
-                                <div class="contact_links_item">
-                                    <a href="#">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_zen"></use>
-                                        </svg> 
-                                    </a>
-                                </div>
-                            </div>
+                <div class="contacts_wrap">
+                    <div class="contacts_col">
+                        <div class="contact_map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6d07096acefa1e19f5db988421c8ea9f465170d964ffc4ea8414a754d019386b&amp;width=492&amp;height=492&amp;lang=ru_RU&amp;scroll=true"></script>
                         </div>
                     </div>
+                    <div class="contacts_col">
+                        <div class="contacts_items">
+                            <div class="contacts_item">
+                                <div class="contacts_item_title">
+                                    Адрес:
+                                </div>
 
-                    <div class="contact_buttons">
-                        <button class="contact_save button_1">
-                            Сохранить контакт
-                        </button>
+                                <div class="contacts_item_desc">
+                                    231337 Республика Беларусь, Гродненская область, г.Ивье, ул.1 Мая, 67
+                                </div>
+                            </div>
 
-                        <button class="contact_feedback button_2 ask_question_trigger">
-                            Написать батюшке
-                        </button>
+                            <div class="contacts_item">
+                                <div class="contacts_item_title">
+                                    Настоятель:
+                                </div>
+
+                                <div class="contacts_item_desc">
+                                    Протоиерей Вячеслав Пашкевич
+                                </div>
+                            </div>
+
+                            <div class="contacts_item">
+                                <div class="contacts_item_title">
+                                    Социальные сети:
+                                </div>
+
+                                <div class="contacts_item_desc">
+                                    info@xram.by <br>
+                                    +375 (25) 123 45 67
+                                </div>
+
+                                <div class="contact_links">
+                                    <div class="contact_links_item">
+                                        <a href="#">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_instagram"></use>
+                                            </svg> 
+                                        </a>
+                                    </div>
+
+                                    <div class="contact_links_item">
+                                        <a href="#">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_telegram"></use>
+                                            </svg> 
+                                        </a>
+                                    </div>
+
+                                    <div class="contact_links_item">
+                                        <a href="#">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_zen"></use>
+                                            </svg> 
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact_buttons">
+                            <button class="contact_save button_1">
+                                Сохранить контакт
+                            </button>
+
+                            <button class="contact_feedback button_2 ask_question_trigger">
+                                Написать батюшке
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="contact_cards_section">
-        <div class="container">
-            <div class="contact_cards row">
-                <div class="contact_card col-12 col-xl-3 col-lg-6">
-                    <div class="contact_card_box">
-                        <div class="contact_card_image">
-                            <img src="assets/images/card/contact_card-1.png" alt="portrait">
-                        </div>
+        <div class="contact_cards_section">
+            <div class="container">
+                <div class="contact_cards row">
+                    <div class="contact_card col-6 col-xl-3 col-lg-3">
+                        <div class="contact_card_box">
+                            <div class="contact_card_image">
+                                <img src="assets/images/card/contact_card-1.png" alt="portrait">
+                            </div>
 
-                        <div class="contact_cards_name">
-                            Патриарх
-                        </div>
-                        
-                        <div class="contact_cards_desc">
-                            Кирилл святейший Патриарх Московский и всея Руси
-                        </div>
+                            <div class="contact_cards_name">
+                                Патриарх
+                            </div>
+                            
+                            <div class="contact_cards_desc">
+                                Кирилл святейший Патриарх Московский и всея Руси
+                            </div>
 
-                        <div class="contact_card_links">
-                            <a href="#">
-                                Перейти на сайт
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
-                                </svg> 
-                            </a>
+                            <div class="contact_card_links">
+                                <a href="#">
+                                    Перейти на сайт
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
+                                    </svg> 
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact_card col-12 col-xl-3 col-lg-6">
-                    <div class="contact_card_box">
-                        <div class="contact_card_image">
-                            <img src="assets/images/card/contact_card-2.png" alt="portrait">
-                        </div>
+                    <div class="contact_card col-6 col-xl-3 col-lg-3">
+                        <div class="contact_card_box">
+                            <div class="contact_card_image">
+                                <img src="assets/images/card/contact_card-2.png" alt="portrait">
+                            </div>
 
-                        <div class="contact_cards_name">
-                            Вениамин
-                        </div>
-                        
-                        <div class="contact_cards_desc">
-                            Митрополит Минский и Заславский, Патриарший экзарх всея Беларуси
-                        </div>
+                            <div class="contact_cards_name">
+                                Вениамин
+                            </div>
+                            
+                            <div class="contact_cards_desc">
+                                Митрополит Минский и Заславский, Патриарший экзарх всея Беларуси
+                            </div>
 
-                        <div class="contact_card_links">
-                            <a href="#">
-                                Перейти на сайт
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
-                                </svg> 
-                            </a>
+                            <div class="contact_card_links">
+                                <a href="#">
+                                    Перейти на сайт
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
+                                    </svg> 
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact_card col-12 col-xl-3 col-lg-6">
-                    <div class="contact_card_box">
-                        <div class="contact_card_image">
-                            <img src="assets/images/card/contact_card-3.png" alt="portrait">
-                        </div>
+                    <div class="contact_card col-6 col-xl-3 col-lg-3">
+                        <div class="contact_card_box">
+                            <div class="contact_card_image">
+                                <img src="assets/images/card/contact_card-3.png" alt="portrait">
+                            </div>
 
-                        <div class="contact_cards_name">
-                            Порфирий
-                        </div>
-                        
-                        <div class="contact_cards_desc">
-                            Епископ Лидский и Сморгонский
-                        </div>
+                            <div class="contact_cards_name">
+                                Порфирий
+                            </div>
+                            
+                            <div class="contact_cards_desc">
+                                Епископ Лидский и Сморгонский
+                            </div>
 
-                        <div class="contact_card_links">
-                            <a href="#">
-                                Перейти на сайт
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
-                                </svg> 
-                            </a>
+                            <div class="contact_card_links">
+                                <a href="#">
+                                    Перейти на сайт
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
+                                    </svg> 
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="contact_card col-12 col-xl-3 col-lg-6">
-                    <div class="contact_card_box">
-                        <div class="contact_card_image">
-                            <img src="assets/images/card/contact_card-4.png" alt="portrait">
-                        </div>
+                    <div class="contact_card col-6 col-xl-3 col-lg-3">
+                        <div class="contact_card_box">
+                            <div class="contact_card_image">
+                                <img src="assets/images/card/contact_card-4.png" alt="portrait">
+                            </div>
 
-                        <div class="contact_cards_name">
-                            Вячеслав
-                        </div>
-                        
-                        <div class="contact_cards_desc">
-                            Благочинный Ивьевского округа, настоятель храма г.Ивье протоиерей 
-                        </div>
+                            <div class="contact_cards_name">
+                                Вячеслав
+                            </div>
+                            
+                            <div class="contact_cards_desc">
+                                Благочинный Ивьевского округа, настоятель храма г.Ивье протоиерей 
+                            </div>
 
-                        <div class="contact_card_links">
-                            <a href="#">
-                                Перейти на сайт
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
-                                </svg> 
-                            </a>
+                            <div class="contact_card_links">
+                                <a href="#">
+                                    Перейти на сайт
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="./assets/other-files/sprites/sprite.svg#contact_card_link"></use>
+                                    </svg> 
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
